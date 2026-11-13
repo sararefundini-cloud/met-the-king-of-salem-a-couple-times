@@ -1,5 +1,7 @@
 # Met the King of Salem Twice: The Alchemist and Abraham, an Exploratory Text Analytics Project
 
+**Read the report:** https://sararefundini-cloud.github.io/met-the-king-of-salem-a-couple-times/
+
 An exploratory, AI-assisted text analytics report on how Paulo Coelho's *The Alchemist* lines up with Abraham's journey in Genesis.
 
 Interactive report: [dashboard](https://cursor.com/canvas/store-3f56d3a0-7393-4378-8c2f-d5df9305ae31/a25fea83-5077-4720-bbed-186fcbf3a72c)

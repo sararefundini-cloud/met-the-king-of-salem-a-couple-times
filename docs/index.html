@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report: The Alchemist and the Old Testament — A Text Analytics Study</title>
+<meta name="author" content="Sara Refundini">
+<meta name="description" content="An exploratory, AI-assisted text analytics report comparing The Alchemist with the Abraham narrative in Genesis and a biblical lexicon.">
+<meta property="og:title" content="The Alchemist and the Old Testament: A Text Analytics Study">
+<meta property="og:description" content="An exploratory, AI-assisted text analytics report comparing The Alchemist with the Abraham narrative in Genesis and a biblical lexicon.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sararefundini-cloud.github.io/met-the-king-of-salem-a-couple-times/">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Sara Refundini">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Alchemist and the Old Testament: A Text Analytics Study">
+<meta name="twitter:description" content="An exploratory, AI-assisted text analytics report comparing The Alchemist with the Abraham narrative in Genesis and a biblical lexicon.">
+<style>
+:root {
+  --paper: #f4efe6;
+  --paper-2: #fffdf8;
+  --ink: #241c16;
+  --ink-soft: #5a524b;
+  --line: #d8cec2;
+  --line-strong: #c4b8a8;
+  --accent: #8c3b28;
+  --accent-dark: #6c2b1c;
+  --gold: #a67c2d;
+  --gold-soft: #ead9b0;
+  --sand: #efe3d0;
+  --sand-dark: #e4d3b6;
+  --info: #eef3e8;
+  --info-edge: #5f7348;
+  --bar: #8c3b28;
+  --bar-mute: #c4b49a;
+  --shadow: 0 1px 2px rgba(36, 28, 22, 0.06), 0 8px 24px rgba(36, 28, 22, 0.05);
+  --radius: 12px;
+  --max: 74rem;
+  --serif: "Palatino Linotype", Palatino, "Book Antiqua", "Iowan Old Style", Georgia, "Times New Roman", Times, serif;
+  --sans: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 400px at 50% -80px, rgba(166, 124, 45, 0.12), transparent 60%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover { color: var(--accent); }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  background: var(--ink);
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0 0 6px 6px;
+  z-index: 20;
+}
+
+.skip:focus { top: 0; }
+
+.wrap {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.masthead {
+  padding: 2.75rem 0 1.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.masthead-rules {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 1.35rem;
+  width: 7rem;
+}
+
+.masthead-rules span:first-child {
+  height: 3px;
+  background: var(--accent);
+}
+
+.masthead-rules span:last-child {
+  height: 1px;
+  background: var(--gold);
+}
+
+.kicker {
+  margin: 0 0 0.35rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 0.7rem;
+  font-family: var(--serif);
+  font-size: clamp(1.85rem, 4.2vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.byline {
+  margin: 0 0 0.35rem;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.repo {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+main { padding-bottom: 4.5rem; }
+
+.lede {
+  margin: 1.6rem 0 1.4rem;
+  padding: 1rem 1.2rem 1rem 1.15rem;
+  background: var(--sand);
+  border: 1px solid var(--sand-dark);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.lede strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.lede p { margin: 0; }
+
+nav.toc {
+  margin: 0 0 2.5rem;
+  padding: 1.15rem 1.3rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+nav.toc h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+nav.toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.25rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+nav.toc a { text-decoration: none; }
+
+nav.toc a:hover { text-decoration: underline; }
+
+section.block {
+  margin: 0 0 3.1rem;
+  padding-top: 0.4rem;
+}
+
+section.block h2 {
+  margin: 0 0 0.9rem;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.6vw, 1.75rem);
+  line-height: 1.25;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.45rem;
+}
+
+.caption, figcaption {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+section.block p { margin: 0 0 1rem; }
+
+section.block p:last-child { margin-bottom: 0; }
+
+blockquote.pull {
+  margin: 1.2rem 0 1.3rem;
+  padding: 0.9rem 0 0.9rem 1.2rem;
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(90deg, rgba(166, 124, 45, 0.08), transparent 70%);
+}
+
+blockquote.pull p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+blockquote.pull footer {
+  margin-top: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-style: normal;
+  color: var(--ink-soft);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  box-shadow: var(--shadow);
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-hint {
+  display: none;
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+th, td {
+  padding: 0.6rem 0.7rem;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #f3eadc;
+  text-align: left;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+tbody tr:last-child td { border-bottom: 0; }
+
+tbody tr:nth-child(even) { background: rgba(239, 227, 208, 0.35); }
+
+.lexicon-table { min-width: 86rem; }
+
+.lexicon-table th:first-child,
+.lexicon-table td:first-child {
+  position: sticky;
+  left: 0;
+  background: var(--paper-2);
+  font-weight: 650;
+  z-index: 1;
+  min-width: 8.5rem;
+}
+
+.lexicon-table tbody tr:nth-child(even) td:first-child {
+  background: #f8f1e6;
+}
+
+.lexicon-table .wide { min-width: 16rem; }
+
+.contrast-table { min-width: 68rem; }
+
+@media (max-width: 720px) {
+  .contrast-table { min-width: 0; }
+  .contrast-table thead { display: none; }
+  .contrast-table, .contrast-table tbody, .contrast-table tr, .contrast-table td {
+    display: block;
+    width: 100%;
+  }
+  .contrast-table tr {
+    padding: 0.9rem 0.9rem 0.35rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .contrast-table tr:last-child { border-bottom: 0; }
+  .contrast-table td {
+    border: 0;
+    padding: 0.25rem 0 0.7rem;
+  }
+  .contrast-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.15rem;
+  }
+  .scroll-hint.for-lexicon { display: block; }
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+  margin: 1.1rem 0 1.4rem;
+}
+
+.metric {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.95rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.metric .value {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent-dark);
+}
+
+.metric .label {
+  margin: 0.35rem 0 0.3rem;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.metric .detail {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+@media (max-width: 960px) {
+  .metrics { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  .metrics { grid-template-columns: 1fr; }
+}
+
+.chart {
+  margin: 1rem 0 1.3rem;
+  padding: 1rem 1.1rem 0.85rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.chart-title {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 13rem) 1fr 4.6rem;
+  gap: 0.55rem 0.8rem;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.bar-label { font-size: 0.9rem; }
+
+.bar-track {
+  height: 1.05rem;
+  background: #efe6d8;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0;
+  background: var(--bar-mute);
+  border-radius: inherit;
+}
+
+.bar-fill.emphasis { background: var(--bar); }
+
+.bar-value {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  text-align: right;
+  font-weight: 650;
+}
+
+.filters, .chart-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: flex-end;
+  margin: 0.9rem 0 0.85rem;
+}
+
+.field { display: flex; flex-direction: column; gap: 0.25rem; min-width: 10rem; }
+
+.field label, .seg-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.field input, .field select {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.42rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--paper-2);
+  color: var(--ink);
+  min-height: 2.25rem;
+}
+
+.seg {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+
+.seg button {
+  font: inherit;
+  font-size: 0.85rem;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.4rem 0.8rem;
+  min-height: 2.25rem;
+}
+
+.seg button:last-child { border-right: 0; }
+
+.seg button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.result-count {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+.empty {
+  margin: 0.8rem 0;
+  padding: 0.8rem 1rem;
+  background: var(--paper-2);
+  border: 1px dashed var(--line-strong);
+  border-radius: 8px;
+  color: var(--ink-soft);
+}
+
+.callout-limits {
+  margin: 0 0 1.3rem;
+  padding: 1rem 1.15rem;
+  background: var(--info);
+  border: 1px solid #d3ddc8;
+  border-left: 4px solid var(--info-edge);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.callout-limits strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.callout-limits p { margin: 0; }
+
+.steps {
+  margin: 0 0 1.3rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+
+.steps li {
+  position: relative;
+  padding: 0 0 1.15rem 2.6rem;
+  border-left: 1px solid var(--line);
+  margin-left: 0.7rem;
+}
+
+.steps li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: -0.85rem;
+  top: 0.05rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.steps p { margin: 0; color: var(--ink); }
+
+.props {
+  display: grid;
+  grid-template-columns: minmax(10rem, 16rem) 1fr;
+  gap: 0.55rem 1.2rem;
+  margin: 1.1rem 0 1.3rem;
+  padding: 1rem 1.15rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.props dt {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.props dd { margin: 0; }
+
+@media (max-width: 620px) {
+  .props { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 1fr auto; }
+  .bar-track { grid-column: 1 / -1; }
+}
+
+.sources {
+  margin-top: 2rem;
+  padding-top: 0.4rem;
+}
+
+.sources ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.sources li { margin: 0 0 0.55rem; }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.4rem 0 2.2rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.back-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 10;
+  border: 1px solid var(--line-strong);
+  background: var(--paper-2);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.back-top:hover { background: var(--sand); }
+
+@media print {
+  body { background: #fff; }
+  .skip, .back-top, .filters, .chart-switch, .scroll-hint { display: none !important; }
+  .wrap { width: auto; }
+  a { color: inherit; text-decoration: none; }
+  .table-wrap, .chart, .metric, nav.toc { box-shadow: none; }
+  .lexicon-table { min-width: 0; }
+}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the report</a>
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-rules" aria-hidden="true"><span></span><span></span></div>
+    <p class="kicker">Report</p>
+    <h1>Report: The Alchemist and the Old Testament — A Text Analytics Study</h1>
+    <p class="byline">by Sara Refundini</p>
+    <p class="repo">Code repository: <a href="https://github.com/sararefundini-cloud/met-the-king-of-salem-a-couple-times">https://github.com/sararefundini-cloud/met-the-king-of-salem-a-couple-times</a></p>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <div class="lede">
+      <strong>An exploratory, AI-assisted text analytics report</strong>
+      <p>This page shows observations and an interpretation, not proof of authorial intent.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#origin">Origin</a></li>
+        <li><a href="#lead">Lead finding: Melchizedek and the tenth</a></li>
+        <li><a href="#contrasts">Five contrasts</a></li>
+        <li><a href="#rates">Abraham-cycle vocabulary</a></li>
+        <li><a href="#lexicon">Biblical lexicon</a></li>
+        <li><a href="#method">Limits, method, and reproducibility</a></li>
+      </ol>
+    </nav>
+
+    <section class="block" id="origin">
+      <h2>Origin / research question</h2>
+      <p>This opening is a personal starting point, not a finding from the data.</p>
+      <p>In undergrad, I was on a team that sorted TripAdvisor reviews about visitor harassment by micro-traders — taxi scams, aggressive street vendors — into categories. Later, at Staples, I analyzed exception tickets in Excel to find trends in benefits enrollment. Years later, I started reading Bible stories the same way: as tickets, sorted into categories.</p>
+      <p>I built those categories from Venn diagrams I drew by hand comparing The Economy of God and The Alchemist. That lexicon became the backbone of this Python analysis.</p>
+      <p>The Alchemist used to be my bible. It shaped my decisions. Studying it next to Genesis, it started to look like a shadow of Abraham’s story: the same king of Salem, the same tenth, but trust placed in personal dreams rather than in God. Abraham’s kind of faith is the one I want in my own life.</p>
+    </section>
+
+    <section class="block" id="lead">
+      <h2>Lead finding: Melchizedek and the tenth</h2>
+      <p>The strongest observation is specific and named in both texts. In Genesis 14:18–20, Melchizedek, king of Salem, blesses Abram, and Abram gives him a tenth of the spoils. In The Alchemist, a king of Salem meets Santiago and charges a tenth of his sheep as a fee. The novel itself compares that fee to Abraham.</p>
+      <blockquote class="pull">
+        <p>just as he had never seen Abraham again after having charged him his one-tenth fee</p>
+        <footer>Paulo Coelho, The Alchemist, translated by Alan R. Clarke (HarperCollins)</footer>
+      </blockquote>
+      <p>That correspondence can support a literary reading: the same recognizable figure stands at a fork between two understandings of a journey. It does not by itself prove that Coelho set out to reverse Genesis.</p>
+    </section>
+
+    <section class="block" id="contrasts">
+      <h2>Five contrasts</h2>
+      <p>Around that figure, five independent contrasts can be read between the Abraham cycle (Genesis 11:26–25:10) and Santiago’s journey. Theological differences that were previously listed separately — calling versus dream, God’s mandate versus omens, trust in God versus desire, and covenant versus Personal Legend — are treated here as one contrast: where trust is placed. Generic travel furniture (tents, stars, the road itself) is omitted. The table is an interpretation, not a claim of design. Alchemist quotations are from Paulo Coelho, The Alchemist, translated by Alan R. Clarke (HarperCollins).</p>
+      <div class="table-wrap">
+        <table class="contrast-table">
+          <thead>
+            <tr>
+              <th scope="col">Abraham (Genesis 11:26–25:10)</th>
+              <th scope="col">Ref</th>
+              <th scope="col">Santiago</th>
+              <th scope="col">Alchemist snippet</th>
+              <th scope="col">Reading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Abraham (Genesis 11:26–25:10)">Melchizedek, king of Salem, blesses Abram and receives a tenth of the spoils</td>
+              <td data-label="Ref">Genesis 14:18–20; Hebrews 7:1–2, 7:4</td>
+              <td data-label="Santiago">The king of Salem charges a tenth of the sheep as a fee, and the novel compares that fee to Abraham</td>
+              <td data-label="Alchemist snippet">just as he had never seen Abraham again after having charged him his one-tenth fee</td>
+              <td data-label="Reading">The same named figure and the same tenth. In Genesis the tenth follows a blessing; in the novel it is a fee. This is the most specific correspondence, because the book itself names Abraham.</td>
+            </tr>
+            <tr>
+              <td data-label="Abraham (Genesis 11:26–25:10)">Trust is placed in God’s call, a covenant, and a mandate Abraham did not invent</td>
+              <td data-label="Ref">Genesis 12:1, 15:6, 15:18, 17:7; Hebrews 11:8</td>
+              <td data-label="Santiago">Trust is placed in a Personal Legend, omens, and a desire the universe is said to help fulfill</td>
+              <td data-label="Alchemist snippet">And, when you want something, all the universe conspires in helping you to achieve it.</td>
+              <td data-label="Reading">One contrast, not four: calling versus dream, mandate versus omens, covenant versus Personal Legend, and trust in God versus trust in desire are the same difference in where authority sits.</td>
+            </tr>
+            <tr>
+              <td data-label="Abraham (Genesis 11:26–25:10)">Abraham’s servant meets Rebekah at a well; the meeting leads to a marriage that serves the next generation</td>
+              <td data-label="Ref">Genesis 24:11, 24:15–16, 24:67</td>
+              <td data-label="Santiago">Santiago meets Fatima at the oasis well, then leaves her to continue the quest</td>
+              <td data-label="Alchemist snippet">The boy went to the well every day to meet with Fatima.</td>
+              <td data-label="Reading">A specific well-and-woman type-scene, reused with a different end: Genesis serves a lineage; the novel serves a personal journey.</td>
+            </tr>
+            <tr>
+              <td data-label="Abraham (Genesis 11:26–25:10)">The promise of descendants and land is generational and deferred; Abraham is buried still waiting</td>
+              <td data-label="Ref">Genesis 12:2, 12:7, 15:5, 17:8, 25:9–10; Hebrews 11:13</td>
+              <td data-label="Santiago">The treasure is personal, and he recovers it in his own lifetime</td>
+              <td data-label="Alchemist snippet">Now he was here not with his flock, but with a shovel.</td>
+              <td data-label="Reading">The journeys are organized toward different payoffs: a promise seen from afar, versus a reward claimed by the traveler himself.</td>
+            </tr>
+            <tr>
+              <td data-label="Abraham (Genesis 11:26–25:10)">Abram is very rich in cattle; the flock is a measure of prosperity</td>
+              <td data-label="Ref">Genesis 13:2</td>
+              <td data-label="Santiago">The shepherd sells his flock to fund the quest</td>
+              <td data-label="Alchemist snippet">the day he had sold his sheep to pursue his Personal Legend</td>
+              <td data-label="Reading">The same pastoral wealth is put to opposite use: kept as a sign of blessing, or liquidated to chase a personal reward.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="block" id="rates">
+      <h2>Abraham-cycle vocabulary</h2>
+      <p class="caption">Distinctive-token rate per 10,000 content (non-stopword) tokens. The list is built from Genesis 11:26–25:10, not from Genesis as a whole. These are observations; the controls are not genre-matched (see Limits).</p>
+      <figure class="chart" aria-labelledby="abraham-chart-title">
+        <figcaption class="chart-title" id="abraham-chart-title">Distinctive-token rate per 10,000 content tokens</figcaption>
+        <div class="bars">
+          <div class="bar-row">
+            <div class="bar-label">The Alchemist</div>
+            <div class="bar-track"><div class="bar-fill emphasis" style="width: 100%" role="img" aria-label="The Alchemist, 40.42"></div></div>
+            <div class="bar-value">40.42</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">The Great Gatsby</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 7.64%" role="img" aria-label="The Great Gatsby, 3.09"></div></div>
+            <div class="bar-value">3.09</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">The Thirty-Nine Steps</div>
+            <div class="bar-track"><div class="bar-fill" style="width: 28.70%" role="img" aria-label="The Thirty-Nine Steps, 11.60"></div></div>
+            <div class="bar-value">11.60</div>
+          </div>
+        </div>
+      </figure>
+      <p>A word counts as distinctive of the Abraham cycle if it occurs at least three times in Genesis 11:26–25:10, its smoothed log-odds versus wordfreq English is at least 4.0 (a heuristic), and it is over-represented against the rest of Genesis (log-odds at least 0.5). Cycle proper names are added, including the hapaxes Melchizedek and Salem; other names must pass the same rest-of-Genesis test. The list has 165 types (78 by log-odds, 87 names-only). Lord, god, and lot are excluded. Egypt, Egyptians, and Pharaoh fall out as more characteristic of later Genesis; Egyptian remains (three tokens in The Alchemist).</p>
+      <p>On that measure, The Alchemist uses 12 types, 67 tokens, at 40.42 per 10k content tokens, against 3.09 in The Great Gatsby (5 types, 7 tokens) and 11.60 in The Thirty-Nine Steps (10 types, 21 tokens). The novel’s leading items are tent (31), salem (11), camels (9), and melchizedek (4). None of those appear in Gatsby except tent (2). The book also names Abraham once, in connection with Melchizedek’s fee. The gap is real, but Gatsby is a poor control for a desert-quest novel, so the size of the gap should not be read as a measure of biblical influence.</p>
+    </section>
+
+    <section class="block" id="lexicon">
+      <h2>Biblical lexicon</h2>
+      <p class="caption">A vocabulary drawn from the King James Bible, with Genesis as the core. The Source column marks terms whose primary biblical citation is Exodus, Leviticus, Job, or 2 Samuel rather than Genesis. Rates are occurrences per 10,000 content tokens.</p>
+      <p>This table is a frequency inventory, not a proof of symbolism. A word count cannot show whether Coelho uses a term symbolically, typologically, or just as plot furniture. Many high counts simply reflect the story: desert, treasure, crystal, gold, and stone are what the novel is about. The list was also chosen with knowledge of the novel, so there is a selection-bias risk: terms Coelho uses, including gems whose King James source is not Genesis, were included because he uses them. Witness Lee’s definitions, where present, are one typological reading from The Economy of God. They are not the Bible’s own explicit meaning, and a later use of the same word does not inherit that reading automatically.</p>
+
+      <div class="metrics">
+        <article class="metric">
+          <div class="value">72</div>
+          <div class="label">Lexicon terms</div>
+          <p class="detail">17 architecture/places, 15 materials/gems, 10 colors, 17 nature/elements, 13 objects. 45 appear in The Alchemist. 19 have a Lee reading.</p>
+        </article>
+        <article class="metric">
+          <div class="value">130.91 vs 15.00</div>
+          <div class="label">Materials / gems rate per 10k (observation)</div>
+          <p class="detail">The Alchemist vs Gatsby. Crystal 62 vs 1; stone 52 vs 1; gold 45 vs 15; Urim, Thummim, and emerald 15 each vs 0. Some of these are plot words (alchemy, a treasure hunt) or terms selected after seeing the novel.</p>
+        </article>
+        <article class="metric">
+          <div class="value">85 vs 0</div>
+          <div class="label">Treasure in The Alchemist vs Gatsby</div>
+          <p class="detail">A plot word. Objects as a category run 73.00 vs 11.03 per 10k, almost entirely because of treasure.</p>
+        </article>
+        <article class="metric">
+          <div class="value">185 vs 0</div>
+          <div class="label">Desert / wilderness vs Gatsby</div>
+          <p class="detail">Also a plot word. Genesis uses wilderness, not desert (7 in Genesis, 353 in the KJV). The two are counted together because desert is the novel’s setting word.</p>
+        </article>
+      </div>
+
+      <div class="chart-switch">
+        <div>
+          <div class="seg-label" id="chart-cat-label">Category rates</div>
+          <div class="seg" data-seg="chart-category" role="group" aria-labelledby="chart-cat-label">
+            <button type="button" data-value="materials / gems" aria-pressed="true">Materials</button>
+            <button type="button" data-value="objects" aria-pressed="false">Objects</button>
+            <button type="button" data-value="nature / elements" aria-pressed="false">Nature</button>
+            <button type="button" data-value="architecture / places" aria-pressed="false">Places</button>
+            <button type="button" data-value="colors" aria-pressed="false">Colors</button>
+          </div>
+        </div>
+      </div>
+
+      <figure class="chart" aria-labelledby="category-chart-title">
+        <figcaption class="chart-title" id="category-chart-title">Rates per 10,000 content tokens — Materials / gems</figcaption>
+        <div class="bars" id="category-bars">
+          <div class="bar-row">
+            <div class="bar-label">The Alchemist</div>
+            <div class="bar-track"><div class="bar-fill emphasis" role="img" aria-label="The Alchemist"></div></div>
+            <div class="bar-value">130.91</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">The Great Gatsby</div>
+            <div class="bar-track"><div class="bar-fill" role="img" aria-label="The Great Gatsby"></div></div>
+            <div class="bar-value">15.00</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">The Thirty-Nine Steps</div>
+            <div class="bar-track"><div class="bar-fill" role="img" aria-label="The Thirty-Nine Steps"></div></div>
+            <div class="bar-value">32.59</div>
+          </div>
+          <div class="bar-row">
+            <div class="bar-label">The Economy of God</div>
+            <div class="bar-track"><div class="bar-fill" role="img" aria-label="The Economy of God"></div></div>
+            <div class="bar-value">31.96</div>
+          </div>
+        </div>
+      </figure>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col" class="num">Alchemist</th>
+              <th scope="col" class="num">Gatsby</th>
+              <th scope="col" class="num">Thirty-Nine Steps</th>
+              <th scope="col" class="num">Economy of God</th>
+              <th scope="col" class="num">Alchemist vs Gatsby</th>
+            </tr>
+          </thead>
+          <tbody id="category-rate-body">
+            <tr><td>Materials / gems</td><td class="num">130.91</td><td class="num">15.00</td><td class="num">32.59</td><td class="num">31.96</td><td class="num">8.73×</td></tr>
+            <tr><td>Objects</td><td class="num">73.00</td><td class="num">11.03</td><td class="num">11.60</td><td class="num">23.65</td><td class="num">6.62×</td></tr>
+            <tr><td>Nature / elements</td><td class="num">221.40</td><td class="num">64.41</td><td class="num">46.95</td><td class="num">69.34</td><td class="num">3.44×</td></tr>
+            <tr><td>Architecture / places</td><td class="num">74.20</td><td class="num">107.20</td><td class="num">82.85</td><td class="num">54.64</td><td class="num">0.69×</td></tr>
+            <tr><td>Colors</td><td class="num">18.10</td><td class="num">40.59</td><td class="num">50.26</td><td class="num">9.59</td><td class="num">0.45×</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The density is uneven, which is why a baseline still helps as a descriptive check. Materials and gems run higher in The Alchemist (130.91 vs 15.00 in Gatsby). Architecture and places, taken as a category, do not (74.20 vs 107.20), because house and door are ordinary English. Color words run higher in both control novels. Those contrasts describe the vocabulary; they do not establish symbolism.</p>
+
+      <div class="filters">
+        <div class="field">
+          <label for="word-query">Search</label>
+          <input id="word-query" type="search" placeholder="Term, verse, reading, or use" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="category-filter">Category</label>
+          <select id="category-filter">
+            <option value="all">All categories</option>
+            <option value="architecture / places">Architecture / places</option>
+            <option value="materials / gems">Materials / gems</option>
+            <option value="colors">Colors</option>
+            <option value="nature / elements">Nature / elements</option>
+            <option value="objects">Objects</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort-key">Sort by</label>
+          <select id="sort-key">
+            <option value="alchemist">Alchemist count</option>
+            <option value="gatsby">Gatsby count</option>
+            <option value="genesis">Genesis count</option>
+            <option value="kjv">KJV count</option>
+            <option value="economy">Economy of God count</option>
+            <option value="term">Term</option>
+            <option value="category">Category</option>
+          </select>
+        </div>
+        <div>
+          <div class="seg-label" id="sort-dir-label">Order</div>
+          <div class="seg" data-seg="sort-dir" role="group" aria-labelledby="sort-dir-label">
+            <button type="button" data-value="desc" aria-pressed="true">High to low</button>
+            <button type="button" data-value="asc" aria-pressed="false">Low to high</button>
+          </div>
+        </div>
+        <div>
+          <div class="seg-label" id="presence-label">Presence</div>
+          <div class="seg" data-seg="presence" role="group" aria-labelledby="presence-label">
+            <button type="button" data-value="in-alchemist" aria-pressed="true">In The Alchemist</button>
+            <button type="button" data-value="all" aria-pressed="false">All 72 terms</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="result-count" id="result-count">Showing 45 of 72 terms.</p>
+      <p class="scroll-hint for-lexicon">Swipe or scroll sideways to see every column.</p>
+      <div class="table-wrap">
+        <table class="lexicon-table">
+          <thead>
+            <tr>
+              <th scope="col">Term</th>
+              <th scope="col">Category</th>
+              <th scope="col">Source</th>
+              <th scope="col" class="num">Alchemist</th>
+              <th scope="col" class="num">Gatsby</th>
+              <th scope="col" class="num">Thirty-Nine Steps</th>
+              <th scope="col" class="num">Economy of God</th>
+              <th scope="col" class="num">Genesis</th>
+              <th scope="col" class="num">Leviticus</th>
+              <th scope="col" class="num">KJV</th>
+              <th scope="col">Bible ref</th>
+              <th scope="col">One typological reading (Witness Lee)</th>
+              <th scope="col">Coelho’s use</th>
+            </tr>
+          </thead>
+          <tbody id="lexicon-body">
+<tr><td>desert / wilderness</td><td>nature / elements</td><td>Genesis</td><td class="num">185 (111.61)</td><td class="num">0 (0.00)</td><td class="num">1 (0.55)</td><td class="num">35 (11.18)</td><td class="num">7</td><td class="num">4</td><td class="num">353</td><td class="wide">Genesis 16:7: And the angel of the Lord found her by a fountain of water in the wilderness</td><td class="wide">Typifies wandering in the soul after salvation, short of entering the spirit. (“What does this typify? It means that many Christians after being saved are simply wandering in the soul.”; Economy of God, ch. 3)</td><td class="wide">“The desert was all sand in some stretches, and rocky in others.”</td></tr>
+<tr><td>wind</td><td>nature / elements</td><td>Genesis</td><td class="num">87 (52.49)</td><td class="num">13 (5.74)</td><td class="num">6 (3.31)</td><td class="num">0 (0.00)</td><td class="num">4</td><td class="num">0</td><td class="num">146</td><td class="wide">Genesis 8:1: and God made a wind to pass over the earth, and the waters asswaged</td><td class="wide">—</td><td class="wide">“It&#x27;s just that I don&#x27;t know how to turn myself into the wind.”</td></tr>
+<tr><td>treasure</td><td>objects</td><td>Genesis</td><td class="num">85 (51.28)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">4 (1.28)</td><td class="num">1</td><td class="num">0</td><td class="num">99</td><td class="wide">Genesis 43:23: your God, and the God of your father, hath given you treasure in your sacks</td><td class="wide">The image of Christ as the treasure held in earthen vessels. (“This very image of Christ is the treasure in the earthen vessels.”; Economy of God, ch. 5)</td><td class="wide">“There you will find a treasure that will make you a rich man.”</td></tr>
+<tr><td>crystal</td><td>materials / gems</td><td>Job</td><td class="num">62 (37.40)</td><td class="num">1 (0.44)</td><td class="num">1 (0.55)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">0</td><td class="num">5</td><td class="wide">Job 28:17: The gold and the crystal cannot equal it: and the exchange of it shall not be for jewels of fine gold.</td><td class="wide">—</td><td class="wide">“They&#x27;re only made of rock crystal, and there are millions of rock crystals in the earth.”</td></tr>
+<tr><td>stone</td><td>materials / gems</td><td>Genesis</td><td class="num">52 (31.37)</td><td class="num">1 (0.44)</td><td class="num">30 (16.57)</td><td class="num">6 (1.92)</td><td class="num">15</td><td class="num">15</td><td class="num">349</td><td class="wide">Genesis 28:18: and took the stone that he had put for his pillows, and set it up for a pillar</td><td class="wide">—</td><td class="wide">“The old man, holding out a white stone and a black stone that had been embedded at the center of the breastplate.”</td></tr>
+<tr><td>gold</td><td>materials / gems</td><td>Genesis</td><td class="num">45 (27.15)</td><td class="num">15 (6.62)</td><td class="num">4 (2.21)</td><td class="num">36 (11.50)</td><td class="num">9</td><td class="num">1</td><td class="num">483</td><td class="wide">Genesis 2:12: And the gold of that land is good: there is bdellium and the onyx stone.</td><td class="wide">Typifies divinity, the divine nature wrought into and upon humanity. (“the gold overlaying the boards signifies divinity, the divine nature.”; Economy of God, ch. 21)</td><td class="wide">“The old man wore a breastplate of heavy gold, covered with precious stones.”</td></tr>
+<tr><td>tent</td><td>architecture / places</td><td>Genesis</td><td class="num">35 (21.11)</td><td class="num">2 (0.88)</td><td class="num">0 (0.00)</td><td class="num">3 (0.96)</td><td class="num">27</td><td class="num">1</td><td class="num">164</td><td class="wide">Genesis 12:8: and pitched his tent, having Beth-el on the west, and Hai on the east</td><td class="wide">—</td><td class="wide">“There were three hundred wells, fifty thousand date trees, and innumerable colored tents spread among them.”</td></tr>
+<tr><td>Egypt</td><td>architecture / places</td><td>Genesis</td><td class="num">24 (14.48)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">24 (7.67)</td><td class="num">97</td><td class="num">12</td><td class="num">736</td><td class="wide">Genesis 12:10: and Abram went down into Egypt to sojourn there; for the famine was grievous in the land</td><td class="wide">The worldly starting place, corresponding to the outer court, before the Passover deliverance. (“Are we in Egypt? in the wilderness? or in Canaan?”; Economy of God, ch. 18)</td><td class="wide">“you must go to the Pyramids in Egypt”</td></tr>
+<tr><td>sand</td><td>nature / elements</td><td>Genesis</td><td class="num">22 (13.27)</td><td class="num">3 (1.32)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">3</td><td class="num">0</td><td class="num">28</td><td class="wide">Genesis 22:17: and in multiplying I will multiply thy seed as the stars of the heaven, and as the sand which is upon the sea shore</td><td class="wide">—</td><td class="wide">“The old man leaned over, picked up a stick, and began to write in the sand of the plaza.”</td></tr>
+<tr><td>city</td><td>architecture / places</td><td>Genesis</td><td class="num">21 (12.67)</td><td class="num">19 (8.38)</td><td class="num">8 (4.42)</td><td class="num">2 (0.64)</td><td class="num">50</td><td class="num">14</td><td class="num">1,318</td><td class="wide">Genesis 4:17: and he builded a city, and called the name of the city, after the name of his son, Enoch</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>sword</td><td>objects</td><td>Genesis</td><td class="num">19 (11.46)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">5 (1.60)</td><td class="num">6</td><td class="num">7</td><td class="num">448</td><td class="wide">Genesis 3:24: and a flaming sword which turned every way, to keep the way of the tree of life</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>tree</td><td>nature / elements</td><td>Genesis</td><td class="num">17 (10.26)</td><td class="num">20 (8.82)</td><td class="num">14 (7.73)</td><td class="num">45 (14.38)</td><td class="num">20</td><td class="num">7</td><td class="num">346</td><td class="wide">Genesis 2:9: the tree of life also in the midst of the garden, and the tree of knowledge of good and evil</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>star</td><td>nature / elements</td><td>Genesis</td><td class="num">16 (9.65)</td><td class="num">10 (4.41)</td><td class="num">1 (0.55)</td><td class="num">7 (2.24)</td><td class="num">5</td><td class="num">0</td><td class="num">66</td><td class="wide">Genesis 15:5: Look now toward heaven, and tell the stars, if thou be able to number them</td><td class="wide">—</td><td class="wide">“sighting on a star that indicated the location of the oasis”</td></tr>
+<tr><td>fire</td><td>nature / elements</td><td>Genesis</td><td class="num">16 (9.65)</td><td class="num">4 (1.76)</td><td class="num">5 (2.76)</td><td class="num">12 (3.83)</td><td class="num">3</td><td class="num">74</td><td class="num">550</td><td class="wide">Genesis 22:6: and he took the fire in his hand, and a knife; and they went both of them together</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>emerald</td><td>materials / gems</td><td>Exodus</td><td class="num">15 (9.05)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">0</td><td class="num">6</td><td class="wide">Exodus 28:18: And the second row shall be an emerald, a sapphire, and a diamond.</td><td class="wide">—</td><td class="wide">“The miner had abandoned everything to go mining for emeralds.”</td></tr>
+<tr><td>Urim</td><td>materials / gems</td><td>Leviticus</td><td class="num">15 (9.05)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">1</td><td class="num">7</td><td class="wide">Leviticus 8:8: And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.</td><td class="wide">—</td><td class="wide">“They are called Urim and Thummim.”</td></tr>
+<tr><td>Thummim</td><td>materials / gems</td><td>Leviticus</td><td class="num">15 (9.05)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">1</td><td class="num">5</td><td class="wide">Leviticus 8:8: And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.</td><td class="wide">—</td><td class="wide">“They are called Urim and Thummim.”</td></tr>
+<tr><td>well</td><td>architecture / places</td><td>Genesis</td><td class="num">13 (7.84)</td><td class="num">5 (2.21)</td><td class="num">2 (1.10)</td><td class="num">9 (2.88)</td><td class="num">29</td><td class="num">0</td><td class="num">61</td><td class="wide">Genesis 24:11: he made his camels to kneel down without the city by a well of water</td><td class="wide">Typifies Christ within us, the well of living water that must be dug. (“While the rock is Christ on the cross, the well is Christ within us (John 4:14).”; Economy of God, ch. 10)</td><td class="wide">“The boy went to the well every day to meet with Fatima.”</td></tr>
+<tr><td>white</td><td>colors</td><td>Genesis</td><td class="num">13 (7.84)</td><td class="num">47 (20.73)</td><td class="num">23 (12.70)</td><td class="num">9 (2.88)</td><td class="num">5</td><td class="num">20</td><td class="num">75</td><td class="wide">Genesis 30:35: and all the she goats that were speckled and spotted, and every one that had some white in it, and all the brown among the sheep</td><td class="wide">The court linen&#x27;s testimony: inside the church&#x27;s line, everything is purged and white. (“Outside this line everything is black, but within this line everything is white.”; Economy of God, ch. 21)</td><td class="wide">“The black signifies &#x27;yes,&#x27; and the white &#x27;no.&#x27;”</td></tr>
+<tr><td>black</td><td>colors</td><td>Leviticus</td><td class="num">12 (7.24)</td><td class="num">11 (4.85)</td><td class="num">31 (17.12)</td><td class="num">4 (1.28)</td><td class="num">0</td><td class="num">2</td><td class="num">18</td><td class="wide">Leviticus 13:31: and, behold, it be not in sight deeper than the skin, and that there is no black hair in it</td><td class="wide">—</td><td class="wide">“The black signifies &#x27;yes,&#x27; and the white &#x27;no.&#x27;”</td></tr>
+<tr><td>Salem</td><td>architecture / places</td><td>Genesis</td><td class="num">11 (6.64)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">1</td><td class="num">0</td><td class="num">4</td><td class="wide">Genesis 14:18: And Melchizedek king of Salem brought forth bread and wine</td><td class="wide">—</td><td class="wide">“I&#x27;m the king of Salem!”</td></tr>
+<tr><td>light</td><td>nature / elements</td><td>Genesis</td><td class="num">7 (4.22)</td><td class="num">53 (23.38)</td><td class="num">26 (14.36)</td><td class="num">78 (24.93)</td><td class="num">14</td><td class="num">1</td><td class="num">282</td><td class="wide">Genesis 1:3: And God said, Let there be light: and there was light.</td><td class="wide">The lampstand typifies Christ as the light of life, shining within. (“The candlestick, or the lampstand, typifies Christ as the light of life.”; Economy of God, ch. 21)</td><td class="wide">—</td></tr>
+<tr><td>gate</td><td>architecture / places</td><td>Genesis</td><td class="num">6 (3.62)</td><td class="num">8 (3.53)</td><td class="num">10 (5.52)</td><td class="num">3 (0.96)</td><td class="num">9</td><td class="num">0</td><td class="num">419</td><td class="wide">Genesis 22:17: and thy seed shall possess the gate of his enemies</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>mountain</td><td>nature / elements</td><td>Genesis</td><td class="num">6 (3.62)</td><td class="num">0 (0.00)</td><td class="num">3 (1.66)</td><td class="num">0 (0.00)</td><td class="num">9</td><td class="num">0</td><td class="num">314</td><td class="wide">Genesis 22:2: and offer him there for a burnt offering upon one of the mountains which I will tell thee of</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>breastplate</td><td>objects</td><td>Leviticus</td><td class="num">6 (3.62)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">2</td><td class="num">31</td><td class="wide">Leviticus 8:8: And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.</td><td class="wide">—</td><td class="wide">“The old man wore a breastplate of heavy gold, covered with precious stones.”</td></tr>
+<tr><td>house</td><td>architecture / places</td><td>Genesis</td><td class="num">5 (3.02)</td><td class="num">103 (45.44)</td><td class="num">64 (35.35)</td><td class="num">30 (9.59)</td><td class="num">87</td><td class="num">47</td><td class="num">2,162</td><td class="wide">Genesis 12:1: Get thee out of thy country, and from thy kindred, and from thy father&#x27;s house</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>precious stones</td><td>materials / gems</td><td>2 Samuel</td><td class="num">5 (3.02)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">0</td><td class="num">0</td><td class="num">21</td><td class="wide">2 Samuel 12:30: a talent of gold with the precious stones: and it was set on David&#x27;s head</td><td class="wide">—</td><td class="wide">“The old man wore a breastplate of heavy gold, covered with precious stones.”</td></tr>
+<tr><td>dust</td><td>nature / elements</td><td>Genesis</td><td class="num">5 (3.02)</td><td class="num">10 (4.41)</td><td class="num">8 (4.42)</td><td class="num">0 (0.00)</td><td class="num">8</td><td class="num">2</td><td class="num">108</td><td class="wide">Genesis 13:16: And I will make thy seed as the dust of the earth</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>vessels</td><td>objects</td><td>Genesis</td><td class="num">4 (2.41)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">5 (1.60)</td><td class="num">1</td><td class="num">10</td><td class="num">200</td><td class="wide">Genesis 43:11: take of the best fruits in the land in your vessels, and carry down the man a present</td><td class="wide">—</td><td class="wide">“She had a vessel on her shoulder, and her head was covered by a veil, but her face was uncovered.”</td></tr>
+<tr><td>tower</td><td>architecture / places</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">4 (1.76)</td><td class="num">1 (0.55)</td><td class="num">0 (0.00)</td><td class="num">3</td><td class="num">0</td><td class="num">65</td><td class="wide">Genesis 11:4: Go to, let us build us a city and a tower, whose top may reach unto heaven</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>door</td><td>architecture / places</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">71 (31.32)</td><td class="num">54 (29.82)</td><td class="num">7 (2.24)</td><td class="num">12</td><td class="num">24</td><td class="num">260</td><td class="wide">Genesis 18:1: and he sat in the tent door in the heat of the day</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>silver</td><td>materials / gems</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">11 (4.85)</td><td class="num">3 (1.66)</td><td class="num">4 (1.28)</td><td class="num">11</td><td class="num">5</td><td class="num">320</td><td class="wide">Genesis 13:2: And Abram was very rich in cattle, in silver, and in gold.</td><td class="wide">Typifies redemption, the joining and covering of God&#x27;s building. (“Silver typifies redemption.”; Economy of God, ch. 21)</td><td class="wide">“The scabbard was embossed in silver, and the handle was black and encrusted with precious stones.”</td></tr>
+<tr><td>iron</td><td>materials / gems</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">0 (0.00)</td><td class="num">2 (1.10)</td><td class="num">0 (0.00)</td><td class="num">1</td><td class="num">1</td><td class="num">101</td><td class="wide">Genesis 4:22: an instructer of every artificer in brass and iron</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>red</td><td>colors</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">9 (3.97)</td><td class="num">8 (4.42)</td><td class="num">14 (4.47)</td><td class="num">3</td><td class="num">0</td><td class="num">53</td><td class="wide">Genesis 25:25: And the first came out red, all over like an hairy garment; and they called his name Esau.</td><td class="wide">The color of the rams&#x27; skins: the shedding of blood in redemption. (“The color red means the shedding of blood in Christ&#x27;s redemptive work.”; Economy of God, ch. 22)</td><td class="wide">—</td></tr>
+<tr><td>cloud</td><td>nature / elements</td><td>Genesis</td><td class="num">3 (1.81)</td><td class="num">4 (1.76)</td><td class="num">2 (1.10)</td><td class="num">0 (0.00)</td><td class="num">4</td><td class="num">2</td><td class="num">156</td><td class="wide">Genesis 9:13: I do set my bow in the cloud, and it shall be for a token of a covenant</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>garden</td><td>architecture / places</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">30 (13.24)</td><td class="num">10 (5.52)</td><td class="num">5 (1.60)</td><td class="num">14</td><td class="num">0</td><td class="num">64</td><td class="wide">Genesis 2:8: And the Lord God planted a garden eastward in Eden</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>green</td><td>colors</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">17 (7.50)</td><td class="num">15 (8.28)</td><td class="num">0 (0.00)</td><td class="num">3</td><td class="num">2</td><td class="num">41</td><td class="wide">Genesis 30:37: And Jacob took him rods of green poplar, and of the hazel and chesnut tree</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>river</td><td>nature / elements</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">2 (0.88)</td><td class="num">10 (5.52)</td><td class="num">5 (1.60)</td><td class="num">15</td><td class="num">2</td><td class="num">256</td><td class="wide">Genesis 2:10: And a river went out of Eden to water the garden</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>ring</td><td>objects</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">2 (0.88)</td><td class="num">4 (2.21)</td><td class="num">6 (1.92)</td><td class="num">1</td><td class="num">0</td><td class="num">55</td><td class="wide">Genesis 41:42: And Pharaoh took off his ring from his hand, and put it upon Joseph&#x27;s hand</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>cup</td><td>objects</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">3 (1.32)</td><td class="num">2 (1.10)</td><td class="num">1 (0.32)</td><td class="num">10</td><td class="num">0</td><td class="num">74</td><td class="wide">Genesis 44:2: And put my cup, the silver cup, in the sack&#x27;s mouth of the youngest</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>veil</td><td>objects</td><td>Genesis</td><td class="num">2 (1.21)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">28 (8.95)</td><td class="num">3</td><td class="num">7</td><td class="num">46</td><td class="wide">Genesis 24:65: therefore she took a vail, and covered herself</td><td class="wide">Typifies the flesh, which must be riven to enter the Holiest. (“the veil, which typifies the flesh (Heb. 10:20), must be riven and broken.”; Economy of God, ch. 3)</td><td class="wide">“her head was covered by a veil, but her face was uncovered.”</td></tr>
+<tr><td>linen</td><td>materials / gems</td><td>Genesis</td><td class="num">1 (0.60)</td><td class="num">2 (0.88)</td><td class="num">2 (1.10)</td><td class="num">16 (5.11)</td><td class="num">1</td><td class="num">13</td><td class="num">104</td><td class="wide">Genesis 41:42: and arrayed him in vestures of fine linen, and put a gold chain about his neck</td><td class="wide">Fine linen symbolizes the humanity of Christ: fine, strong, without crudeness. (“the fine linen, which symbolizes the humanity of Christ with all His fine characteristics”; Economy of God, ch. 22)</td><td class="wide">—</td></tr>
+<tr><td>jewels</td><td>materials / gems</td><td>Genesis</td><td class="num">1 (0.60)</td><td class="num">2 (0.88)</td><td class="num">0 (0.00)</td><td class="num">0 (0.00)</td><td class="num">2</td><td class="num">0</td><td class="num">28</td><td class="wide">Genesis 24:53: And the servant brought forth jewels of silver, and jewels of gold, and raiment</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>flood</td><td>nature / elements</td><td>Genesis</td><td class="num">1 (0.60)</td><td class="num">1 (0.44)</td><td class="num">1 (0.55)</td><td class="num">1 (0.32)</td><td class="num">12</td><td class="num">0</td><td class="num">62</td><td class="wide">Genesis 6:17: And, behold, I, even I, do bring a flood of waters upon the earth</td><td class="wide">—</td><td class="wide">—</td></tr>
+<tr><td>staff</td><td>objects</td><td>Genesis</td><td class="num">1 (0.60)</td><td class="num">0 (0.00)</td><td class="num">1 (0.55)</td><td class="num">0 (0.00)</td><td class="num">3</td><td class="num">1</td><td class="num">43</td><td class="wide">Genesis 32:10: with my staff I passed over this Jordan; and now I am become two bands</td><td class="wide">—</td><td class="wide">—</td></tr>
+</tbody>
+        </table>
+      </div>
+      <p class="empty" id="lexicon-empty" hidden>No terms match these filters.</p>
+
+      <p>Non-Genesis sources, marked in the Source column: crystal is first at Job 28:17; emerald at Exodus 28:18; Urim, Thummim, and the breastplate at Leviticus 8:8, with the making instructions in Exodus 28:30; “precious stones” first at 2 Samuel 12:30 (Genesis 24:53 has jewels and “precious things”). Genesis itself names only two gemstones, both in 2:12: onyx and bdellium. Coelho calls Urim and Thummim “a white stone and a black stone”; the King James text names the stones but does not give their colors. The color word black is not in Genesis. Lee does not define the gem or breastplate terms, so those cells are blank.</p>
+    </section>
+
+    <section class="block" id="method">
+      <h2>Limits, method, and reproducibility</h2>
+      <div class="callout-limits">
+        <strong>Limits</strong>
+        <p>The Great Gatsby and The Thirty-Nine Steps are exploratory controls: public-domain novels of similar era and length, chosen for availability. They do not match The Alchemist’s genre. A comparison set of journey, desert, or spiritual-quest narratives would be the right next step, and without it the frequency gaps should not be treated as surprising evidence of biblical influence. The 4.0 log-odds threshold is a heuristic, not a validated cutoff. Tokenization was spot-checked (noun-only well, the Jordan Baker guard, em-dashes, possessives, and contractions) and is covered by a small test suite.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>Isolate the Abraham cycle</h3>
+          <p>The window is Genesis 11:26–25:10 (377 verses, 9,742 tokens). The rest of Genesis (28,520 tokens) is the contrast set, so Joseph-cycle vocabulary is not treated as Abraham vocabulary. The full King James corpus is 31,102 verses, 790,882 tokens, and 304,848 content tokens.</p>
+        </li>
+        <li>
+          <h3>Score distinctiveness and rate the novels</h3>
+          <p>Content words need count 3 or more, log-odds versus wordfreq 3.1.1 English of at least 4.0, and log-odds versus the rest of Genesis of at least 0.5. Mid-verse capitalized names are added with a common-name guard; Melchizedek and Salem are force-included. Rates are distinctive tokens per 10,000 content tokens in The Alchemist (39,637 tokens, 16,576 content), The Great Gatsby (49,438; 22,667; Gutenberg #64317), and The Thirty-Nine Steps (41,753; 18,106; Gutenberg #558).</p>
+        </li>
+        <li>
+          <h3>Count a biblical lexicon</h3>
+          <p>A second list of 72 terms takes Genesis as the core and marks other King James sources per row. Counts are token-sequence matches (regular plurals; Egypt includes Egyptian; gold includes golden; desert and wilderness are one term). Well is counted only in noun-like patterns; Jordan in the novels only in river or plain patterns. Figures are lexical, not sense-tagged.</p>
+        </li>
+      </ol>
+      <dl class="props">
+        <dt>Abraham window</dt>
+        <dd>Genesis 11:26–25:10, 377 verses, 9,742 tokens</dd>
+        <dt>Abraham-cycle list</dt>
+        <dd>165 types (78 by log-odds, 87 names-only)</dd>
+        <dt>Thresholds</dt>
+        <dd>Minimum count 3; log-odds vs wordfreq at least 4.0 (heuristic); log-odds vs rest of Genesis at least 0.5</dd>
+        <dt>Biblical lexicon</dt>
+        <dd>72 terms, Genesis core, other sources marked per row; 19 have a Lee reading</dd>
+      </dl>
+      <p>Reproducibility. Source texts are in the project folder: source/KJV.csv (scrollmapper public-domain King James), data/private/alchemist.txt, data/private/economy.txt, and data/baselines/. Shared tokenization and book cleaners live in textutil.py. From the project folder, run compare.py for Abraham-cycle distinctiveness and book rates, and build_symbolic_genesis.py for the biblical-lexicon counts. The distinctiveness scores need a Python environment with wordfreq 3.1.1. A small test suite checks tokenization, a toy log-odds example, the kjvindex cross-checks, and the Salem and Melchizedek counts. Figures on this page are computed counts from that pipeline, not estimates. The analysis was AI-assisted.</p>
+    </section>
+
+    <section class="block sources" id="sources">
+      <h2>Sources</h2>
+      <ol>
+        <li>Public-domain King James text, scrollmapper/bible_databases; Abraham cycle Genesis 11:26–25:10 (377 verses, 9,742 tokens); full Genesis 1,533 verses, 38,262 tokens; full corpus 31,102 verses, 790,882 tokens, 304,848 content tokens</li>
+        <li>Paulo Coelho, The Alchemist, translated by Alan R. Clarke (HarperCollins, 1993 English edition; Portuguese original O Alquimista, 1988). Cleaned running text, 39,637 tokens, 16,576 content tokens</li>
+        <li>Witness Lee, The Economy of God (messages given at the 1964 Summer Conference in Los Angeles; foreword dated January 11, 1968). 74,590 tokens, 31,293 content tokens</li>
+        <li>Project Gutenberg #64317, F. Scott Fitzgerald, The Great Gatsby (1925); 49,438 tokens, 22,667 content tokens</li>
+        <li>Project Gutenberg #558, John Buchan, The Thirty-Nine Steps (1915); 41,753 tokens, 18,106 content tokens</li>
+        <li>wordfreq 3.1.1 (Speer et al.), English reference frequencies</li>
+      </ol>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Report by Sara Refundini. An exploratory, AI-assisted text analytics study. Code and data: <a href="https://github.com/sararefundini-cloud/met-the-king-of-salem-a-couple-times">github.com/sararefundini-cloud/met-the-king-of-salem-a-couple-times</a>.</p>
+  </div>
+</footer>
+<button class="back-top" type="button" onclick="window.scrollTo(0,0)">Back to top</button>
+
+<script type="application/json" id="symbol-data">[{"term":"city","category":"architecture / places","alchemist":21,"alchemistRate":12.67,"gatsby":19,"gatsbyRate":8.38,"steps":8,"stepsRate":4.42,"economy":2,"economyRate":0.64,"genesis":50,"leviticus":14,"kjv":1318,"ref":"Genesis 4:17","refQuote":"and he builded a city, and called the name of the city, after the name of his son, Enoch","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"tower","category":"architecture / places","alchemist":3,"alchemistRate":1.81,"gatsby":4,"gatsbyRate":1.76,"steps":1,"stepsRate":0.55,"economy":0,"economyRate":0,"genesis":3,"leviticus":0,"kjv":65,"ref":"Genesis 11:4","refQuote":"Go to, let us build us a city and a tower, whose top may reach unto heaven","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"altar","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":41,"economyRate":13.1,"genesis":13,"leviticus":87,"kjv":433,"ref":"Genesis 12:7","refQuote":"and there builded he an altar unto the Lord, who appeared unto him","leeMeaning":"In the outer court, typifies the cross of Christ and His all-inclusive death.","leeQuote":"In the outer court there is the altar, which typifies the cross of Christ","chapter":"21","coelho":""},{"term":"tent","category":"architecture / places","alchemist":35,"alchemistRate":21.11,"gatsby":2,"gatsbyRate":0.88,"steps":0,"stepsRate":0,"economy":3,"economyRate":0.96,"genesis":27,"leviticus":1,"kjv":164,"ref":"Genesis 12:8","refQuote":"and pitched his tent, having Beth-el on the west, and Hai on the east","leeMeaning":"","leeQuote":"","chapter":"","coelho":"There were three hundred wells, fifty thousand date trees, and innumerable colored tents spread among them."},{"term":"well","category":"architecture / places","alchemist":13,"alchemistRate":7.84,"gatsby":5,"gatsbyRate":2.21,"steps":2,"stepsRate":1.1,"economy":9,"economyRate":2.88,"genesis":29,"leviticus":0,"kjv":61,"ref":"Genesis 24:11","refQuote":"he made his camels to kneel down without the city by a well of water","leeMeaning":"Typifies Christ within us, the well of living water that must be dug.","leeQuote":"While the rock is Christ on the cross, the well is Christ within us (John 4:14).","chapter":"10","coelho":"The boy went to the well every day to meet with Fatima."},{"term":"gate","category":"architecture / places","alchemist":6,"alchemistRate":3.62,"gatsby":8,"gatsbyRate":3.53,"steps":10,"stepsRate":5.52,"economy":3,"economyRate":0.96,"genesis":9,"leviticus":0,"kjv":419,"ref":"Genesis 22:17","refQuote":"and thy seed shall possess the gate of his enemies","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"house","category":"architecture / places","alchemist":5,"alchemistRate":3.02,"gatsby":103,"gatsbyRate":45.44,"steps":64,"stepsRate":35.35,"economy":30,"economyRate":9.59,"genesis":87,"leviticus":47,"kjv":2162,"ref":"Genesis 12:1","refQuote":"Get thee out of thy country, and from thy kindred, and from thy father's house","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"door","category":"architecture / places","alchemist":3,"alchemistRate":1.81,"gatsby":71,"gatsbyRate":31.32,"steps":54,"stepsRate":29.82,"economy":7,"economyRate":2.24,"genesis":12,"leviticus":24,"kjv":260,"ref":"Genesis 18:1","refQuote":"and he sat in the tent door in the heat of the day","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"pillar","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":1,"gatsbyRate":0.44,"steps":0,"stepsRate":0,"economy":21,"economyRate":6.71,"genesis":12,"leviticus":0,"kjv":136,"ref":"Genesis 28:18","refQuote":"and took the stone that he had put for his pillows, and set it up for a pillar","leeMeaning":"The church as the pillar and ground of the truth.","leeQuote":"the house of God, which is the church of the living God, the pillar and ground of the truth.","chapter":"23","coelho":""},{"term":"garden","category":"architecture / places","alchemist":2,"alchemistRate":1.21,"gatsby":30,"gatsbyRate":13.24,"steps":10,"stepsRate":5.52,"economy":5,"economyRate":1.6,"genesis":14,"leviticus":0,"kjv":64,"ref":"Genesis 2:8","refQuote":"And the Lord God planted a garden eastward in Eden","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"Salem","category":"architecture / places","alchemist":11,"alchemistRate":6.64,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":1,"leviticus":0,"kjv":4,"ref":"Genesis 14:18","refQuote":"And Melchizedek king of Salem brought forth bread and wine","leeMeaning":"","leeQuote":"","chapter":"","coelho":"I'm the king of Salem!"},{"term":"Egypt","category":"architecture / places","alchemist":24,"alchemistRate":14.48,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":24,"economyRate":7.67,"genesis":97,"leviticus":12,"kjv":736,"ref":"Genesis 12:10","refQuote":"and Abram went down into Egypt to sojourn there; for the famine was grievous in the land","leeMeaning":"The worldly starting place, corresponding to the outer court, before the Passover deliverance.","leeQuote":"Are we in Egypt? in the wilderness? or in Canaan?","chapter":"18","coelho":"you must go to the Pyramids in Egypt"},{"term":"Canaan","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":15,"economyRate":4.79,"genesis":56,"leviticus":3,"kjv":160,"ref":"Genesis 12:5","refQuote":"and they went forth to go into the land of Canaan; and into the land of Canaan they came","leeMeaning":"The land of rest, a type of the all-inclusive Christ in our spirit.","leeQuote":"Christ is the good land of Canaan, and He is our rest.","chapter":"3","coelho":""},{"term":"Eden","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":3,"economyRate":0.96,"genesis":6,"leviticus":0,"kjv":20,"ref":"Genesis 2:8","refQuote":"And the Lord God planted a garden eastward in Eden","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"Ur","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":3,"leviticus":0,"kjv":5,"ref":"Genesis 11:31","refQuote":"and they went forth with them from Ur of the Chaldees, to go into the land of Canaan","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"Bethel","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":12,"leviticus":0,"kjv":66,"ref":"Genesis 12:8","refQuote":"And he removed from thence unto a mountain on the east of Beth-el, and pitched his tent","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"Jordan","category":"architecture / places","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":1,"stepsRate":0.55,"economy":8,"economyRate":2.56,"genesis":5,"leviticus":0,"kjv":197,"ref":"Genesis 13:10","refQuote":"and beheld all the plain of Jordan, that it was well watered every where","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"gold","category":"materials / gems","alchemist":45,"alchemistRate":27.15,"gatsby":15,"gatsbyRate":6.62,"steps":4,"stepsRate":2.21,"economy":36,"economyRate":11.5,"genesis":9,"leviticus":1,"kjv":483,"ref":"Genesis 2:12","refQuote":"And the gold of that land is good: there is bdellium and the onyx stone.","leeMeaning":"Typifies divinity, the divine nature wrought into and upon humanity.","leeQuote":"the gold overlaying the boards signifies divinity, the divine nature.","chapter":"21","coelho":"The old man wore a breastplate of heavy gold, covered with precious stones."},{"term":"silver","category":"materials / gems","alchemist":3,"alchemistRate":1.81,"gatsby":11,"gatsbyRate":4.85,"steps":3,"stepsRate":1.66,"economy":4,"economyRate":1.28,"genesis":11,"leviticus":5,"kjv":320,"ref":"Genesis 13:2","refQuote":"And Abram was very rich in cattle, in silver, and in gold.","leeMeaning":"Typifies redemption, the joining and covering of God's building.","leeQuote":"Silver typifies redemption.","chapter":"21","coelho":"The scabbard was embossed in silver, and the handle was black and encrusted with precious stones."},{"term":"stone","category":"materials / gems","alchemist":52,"alchemistRate":31.37,"gatsby":1,"gatsbyRate":0.44,"steps":30,"stepsRate":16.57,"economy":6,"economyRate":1.92,"genesis":15,"leviticus":15,"kjv":349,"ref":"Genesis 28:18","refQuote":"and took the stone that he had put for his pillows, and set it up for a pillar","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The old man, holding out a white stone and a black stone that had been embedded at the center of the breastplate."},{"term":"brass","category":"materials / gems","alchemist":0,"alchemistRate":0,"gatsby":2,"gatsbyRate":0.88,"steps":2,"stepsRate":1.1,"economy":29,"economyRate":9.27,"genesis":1,"leviticus":1,"kjv":126,"ref":"Genesis 4:22","refQuote":"an instructer of every artificer in brass and iron","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"iron","category":"materials / gems","alchemist":3,"alchemistRate":1.81,"gatsby":0,"gatsbyRate":0,"steps":2,"stepsRate":1.1,"economy":0,"economyRate":0,"genesis":1,"leviticus":1,"kjv":101,"ref":"Genesis 4:22","refQuote":"an instructer of every artificer in brass and iron","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"wood","category":"materials / gems","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":15,"stepsRate":8.28,"economy":9,"economyRate":2.88,"genesis":6,"leviticus":14,"kjv":141,"ref":"Genesis 22:6","refQuote":"And Abraham took the wood of the burnt offering, and laid it upon Isaac his son","leeMeaning":"Signifies humanity, the human nature of the tabernacle boards.","leeQuote":"the wood of the boards (Exo. 26:15) signifies humanity, the human nature","chapter":"21","coelho":""},{"term":"linen","category":"materials / gems","alchemist":1,"alchemistRate":0.6,"gatsby":2,"gatsbyRate":0.88,"steps":2,"stepsRate":1.1,"economy":16,"economyRate":5.11,"genesis":1,"leviticus":13,"kjv":104,"ref":"Genesis 41:42","refQuote":"and arrayed him in vestures of fine linen, and put a gold chain about his neck","leeMeaning":"Fine linen symbolizes the humanity of Christ: fine, strong, without crudeness.","leeQuote":"the fine linen, which symbolizes the humanity of Christ with all His fine characteristics","chapter":"22","coelho":""},{"term":"onyx","category":"materials / gems","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":1,"leviticus":0,"kjv":11,"ref":"Genesis 2:12","refQuote":"And the gold of that land is good: there is bdellium and the onyx stone.","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"bdellium","category":"materials / gems","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":1,"leviticus":0,"kjv":2,"ref":"Genesis 2:12","refQuote":"And the gold of that land is good: there is bdellium and the onyx stone.","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"jewels","category":"materials / gems","alchemist":1,"alchemistRate":0.6,"gatsby":2,"gatsbyRate":0.88,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":2,"leviticus":0,"kjv":28,"ref":"Genesis 24:53","refQuote":"And the servant brought forth jewels of silver, and jewels of gold, and raiment","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"precious stones","category":"materials / gems","alchemist":5,"alchemistRate":3.02,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":0,"leviticus":0,"kjv":21,"ref":"2 Samuel 12:30","refQuote":"a talent of gold with the precious stones: and it was set on David's head","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The old man wore a breastplate of heavy gold, covered with precious stones."},{"term":"crystal","category":"materials / gems","alchemist":62,"alchemistRate":37.4,"gatsby":1,"gatsbyRate":0.44,"steps":1,"stepsRate":0.55,"economy":0,"economyRate":0,"genesis":0,"leviticus":0,"kjv":5,"ref":"Job 28:17","refQuote":"The gold and the crystal cannot equal it: and the exchange of it shall not be for jewels of fine gold.","leeMeaning":"","leeQuote":"","chapter":"","coelho":"They're only made of rock crystal, and there are millions of rock crystals in the earth."},{"term":"emerald","category":"materials / gems","alchemist":15,"alchemistRate":9.05,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":0,"leviticus":0,"kjv":6,"ref":"Exodus 28:18","refQuote":"And the second row shall be an emerald, a sapphire, and a diamond.","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The miner had abandoned everything to go mining for emeralds."},{"term":"Urim","category":"materials / gems","alchemist":15,"alchemistRate":9.05,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":0,"leviticus":1,"kjv":7,"ref":"Leviticus 8:8","refQuote":"And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.","leeMeaning":"","leeQuote":"","chapter":"","coelho":"They are called Urim and Thummim."},{"term":"Thummim","category":"materials / gems","alchemist":15,"alchemistRate":9.05,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":0,"leviticus":1,"kjv":5,"ref":"Leviticus 8:8","refQuote":"And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.","leeMeaning":"","leeQuote":"","chapter":"","coelho":"They are called Urim and Thummim."},{"term":"white","category":"colors","alchemist":13,"alchemistRate":7.84,"gatsby":47,"gatsbyRate":20.73,"steps":23,"stepsRate":12.7,"economy":9,"economyRate":2.88,"genesis":5,"leviticus":20,"kjv":75,"ref":"Genesis 30:35","refQuote":"and all the she goats that were speckled and spotted, and every one that had some white in it, and all the brown among the sheep","leeMeaning":"The court linen's testimony: inside the church's line, everything is purged and white.","leeQuote":"Outside this line everything is black, but within this line everything is white.","chapter":"21","coelho":"The black signifies 'yes,' and the white 'no.'"},{"term":"black","category":"colors","alchemist":12,"alchemistRate":7.24,"gatsby":11,"gatsbyRate":4.85,"steps":31,"stepsRate":17.12,"economy":4,"economyRate":1.28,"genesis":0,"leviticus":2,"kjv":18,"ref":"Leviticus 13:31","refQuote":"and, behold, it be not in sight deeper than the skin, and that there is no black hair in it","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The black signifies 'yes,' and the white 'no.'"},{"term":"red","category":"colors","alchemist":3,"alchemistRate":1.81,"gatsby":9,"gatsbyRate":3.97,"steps":8,"stepsRate":4.42,"economy":14,"economyRate":4.47,"genesis":3,"leviticus":0,"kjv":53,"ref":"Genesis 25:25","refQuote":"And the first came out red, all over like an hairy garment; and they called his name Esau.","leeMeaning":"The color of the rams' skins: the shedding of blood in redemption.","leeQuote":"The color red means the shedding of blood in Christ's redemptive work.","chapter":"22","coelho":""},{"term":"speckled","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":9,"leviticus":0,"kjv":11,"ref":"Genesis 30:32","refQuote":"removing from thence all the speckled and spotted cattle, and all the brown cattle among the sheep","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"spotted","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":1,"gatsbyRate":0.44,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":6,"leviticus":0,"kjv":7,"ref":"Genesis 30:32","refQuote":"removing from thence all the speckled and spotted cattle, and all the brown cattle among the sheep","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"ringstraked","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":7,"leviticus":0,"kjv":7,"ref":"Genesis 30:35","refQuote":"And he removed that day the he goats that were ringstraked and spotted","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"brown","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":7,"gatsbyRate":3.09,"steps":14,"stepsRate":7.73,"economy":0,"economyRate":0,"genesis":4,"leviticus":0,"kjv":4,"ref":"Genesis 30:32","refQuote":"removing from thence all the speckled and spotted cattle, and all the brown cattle among the sheep","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"grisled","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":2,"leviticus":0,"kjv":4,"ref":"Genesis 31:10","refQuote":"the rams which leaped upon the cattle were ringstraked, speckled, and grisled","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"scarlet","category":"colors","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":3,"economyRate":0.96,"genesis":2,"leviticus":5,"kjv":52,"ref":"Genesis 38:28","refQuote":"and the midwife took and bound upon his hand a scarlet thread, saying, This came out first","leeMeaning":"The tabernacle color that stands for redemption.","leeQuote":"Blue means heavenly, purple means royalty, and scarlet stands for redemption.","chapter":"22","coelho":""},{"term":"green","category":"colors","alchemist":2,"alchemistRate":1.21,"gatsby":17,"gatsbyRate":7.5,"steps":15,"stepsRate":8.28,"economy":0,"economyRate":0,"genesis":3,"leviticus":2,"kjv":41,"ref":"Genesis 30:37","refQuote":"And Jacob took him rods of green poplar, and of the hazel and chesnut tree","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"tree","category":"nature / elements","alchemist":17,"alchemistRate":10.26,"gatsby":20,"gatsbyRate":8.82,"steps":14,"stepsRate":7.73,"economy":45,"economyRate":14.38,"genesis":20,"leviticus":7,"kjv":346,"ref":"Genesis 2:9","refQuote":"the tree of life also in the midst of the garden, and the tree of knowledge of good and evil","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"tree of life","category":"nature / elements","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":10,"economyRate":3.2,"genesis":3,"leviticus":0,"kjv":10,"ref":"Genesis 2:9","refQuote":"the tree of life also in the midst of the garden, and the tree of knowledge of good and evil","leeMeaning":"Signifies God Himself in Christ as our life.","leeQuote":"the tree of life signifies God Himself in Christ as our life.","chapter":"12","coelho":""},{"term":"tree of knowledge","category":"nature / elements","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":9,"economyRate":2.88,"genesis":2,"leviticus":0,"kjv":2,"ref":"Genesis 2:9","refQuote":"the tree of life also in the midst of the garden, and the tree of knowledge of good and evil","leeMeaning":"Represents Satan, the source of death.","leeQuote":"This tree represents nothing else than Satan, the source of death.","chapter":"12","coelho":""},{"term":"star","category":"nature / elements","alchemist":16,"alchemistRate":9.65,"gatsby":10,"gatsbyRate":4.41,"steps":1,"stepsRate":0.55,"economy":7,"economyRate":2.24,"genesis":5,"leviticus":0,"kjv":66,"ref":"Genesis 15:5","refQuote":"Look now toward heaven, and tell the stars, if thou be able to number them","leeMeaning":"","leeQuote":"","chapter":"","coelho":"sighting on a star that indicated the location of the oasis"},{"term":"sand","category":"nature / elements","alchemist":22,"alchemistRate":13.27,"gatsby":3,"gatsbyRate":1.32,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":3,"leviticus":0,"kjv":28,"ref":"Genesis 22:17","refQuote":"and in multiplying I will multiply thy seed as the stars of the heaven, and as the sand which is upon the sea shore","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The old man leaned over, picked up a stick, and began to write in the sand of the plaza."},{"term":"dust","category":"nature / elements","alchemist":5,"alchemistRate":3.02,"gatsby":10,"gatsbyRate":4.41,"steps":8,"stepsRate":4.42,"economy":0,"economyRate":0,"genesis":8,"leviticus":2,"kjv":108,"ref":"Genesis 13:16","refQuote":"And I will make thy seed as the dust of the earth","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"desert / wilderness","category":"nature / elements","alchemist":185,"alchemistRate":111.61,"gatsby":0,"gatsbyRate":0,"steps":1,"stepsRate":0.55,"economy":35,"economyRate":11.18,"genesis":7,"leviticus":4,"kjv":353,"ref":"Genesis 16:7","refQuote":"And the angel of the Lord found her by a fountain of water in the wilderness","leeMeaning":"Typifies wandering in the soul after salvation, short of entering the spirit.","leeQuote":"What does this typify? It means that many Christians after being saved are simply wandering in the soul.","chapter":"3","coelho":"The desert was all sand in some stretches, and rocky in others."},{"term":"river","category":"nature / elements","alchemist":2,"alchemistRate":1.21,"gatsby":2,"gatsbyRate":0.88,"steps":10,"stepsRate":5.52,"economy":5,"economyRate":1.6,"genesis":15,"leviticus":2,"kjv":256,"ref":"Genesis 2:10","refQuote":"And a river went out of Eden to water the garden","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"light","category":"nature / elements","alchemist":7,"alchemistRate":4.22,"gatsby":53,"gatsbyRate":23.38,"steps":26,"stepsRate":14.36,"economy":78,"economyRate":24.93,"genesis":14,"leviticus":1,"kjv":282,"ref":"Genesis 1:3","refQuote":"And God said, Let there be light: and there was light.","leeMeaning":"The lampstand typifies Christ as the light of life, shining within.","leeQuote":"The candlestick, or the lampstand, typifies Christ as the light of life.","chapter":"21","coelho":""},{"term":"darkness","category":"nature / elements","alchemist":0,"alchemistRate":0,"gatsby":9,"gatsbyRate":3.97,"steps":6,"stepsRate":3.31,"economy":14,"economyRate":4.47,"genesis":5,"leviticus":0,"kjv":162,"ref":"Genesis 1:2","refQuote":"and darkness was upon the face of the deep","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"flood","category":"nature / elements","alchemist":1,"alchemistRate":0.6,"gatsby":1,"gatsbyRate":0.44,"steps":1,"stepsRate":0.55,"economy":1,"economyRate":0.32,"genesis":12,"leviticus":0,"kjv":62,"ref":"Genesis 6:17","refQuote":"And, behold, I, even I, do bring a flood of waters upon the earth","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"fire","category":"nature / elements","alchemist":16,"alchemistRate":9.65,"gatsby":4,"gatsbyRate":1.76,"steps":5,"stepsRate":2.76,"economy":12,"economyRate":3.83,"genesis":3,"leviticus":74,"kjv":550,"ref":"Genesis 22:6","refQuote":"and he took the fire in his hand, and a knife; and they went both of them together","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"cloud","category":"nature / elements","alchemist":3,"alchemistRate":1.81,"gatsby":4,"gatsbyRate":1.76,"steps":2,"stepsRate":1.1,"economy":0,"economyRate":0,"genesis":4,"leviticus":2,"kjv":156,"ref":"Genesis 9:13","refQuote":"I do set my bow in the cloud, and it shall be for a token of a covenant","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"mountain","category":"nature / elements","alchemist":6,"alchemistRate":3.62,"gatsby":0,"gatsbyRate":0,"steps":3,"stepsRate":1.66,"economy":0,"economyRate":0,"genesis":9,"leviticus":0,"kjv":314,"ref":"Genesis 22:2","refQuote":"and offer him there for a burnt offering upon one of the mountains which I will tell thee of","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"rain","category":"nature / elements","alchemist":0,"alchemistRate":0,"gatsby":17,"gatsbyRate":7.5,"steps":1,"stepsRate":0.55,"economy":0,"economyRate":0,"genesis":4,"leviticus":1,"kjv":102,"ref":"Genesis 7:12","refQuote":"And the rain was upon the earth forty days and forty nights.","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"wind","category":"nature / elements","alchemist":87,"alchemistRate":52.49,"gatsby":13,"gatsbyRate":5.74,"steps":6,"stepsRate":3.31,"economy":0,"economyRate":0,"genesis":4,"leviticus":0,"kjv":146,"ref":"Genesis 8:1","refQuote":"and God made a wind to pass over the earth, and the waters asswaged","leeMeaning":"","leeQuote":"","chapter":"","coelho":"It's just that I don't know how to turn myself into the wind."},{"term":"fountain","category":"nature / elements","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":1,"stepsRate":0.55,"economy":1,"economyRate":0.32,"genesis":4,"leviticus":3,"kjv":48,"ref":"Genesis 16:7","refQuote":"And the angel of the Lord found her by a fountain of water in the wilderness","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"treasure","category":"objects","alchemist":85,"alchemistRate":51.28,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":4,"economyRate":1.28,"genesis":1,"leviticus":0,"kjv":99,"ref":"Genesis 43:23","refQuote":"your God, and the God of your father, hath given you treasure in your sacks","leeMeaning":"The image of Christ as the treasure held in earthen vessels.","leeQuote":"This very image of Christ is the treasure in the earthen vessels.","chapter":"5","coelho":"There you will find a treasure that will make you a rich man."},{"term":"ring","category":"objects","alchemist":2,"alchemistRate":1.21,"gatsby":2,"gatsbyRate":0.88,"steps":4,"stepsRate":2.21,"economy":6,"economyRate":1.92,"genesis":1,"leviticus":0,"kjv":55,"ref":"Genesis 41:42","refQuote":"And Pharaoh took off his ring from his hand, and put it upon Joseph's hand","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"coat","category":"objects","alchemist":0,"alchemistRate":0,"gatsby":17,"gatsbyRate":7.5,"steps":13,"stepsRate":7.18,"economy":0,"economyRate":0,"genesis":9,"leviticus":4,"kjv":39,"ref":"Genesis 37:3","refQuote":"and he made him a coat of many colours","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"ark","category":"objects","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":25,"economyRate":7.99,"genesis":26,"leviticus":1,"kjv":230,"ref":"Genesis 6:14","refQuote":"Make thee an ark of gopher wood; rooms shalt thou make in the ark","leeMeaning":"The type of Christ Himself, hidden in the Holiest of all (Lee refers to the ark of the covenant, not Noah's ark).","leeQuote":"The Holiest of all contains one thing, the ark, the type of Christ Himself.","chapter":"21","coelho":""},{"term":"cup","category":"objects","alchemist":2,"alchemistRate":1.21,"gatsby":3,"gatsbyRate":1.32,"steps":2,"stepsRate":1.1,"economy":1,"economyRate":0.32,"genesis":10,"leviticus":0,"kjv":74,"ref":"Genesis 44:2","refQuote":"And put my cup, the silver cup, in the sack's mouth of the youngest","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"staff","category":"objects","alchemist":1,"alchemistRate":0.6,"gatsby":0,"gatsbyRate":0,"steps":1,"stepsRate":0.55,"economy":0,"economyRate":0,"genesis":3,"leviticus":1,"kjv":43,"ref":"Genesis 32:10","refQuote":"with my staff I passed over this Jordan; and now I am become two bands","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"sword","category":"objects","alchemist":19,"alchemistRate":11.46,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":5,"economyRate":1.6,"genesis":6,"leviticus":7,"kjv":448,"ref":"Genesis 3:24","refQuote":"and a flaming sword which turned every way, to keep the way of the tree of life","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"bow","category":"objects","alchemist":0,"alchemistRate":0,"gatsby":2,"gatsbyRate":0.88,"steps":1,"stepsRate":0.55,"economy":0,"economyRate":0,"genesis":11,"leviticus":1,"kjv":113,"ref":"Genesis 9:13","refQuote":"I do set my bow in the cloud, and it shall be for a token of a covenant","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"bracelets","category":"objects","alchemist":0,"alchemistRate":0,"gatsby":1,"gatsbyRate":0.44,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":5,"leviticus":0,"kjv":11,"ref":"Genesis 24:22","refQuote":"the man took a golden earring of half a shekel weight, and two bracelets for her hands","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"earring","category":"objects","alchemist":0,"alchemistRate":0,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":4,"leviticus":0,"kjv":17,"ref":"Genesis 24:22","refQuote":"the man took a golden earring of half a shekel weight, and two bracelets for her hands","leeMeaning":"","leeQuote":"","chapter":"","coelho":""},{"term":"vessels","category":"objects","alchemist":4,"alchemistRate":2.41,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":5,"economyRate":1.6,"genesis":1,"leviticus":10,"kjv":200,"ref":"Genesis 43:11","refQuote":"take of the best fruits in the land in your vessels, and carry down the man a present","leeMeaning":"","leeQuote":"","chapter":"","coelho":"She had a vessel on her shoulder, and her head was covered by a veil, but her face was uncovered."},{"term":"veil","category":"objects","alchemist":2,"alchemistRate":1.21,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":28,"economyRate":8.95,"genesis":3,"leviticus":7,"kjv":46,"ref":"Genesis 24:65","refQuote":"therefore she took a vail, and covered herself","leeMeaning":"Typifies the flesh, which must be riven to enter the Holiest.","leeQuote":"the veil, which typifies the flesh (Heb. 10:20), must be riven and broken.","chapter":"3","coelho":"her head was covered by a veil, but her face was uncovered."},{"term":"breastplate","category":"objects","alchemist":6,"alchemistRate":3.62,"gatsby":0,"gatsbyRate":0,"steps":0,"stepsRate":0,"economy":0,"economyRate":0,"genesis":0,"leviticus":2,"kjv":31,"ref":"Leviticus 8:8","refQuote":"And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.","leeMeaning":"","leeQuote":"","chapter":"","coelho":"The old man wore a breastplate of heavy gold, covered with precious stones."}]</script>
+<script type="application/json" id="category-data">[{"key":"materials / gems","label":"Materials / gems","alchemist":130.91,"gatsby":15,"steps":32.59,"economy":31.96},{"key":"objects","label":"Objects","alchemist":73,"gatsby":11.03,"steps":11.6,"economy":23.65},{"key":"nature / elements","label":"Nature / elements","alchemist":221.4,"gatsby":64.41,"steps":46.95,"economy":69.34},{"key":"architecture / places","label":"Architecture / places","alchemist":74.2,"gatsby":107.2,"steps":82.85,"economy":54.64},{"key":"colors","label":"Colors","alchemist":18.1,"gatsby":40.59,"steps":50.26,"economy":9.59}]</script>
+<script>
+(function () {
+  "use strict";
+
+  var SYMBOLS = JSON.parse(document.getElementById("symbol-data").textContent);
+  var CATEGORY_RATES = JSON.parse(document.getElementById("category-data").textContent);
+
+  var state = {
+    sortKey: "alchemist",
+    sortDir: "desc",
+    wordQuery: "",
+    categoryFilter: "all",
+    presenceFilter: "in-alchemist",
+    chartCategory: "materials / gems"
+  };
+
+  function fmt(n) {
+    return Number(n).toLocaleString("en-US");
+  }
+
+  function rate(n) {
+    return Number(n).toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+  }
+
+  function countAndRate(count, r) {
+    return fmt(count) + " (" + rate(r) + ")";
+  }
+
+  function sourceOf(ref) {
+    if (ref.indexOf("2 Samuel") === 0) return "2 Samuel";
+    if (ref.indexOf("Job") === 0) return "Job";
+    if (ref.indexOf("Exodus") === 0) return "Exodus";
+    if (ref.indexOf("Leviticus") === 0) return "Leviticus";
+    return "Genesis";
+  }
+
+  function leeCell(w) {
+    if (!w.leeMeaning) return "—";
+    return w.leeMeaning + " (“" + w.leeQuote + "”; Economy of God, ch. " + w.chapter + ")";
+  }
+
+  function coelhoCell(w) {
+    if (!w.coelho) return "—";
+    return "“" + w.coelho + "”";
+  }
+
+  function vsGatsby(c) {
+    if (c.gatsby === 0) {
+      return c.alchemist > 0 ? "— (0 in Gatsby)" : "—";
+    }
+    return (c.alchemist / c.gatsby).toFixed(2) + "×";
+  }
+
+  function text(el, value) {
+    el.textContent = value;
+  }
+
+  function filteredRows() {
+    var q = state.wordQuery.trim().toLowerCase();
+    var rows = SYMBOLS.filter(function (w) {
+      if (state.categoryFilter !== "all" && w.category !== state.categoryFilter) return false;
+      if (state.presenceFilter === "in-alchemist" && w.alchemist === 0) return false;
+      if (!q) return true;
+      return (
+        w.term.toLowerCase().indexOf(q) !== -1 ||
+        w.category.indexOf(q) !== -1 ||
+        w.ref.toLowerCase().indexOf(q) !== -1 ||
+        w.refQuote.toLowerCase().indexOf(q) !== -1 ||
+        w.leeMeaning.toLowerCase().indexOf(q) !== -1 ||
+        w.leeQuote.toLowerCase().indexOf(q) !== -1 ||
+        w.coelho.toLowerCase().indexOf(q) !== -1
+      );
+    });
+    var dir = state.sortDir === "asc" ? 1 : -1;
+    rows.sort(function (a, b) {
+      if (state.sortKey === "term" || state.sortKey === "category") {
+        return dir * a[state.sortKey].localeCompare(b[state.sortKey]);
+      }
+      return dir * (a[state.sortKey] - b[state.sortKey]);
+    });
+    return rows;
+  }
+
+  function renderTable() {
+    var rows = filteredRows();
+    var tbody = document.getElementById("lexicon-body");
+    var empty = document.getElementById("lexicon-empty");
+    var count = document.getElementById("result-count");
+    tbody.textContent = "";
+
+    if (rows.length === 0) {
+      empty.hidden = false;
+      count.textContent = "Showing 0 of 72 terms.";
+      return;
+    }
+
+    empty.hidden = true;
+    if (rows.length === 72) {
+      count.textContent = "Showing all 72 terms.";
+    } else {
+      count.textContent = "Showing " + rows.length + " of 72 terms.";
+    }
+
+    rows.forEach(function (w) {
+      var tr = document.createElement("tr");
+      var values = [
+        [w.term, ""],
+        [w.category, ""],
+        [sourceOf(w.ref), ""],
+        [countAndRate(w.alchemist, w.alchemistRate), "num"],
+        [countAndRate(w.gatsby, w.gatsbyRate), "num"],
+        [countAndRate(w.steps, w.stepsRate), "num"],
+        [countAndRate(w.economy, w.economyRate), "num"],
+        [fmt(w.genesis), "num"],
+        [fmt(w.leviticus), "num"],
+        [fmt(w.kjv), "num"],
+        [w.ref + ": " + w.refQuote, "wide"],
+        [leeCell(w), "wide"],
+        [coelhoCell(w), "wide"]
+      ];
+      values.forEach(function (item) {
+        var td = document.createElement("td");
+        if (item[1]) td.className = item[1];
+        text(td, item[0]);
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  function setBar(rowEl, value, max) {
+    var fill = rowEl.querySelector(".bar-fill");
+    var val = rowEl.querySelector(".bar-value");
+    var pct = max > 0 ? (value / max) * 100 : 0;
+    fill.style.width = pct + "%";
+    text(val, rate(value));
+    fill.setAttribute("aria-valuenow", String(value));
+  }
+
+  function renderChart() {
+    var chartRow = CATEGORY_RATES.find(function (c) {
+      return c.key === state.chartCategory;
+    }) || CATEGORY_RATES[0];
+    var values = [chartRow.alchemist, chartRow.gatsby, chartRow.steps, chartRow.economy];
+    var max = Math.max.apply(null, values);
+    var rows = document.querySelectorAll("#category-bars .bar-row");
+    values.forEach(function (v, i) {
+      setBar(rows[i], v, max);
+    });
+    var title = document.getElementById("category-chart-title");
+    if (title) {
+      text(title, "Rates per 10,000 content tokens — " + chartRow.label);
+    }
+  }
+
+  function bindSeg(name, onChange) {
+    var root = document.querySelector('[data-seg="' + name + '"]');
+    if (!root) return;
+    root.addEventListener("click", function (ev) {
+      var btn = ev.target.closest("button");
+      if (!btn || !root.contains(btn)) return;
+      Array.prototype.forEach.call(root.querySelectorAll("button"), function (b) {
+        b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+      });
+      onChange(btn.getAttribute("data-value"));
+    });
+  }
+
+  document.getElementById("word-query").addEventListener("input", function (ev) {
+    state.wordQuery = ev.target.value;
+    renderTable();
+  });
+
+  document.getElementById("category-filter").addEventListener("change", function (ev) {
+    state.categoryFilter = ev.target.value;
+    renderTable();
+  });
+
+  document.getElementById("sort-key").addEventListener("change", function (ev) {
+    state.sortKey = ev.target.value;
+    renderTable();
+  });
+
+  bindSeg("sort-dir", function (value) {
+    state.sortDir = value;
+    renderTable();
+  });
+
+  bindSeg("presence", function (value) {
+    state.presenceFilter = value;
+    renderTable();
+  });
+
+  bindSeg("chart-category", function (value) {
+    state.chartCategory = value;
+    renderChart();
+  });
+
+  document.querySelectorAll("#category-rate-body tr").forEach(function (tr, i) {
+    var c = CATEGORY_RATES[i];
+    var cells = tr.querySelectorAll("td");
+    text(cells[1], rate(c.alchemist));
+    text(cells[2], rate(c.gatsby));
+    text(cells[3], rate(c.steps));
+    text(cells[4], rate(c.economy));
+    text(cells[5], vsGatsby(c));
+  });
+
+  renderChart();
+  renderTable();
+})();
+
+</script>
+</body>
+</html>
