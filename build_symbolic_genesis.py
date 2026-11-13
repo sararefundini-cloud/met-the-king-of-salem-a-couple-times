@@ -679,6 +679,11 @@ def corpus_sizes(verses, corpora):
     return sizes
 
 
+# Dropped as desert-caravan setting words; in The Alchemist they are
+# transport, in Genesis livestock/wealth.
+SETTING_EXCLUSIONS = {"camel", "camels"}
+
+
 def abraham_cycle(verses, corpora, log_odds_threshold=None):
     """Build the Abraham-cycle distinctive-word list and score the novels.
 
@@ -686,8 +691,9 @@ def abraham_cycle(verses, corpora, log_odds_threshold=None):
     occurs at least three times, its log-odds versus modern English is at
     least the threshold (4.0 by default), and it is also over-represented
     against the rest of Genesis. Proper names are added separately; Melchizedek
-    and Salem are kept even as hapaxes. Rates are distinctive tokens per
-    10,000 content tokens in each novel.
+    and Salem are kept even as hapaxes. Camel and camels are then removed
+    (SETTING_EXCLUSIONS). Rates are distinctive tokens per 10,000 content
+    tokens in each novel.
     """
     cycle = []
     rest = []
@@ -775,6 +781,9 @@ def abraham_cycle(verses, corpora, log_odds_threshold=None):
                 "log_odds_rest": lor_rest,
                 "is_proper_name": True,
             }
+
+    for w in SETTING_EXCLUSIONS:
+        words.pop(w, None)
 
     types = sorted(words)
     # rates in novels (content-token denominator; count distinctive types in content tokens)

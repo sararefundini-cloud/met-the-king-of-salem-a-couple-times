@@ -28,15 +28,17 @@ A secondary quantitative contrast is the **Abraham-cycle rate** (distinctive voc
 
 | Text | Rate per 10k content tokens |
 |---|---:|
-| *The Alchemist* | 40.42 |
+| *The Alchemist* | 34.99 |
 | *The Great Gatsby* | 3.09 |
 | *The Thirty-Nine Steps* | 11.60 |
+
+Camel and camels are excluded as desert-setting words; including them gives 40.42 per 10,000 (about 13 times Gatsby), so the result does not depend on this choice.
 
 These are observations from an exploratory comparison, not proof of deliberate literary construction. Santiago can be read as a literary foil to Abraham; that is an interpretation, not a statistical conclusion.
 
 ## Limitations
 
-- The control novels are poorly matched for genre. A shepherd-and-desert quest will naturally use more tents, camels, and desert language than a novel about wealthy New Yorkers. The 13× Gatsby contrast should be read with that in mind.
+- The control novels are poorly matched for genre. A shepherd-and-desert quest will naturally use more tents, camels, and desert language than a novel about wealthy New Yorkers. The contrast of about 11 times Gatsby should be read with that in mind. Tent (31 of the 58 hits) is the largest remaining contributor.
 - High counts for words such as *desert* and *treasure* often reflect the plot of *The Alchemist*, not independent evidence of biblical influence.
 - A word that appears in Scripture is not automatically a biblical symbol when it appears in the novel. Meanings drawn from Witness Lee's *The Economy of God* are one interpretive reading, not the Bible's own explicit explanation, and not proof of Coelho's intent.
 - Frequency analysis alone cannot establish whether Coelho deliberately reversed Abraham's theology.

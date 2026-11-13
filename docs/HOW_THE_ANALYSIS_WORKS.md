@@ -30,15 +30,15 @@ A word is treated as distinctive of the Abraham cycle when it occurs at least th
 
 The 4.0 cutoff is a **heuristic**, not a formal significance test. It was set by looking at the score distribution: it admits vocabulary such as *flock* and *altar*, and it rejects ordinary narrative words such as *son* and *came*.
 
-Because it is a judgment call, the headline rate was recomputed at nearby cutoffs. After the tokenizer correction, distinctive-token rates per 10,000 content words are:
+Because it is a judgment call, the headline rate was recomputed at nearby cutoffs. Camel and camels are excluded as desert-setting words before these rates are computed. After the tokenizer correction, distinctive-token rates per 10,000 content words are:
 
 | Log-odds cutoff | List size | The Alchemist | The Great Gatsby | The Thirty-Nine Steps |
 |---|---:|---:|---:|---:|
-| 3.0 | 188 types | 103.76 | 49.85 | 42.53 |
-| **4.0 (reported)** | **165 types** | **40.42** | **3.09** | **11.60** |
-| 5.0 | 149 types | 17.50 | 0.88 | 4.97 |
+| 3.0 | 187 types | 98.33 | 49.85 | 42.53 |
+| **4.0 (reported)** | **164 types** | **34.99** | **3.09** | **11.60** |
+| 5.0 | 148 types | 12.07 | 0.88 | 4.97 |
 
-At 3.0 the list lets in more ordinary narrative words (*son*, *stood*, *laughed*), the rates jump, and the gap between The Alchemist and Gatsby shrinks. At 5.0 the list is stricter, *tent* falls out of the Alchemist’s leading items, and the headline rate drops to 17.50. The reported 4.0 figures sit between those two. The qualitative gap remains in all three rows, but the size of the “13× Gatsby” contrast is sensitive to the cutoff and to the poorly matched control novels.
+At 3.0 the list lets in more ordinary narrative words (*son*, *stood*, *laughed*), the rates jump, and the gap between The Alchemist and Gatsby shrinks. At 5.0 the list is stricter, *tent* falls out of the Alchemist’s leading items, and the headline rate drops to 12.07. The reported 4.0 figures sit between those two. The qualitative gap remains in all three rows, but the size of the “about 11 times Gatsby” contrast is sensitive to the cutoff and to the poorly matched control novels. Camel and camels are excluded as desert-setting words; including them gives 40.42 per 10,000 (about 13 times Gatsby), so the result does not depend on this choice.
 
 ## How the counts were checked
 
@@ -51,7 +51,7 @@ The checks are strong for counts and quotations. They do not validate the litera
 
 ## Limits
 
-- The control novels are public-domain books of similar length and era, not desert-quest or biblical-retelling novels. A shepherd story will naturally use more tents and camels than a novel about wealthy New Yorkers. The size of the frequency gap should not be read as a measure of biblical influence.
+- The control novels are public-domain books of similar length and era, not desert-quest or biblical-retelling novels. A shepherd story will naturally use more tents and camels than a novel about wealthy New Yorkers. The size of the frequency gap should not be read as a measure of biblical influence. Tent (31 of the 58 hits) is the largest remaining contributor.
 - High counts for *desert* and *treasure* often reflect the plot of The Alchemist, not independent evidence of biblical influence.
 - The lexicon was chosen with knowledge of the novel, so there is a selection-bias risk.
 - A word that appears in Scripture is not automatically a biblical symbol when it appears in the novel. Meanings drawn from Witness Lee’s *The Economy of God* are one typological reading, not the Bible’s own explicit explanation, and not proof of Coelho’s intent.

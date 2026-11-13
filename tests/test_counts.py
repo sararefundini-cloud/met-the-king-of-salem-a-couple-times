@@ -134,3 +134,22 @@ def test_melchizedek_count_in_the_alchemist(alchemist_counts):
 
 def test_abraham_is_named_once(alchemist_counts):
     assert alchemist_counts.get("abraham", 0) == 1
+
+
+def test_abraham_cycle_excludes_camel_setting_words():
+    """Camel and camels are desert-setting words, not part of the reported list."""
+    from build_symbolic_genesis import SETTING_EXCLUSIONS, abraham_cycle, load_verses
+
+    assert SETTING_EXCLUSIONS == {"camel", "camels"}
+    verses = load_verses()
+    empty = {"content": [], "n_content": 1}
+    corpora = {"alchemist": empty, "gatsby": empty, "thirty_nine_steps": empty}
+    ab = abraham_cycle(verses, corpora)
+    assert "camel" not in ab["types"]
+    assert "camels" not in ab["types"]
+    # 165 before the exclusion; only plural "camels" qualified (singular occurs once).
+    assert ab["n_types"] == 164
+    assert ab["n_log_odds"] == 77
+    assert ab["n_names_only"] == 87
+    # Published Alchemist rate after dropping 9 camel tokens from 67 hits.
+    assert rate_per_10k(58, 16576) == pytest.approx(34.99, abs=0.005)
