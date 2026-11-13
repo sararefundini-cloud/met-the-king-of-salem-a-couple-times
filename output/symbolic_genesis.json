@@ -1,0 +1,2453 @@
+{
+  "sizes": {
+    "KJV": {
+      "n_tokens": 790882,
+      "n_content": 304848,
+      "n_types": 12559,
+      "n_verses": 31102
+    },
+    "Genesis": {
+      "n_tokens": 38262,
+      "n_content": 14925,
+      "n_types": 2447,
+      "n_verses": 1533
+    },
+    "Exodus": {
+      "n_tokens": 32686,
+      "n_content": 12509,
+      "n_types": 2020,
+      "n_verses": 1213
+    },
+    "Leviticus": {
+      "n_tokens": 24541,
+      "n_content": 8891,
+      "n_types": 1410,
+      "n_verses": 859
+    },
+    "economy": {
+      "n_tokens": 74454,
+      "n_content": 31347,
+      "n_types": 3818
+    },
+    "alchemist": {
+      "n_tokens": 39608,
+      "n_content": 17246,
+      "n_types": 3326
+    },
+    "gatsby": {
+      "n_tokens": 49173,
+      "n_content": 23825,
+      "n_types": 6087
+    },
+    "thirty_nine_steps": {
+      "n_tokens": 41677,
+      "n_content": 18547,
+      "n_types": 5303
+    }
+  },
+  "abraham": {
+    "n_verses": 377,
+    "n_tokens": 9742,
+    "n_rest_tokens": 28520,
+    "n_types": 165,
+    "n_log_odds": 78,
+    "n_names_only": 87,
+    "n_both": 25,
+    "novels": {
+      "alchemist": {
+        "n_types": 12,
+        "n_tokens": 66,
+        "rate": 38.26974370868607,
+        "used": {
+          "abraham": 1,
+          "arose": 1,
+          "bury": 1,
+          "camels": 8,
+          "departed": 1,
+          "egyptian": 3,
+          "lad": 1,
+          "melchizedek": 4,
+          "pray": 3,
+          "salem": 11,
+          "servant": 1,
+          "tent": 31
+        }
+      },
+      "gatsby": {
+        "n_types": 5,
+        "n_tokens": 7,
+        "rate": 2.9380902413431267,
+        "used": {
+          "arose": 1,
+          "bracelets": 1,
+          "maid": 2,
+          "servant": 1,
+          "tent": 2
+        }
+      },
+      "thirty_nine_steps": {
+        "n_types": 10,
+        "n_tokens": 21,
+        "rate": 11.322585862942793,
+        "used": {
+          "abide": 1,
+          "departed": 1,
+          "journeyed": 1,
+          "lad": 1,
+          "lambs": 1,
+          "maid": 5,
+          "servant": 6,
+          "shekels": 1,
+          "vale": 3,
+          "wilderness": 1
+        }
+      }
+    }
+  },
+  "category_counts": {
+    "architecture / places": {
+      "alchemist": 123,
+      "gatsby": 243,
+      "steps": 150,
+      "economy": 171,
+      "genesis": 436,
+      "leviticus": 188,
+      "kjv": 6270
+    },
+    "materials / gems": {
+      "alchemist": 217,
+      "gatsby": 34,
+      "steps": 59,
+      "economy": 100,
+      "genesis": 48,
+      "leviticus": 52,
+      "kjv": 1709
+    },
+    "colors": {
+      "alchemist": 30,
+      "gatsby": 92,
+      "steps": 91,
+      "economy": 30,
+      "genesis": 41,
+      "leviticus": 29,
+      "kjv": 272
+    },
+    "nature / elements": {
+      "alchemist": 367,
+      "gatsby": 146,
+      "steps": 85,
+      "economy": 217,
+      "genesis": 122,
+      "leviticus": 96,
+      "kjv": 2991
+    },
+    "objects": {
+      "alchemist": 121,
+      "gatsby": 25,
+      "steps": 21,
+      "economy": 74,
+      "genesis": 80,
+      "leviticus": 33,
+      "kjv": 1406
+    }
+  },
+  "category_rates": {
+    "architecture / places": {
+      "alchemist": 71.32,
+      "gatsby": 101.99,
+      "steps": 80.88,
+      "economy": 54.55,
+      "genesis": 292.13,
+      "leviticus": 211.45,
+      "kjv": 205.68
+    },
+    "materials / gems": {
+      "alchemist": 125.83,
+      "gatsby": 14.27,
+      "steps": 31.81,
+      "economy": 31.9,
+      "genesis": 32.16,
+      "leviticus": 58.49,
+      "kjv": 56.06
+    },
+    "colors": {
+      "alchemist": 17.4,
+      "gatsby": 38.61,
+      "steps": 49.06,
+      "economy": 9.57,
+      "genesis": 27.47,
+      "leviticus": 32.62,
+      "kjv": 8.92
+    },
+    "nature / elements": {
+      "alchemist": 212.8,
+      "gatsby": 61.28,
+      "steps": 45.83,
+      "economy": 69.23,
+      "genesis": 81.74,
+      "leviticus": 107.97,
+      "kjv": 98.11
+    },
+    "objects": {
+      "alchemist": 70.16,
+      "gatsby": 10.49,
+      "steps": 11.32,
+      "economy": 23.61,
+      "genesis": 53.6,
+      "leviticus": 37.12,
+      "kjv": 46.12
+    }
+  },
+  "rows": [
+    {
+      "term": "city",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 4:17",
+      "ref_quote": "And Cain knew his wife; and she conceived, and bare Enoch: and he builded a city, and called the name of the…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "sunrise and dusk; and they had never read a book in their young lives, and didn’t understand when the boy told them…"
+      ],
+      "counts": {
+        "alchemist": 21,
+        "gatsby": 19,
+        "steps": 8,
+        "economy": 2,
+        "genesis": 50,
+        "exodus": 3,
+        "leviticus": 14,
+        "kjv": 1318
+      },
+      "rates": {
+        "alchemist": 12.18,
+        "gatsby": 7.97,
+        "steps": 4.31,
+        "economy": 0.64,
+        "genesis": 33.5,
+        "leviticus": 15.75,
+        "kjv": 43.23
+      }
+    },
+    {
+      "term": "tower",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 11:4",
+      "ref_quote": "And they said, Go to, let us build us a city and a tower, whose top may reach unto heaven; and let…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "their faces covered, and priests that climbed to the tops of towers and chanted—as everyone about him went to their knees and…"
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 4,
+        "steps": 1,
+        "economy": 0,
+        "genesis": 3,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 65
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 1.68,
+        "steps": 0.54,
+        "economy": 0.0,
+        "genesis": 2.01,
+        "leviticus": 0.0,
+        "kjv": 2.13
+      }
+    },
+    {
+      "term": "altar",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:7",
+      "ref_quote": "And the Lord appeared unto Abram, and said, Unto thy seed will I give this land: and there builded he an altar…",
+      "lee_meaning": "In the outer court, typifies the cross of Christ and His all-inclusive death.",
+      "lee_quote": "In the outer court there is the altar, which typifies the cross of Christ",
+      "lee_chapter": "21",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 41,
+        "genesis": 13,
+        "exodus": 60,
+        "leviticus": 87,
+        "kjv": 433
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 13.08,
+        "genesis": 8.71,
+        "leviticus": 97.85,
+        "kjv": 14.2
+      }
+    },
+    {
+      "term": "tent",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:8",
+      "ref_quote": "And he removed from thence unto a mountain on the east of Beth–el, and pitched his tent, having Beth–el on the west…",
+      "lee_meaning": "",
+      "lee_quote": "e building of God’s dwelling place.",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "There were three hundred wells, fifty thousand date trees, and innumerable colored tents spread among them."
+      ],
+      "counts": {
+        "alchemist": 35,
+        "gatsby": 2,
+        "steps": 0,
+        "economy": 3,
+        "genesis": 27,
+        "exodus": 29,
+        "leviticus": 1,
+        "kjv": 164
+      },
+      "rates": {
+        "alchemist": 20.29,
+        "gatsby": 0.84,
+        "steps": 0.0,
+        "economy": 0.96,
+        "genesis": 18.09,
+        "leviticus": 1.12,
+        "kjv": 5.38
+      }
+    },
+    {
+      "term": "well",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 24:11",
+      "ref_quote": "And he made his camels to kneel down without the city by a well of water at the time of the evening…",
+      "lee_meaning": "Typifies Christ within us, the well of living water that must be dug.",
+      "lee_quote": "While the rock is Christ on the cross, the well is Christ within us (John 4:14).",
+      "lee_chapter": "10",
+      "coelho_candidates": [
+        "THE oasis, rather than being just a well surrounded by a few palm trees— as he had seen once in a geography…"
+      ],
+      "counts": {
+        "alchemist": 13,
+        "gatsby": 5,
+        "steps": 2,
+        "economy": 9,
+        "genesis": 29,
+        "exodus": 2,
+        "leviticus": 0,
+        "kjv": 61
+      },
+      "rates": {
+        "alchemist": 7.54,
+        "gatsby": 2.1,
+        "steps": 1.08,
+        "economy": 2.87,
+        "genesis": 19.43,
+        "leviticus": 0.0,
+        "kjv": 2.0
+      }
+    },
+    {
+      "term": "gate",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 22:17",
+      "ref_quote": "That in blessing I will bless thee, and in multiplying I will multiply thy seed as the stars of the heaven, and…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "He saw to it that all the sheep entered through the ruined gate, and then laid some planks across it to prevent…"
+      ],
+      "counts": {
+        "alchemist": 6,
+        "gatsby": 8,
+        "steps": 10,
+        "economy": 3,
+        "genesis": 9,
+        "exodus": 13,
+        "leviticus": 0,
+        "kjv": 419
+      },
+      "rates": {
+        "alchemist": 3.48,
+        "gatsby": 3.36,
+        "steps": 5.39,
+        "economy": 0.96,
+        "genesis": 6.03,
+        "leviticus": 0.0,
+        "kjv": 13.74
+      }
+    },
+    {
+      "term": "house",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:1",
+      "ref_quote": "Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father’s house…",
+      "lee_meaning": "",
+      "lee_quote": "it, walk after the spirit, and always be mingled with the Lord in the spirit.",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "BACK of her house; it was separated from her living room by a curtain of colored beads."
+      ],
+      "counts": {
+        "alchemist": 5,
+        "gatsby": 103,
+        "steps": 64,
+        "economy": 30,
+        "genesis": 87,
+        "exodus": 43,
+        "leviticus": 47,
+        "kjv": 2162
+      },
+      "rates": {
+        "alchemist": 2.9,
+        "gatsby": 43.23,
+        "steps": 34.51,
+        "economy": 9.57,
+        "genesis": 58.29,
+        "leviticus": 52.86,
+        "kjv": 70.92
+      }
+    },
+    {
+      "term": "door",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 18:1",
+      "ref_quote": "And the Lord appeared unto him in the plains of Mamre: and he sat in the tent door in the heat of…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "He put a sign on the door, and they went to a small café nearby."
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 71,
+        "steps": 54,
+        "economy": 7,
+        "genesis": 12,
+        "exodus": 25,
+        "leviticus": 24,
+        "kjv": 260
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 29.8,
+        "steps": 29.12,
+        "economy": 2.23,
+        "genesis": 8.04,
+        "leviticus": 26.99,
+        "kjv": 8.53
+      }
+    },
+    {
+      "term": "pillar",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 28:18",
+      "ref_quote": "And Jacob rose up early in the morning, and took the stone that he had put for his pillows, and set it…",
+      "lee_meaning": "The church as the pillar and ground of the truth.",
+      "lee_quote": "the house of God, which is the church of the living God, the pillar and ground of the truth.",
+      "lee_chapter": "23",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 1,
+        "steps": 0,
+        "economy": 21,
+        "genesis": 12,
+        "exodus": 40,
+        "leviticus": 0,
+        "kjv": 136
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.42,
+        "steps": 0.0,
+        "economy": 6.7,
+        "genesis": 8.04,
+        "leviticus": 0.0,
+        "kjv": 4.46
+      }
+    },
+    {
+      "term": "garden",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 2:8",
+      "ref_quote": "And the Lord God planted a garden eastward in Eden; and there he put the man whom he had formed.",
+      "lee_meaning": "",
+      "lee_quote": "and peace.",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Did you see the garden that it took the master gardener ten years to create?"
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 30,
+        "steps": 10,
+        "economy": 5,
+        "genesis": 14,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 64
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 12.59,
+        "steps": 5.39,
+        "economy": 1.6,
+        "genesis": 9.38,
+        "leviticus": 0.0,
+        "kjv": 2.1
+      }
+    },
+    {
+      "term": "Salem",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 14:18",
+      "ref_quote": "And Melchizedek king of Salem brought forth bread and wine: and he was the priest of the most high God.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Salem."
+      ],
+      "counts": {
+        "alchemist": 11,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 1,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 4
+      },
+      "rates": {
+        "alchemist": 6.38,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.67,
+        "leviticus": 0.0,
+        "kjv": 0.13
+      }
+    },
+    {
+      "term": "Egypt",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:10",
+      "ref_quote": "And there was a famine in the land: and Abram went down into Egypt to sojourn there; for the famine was grievous…",
+      "lee_meaning": "The worldly starting place, corresponding to the outer court, before the Passover deliverance.",
+      "lee_quote": "Are we in Egypt?",
+      "lee_chapter": "18",
+      "coelho_candidates": [
+        "Egyptian pyramids."
+      ],
+      "counts": {
+        "alchemist": 24,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 24,
+        "genesis": 97,
+        "exodus": 180,
+        "leviticus": 12,
+        "kjv": 736
+      },
+      "rates": {
+        "alchemist": 13.92,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 7.66,
+        "genesis": 64.99,
+        "leviticus": 13.5,
+        "kjv": 24.14
+      }
+    },
+    {
+      "term": "Canaan",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:5",
+      "ref_quote": "And Abram took Sarai his wife, and Lot his brother’s son, and all their substance that they had gathered, and the souls…",
+      "lee_meaning": "The land of rest, a type of the all-inclusive Christ in our spirit.",
+      "lee_quote": "Christ is the good land of Canaan, and He is our rest.",
+      "lee_chapter": "3",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 15,
+        "genesis": 56,
+        "exodus": 11,
+        "leviticus": 3,
+        "kjv": 160
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 4.79,
+        "genesis": 37.52,
+        "leviticus": 3.37,
+        "kjv": 5.25
+      }
+    },
+    {
+      "term": "Eden",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 2:8",
+      "ref_quote": "And the Lord God planted a garden eastward in Eden; and there he put the man whom he had formed.",
+      "lee_meaning": "",
+      "lee_quote": "Here is the key to death or life.",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 3,
+        "genesis": 6,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 20
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.96,
+        "genesis": 4.02,
+        "leviticus": 0.0,
+        "kjv": 0.66
+      }
+    },
+    {
+      "term": "Ur",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 11:31",
+      "ref_quote": "And Terah took Abram his son, and Lot the son of Haran his son’s son, and Sarai his daughter in law, his…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 3,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 5
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 2.01,
+        "leviticus": 0.0,
+        "kjv": 0.16
+      }
+    },
+    {
+      "term": "Bethel",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 12:8",
+      "ref_quote": "And he removed from thence unto a mountain on the east of Beth–el, and pitched his tent, having Beth–el on the west…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 12,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 66
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 8.04,
+        "leviticus": 0.0,
+        "kjv": 2.17
+      }
+    },
+    {
+      "term": "Jordan",
+      "category": "architecture / places",
+      "source_note": "",
+      "ref": "Genesis 13:10",
+      "ref_quote": "And Lot lifted up his eyes, and beheld all the plain of Jordan, that it was well watered every where, before the…",
+      "lee_meaning": "",
+      "lee_quote": "n order to enter into the Holiest of all; so the veil, which typifies the flesh (Heb. 10:20), must be riven and…",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 1,
+        "economy": 8,
+        "genesis": 5,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 197
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.54,
+        "economy": 2.55,
+        "genesis": 3.35,
+        "leviticus": 0.0,
+        "kjv": 6.46
+      }
+    },
+    {
+      "term": "gold",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 2:12",
+      "ref_quote": "And the gold of that land is good: there is bdellium and the onyx stone.",
+      "lee_meaning": "Typifies divinity, the divine nature wrought into and upon humanity.",
+      "lee_quote": "the gold overlaying the boards signifies divinity, the divine nature.",
+      "lee_chapter": "21",
+      "coelho_candidates": [
+        "Spanish gold coins."
+      ],
+      "counts": {
+        "alchemist": 45,
+        "gatsby": 15,
+        "steps": 4,
+        "economy": 36,
+        "genesis": 9,
+        "exodus": 105,
+        "leviticus": 1,
+        "kjv": 483
+      },
+      "rates": {
+        "alchemist": 26.09,
+        "gatsby": 6.3,
+        "steps": 2.16,
+        "economy": 11.48,
+        "genesis": 6.03,
+        "leviticus": 1.12,
+        "kjv": 15.84
+      }
+    },
+    {
+      "term": "silver",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 13:2",
+      "ref_quote": "And Abram was very rich in cattle, in silver, and in gold.",
+      "lee_meaning": "Typifies redemption, the joining and covering of God’s building.",
+      "lee_quote": "Silver typifies redemption.",
+      "lee_chapter": "21",
+      "coelho_candidates": [
+        "The scabbard was embossed in silver, and the handle was black and encrusted with precious stones."
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 11,
+        "steps": 3,
+        "economy": 4,
+        "genesis": 11,
+        "exodus": 32,
+        "leviticus": 5,
+        "kjv": 320
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 4.62,
+        "steps": 1.62,
+        "economy": 1.28,
+        "genesis": 7.37,
+        "leviticus": 5.62,
+        "kjv": 10.5
+      }
+    },
+    {
+      "term": "stone",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 28:18",
+      "ref_quote": "And Jacob rose up early in the morning, and took the stone that he had put for his pillows, and set it…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "The old man related that, the week before, he had been forced to appear before a miner, and had taken the form…"
+      ],
+      "counts": {
+        "alchemist": 52,
+        "gatsby": 1,
+        "steps": 30,
+        "economy": 6,
+        "genesis": 15,
+        "exodus": 38,
+        "leviticus": 15,
+        "kjv": 349
+      },
+      "rates": {
+        "alchemist": 30.15,
+        "gatsby": 0.42,
+        "steps": 16.18,
+        "economy": 1.91,
+        "genesis": 10.05,
+        "leviticus": 16.87,
+        "kjv": 11.45
+      }
+    },
+    {
+      "term": "brass",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 4:22",
+      "ref_quote": "And Zillah, she also bare Tubal–cain, an instructer of every artificer in brass and iron: and the sister of Tubal–cain was Naamah.",
+      "lee_meaning": "",
+      "lee_quote": "tells us that He became just the likeness of the flesh of sin, not the sinful nature of the flesh of sin.",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 2,
+        "steps": 2,
+        "economy": 29,
+        "genesis": 1,
+        "exodus": 32,
+        "leviticus": 1,
+        "kjv": 126
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.84,
+        "steps": 1.08,
+        "economy": 9.25,
+        "genesis": 0.67,
+        "leviticus": 1.12,
+        "kjv": 4.13
+      }
+    },
+    {
+      "term": "iron",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 4:22",
+      "ref_quote": "And Zillah, she also bare Tubal–cain, an instructer of every artificer in brass and iron: and the sister of Tubal–cain was Naamah.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "They forgot that lead, copper, and iron have their own Personal Legends to fulfill."
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 0,
+        "steps": 2,
+        "economy": 0,
+        "genesis": 1,
+        "exodus": 0,
+        "leviticus": 1,
+        "kjv": 101
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 0.0,
+        "steps": 1.08,
+        "economy": 0.0,
+        "genesis": 0.67,
+        "leviticus": 1.12,
+        "kjv": 3.31
+      }
+    },
+    {
+      "term": "wood",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 22:6",
+      "ref_quote": "And Abraham took the wood of the burnt offering, and laid it upon Isaac his son; and he took the fire in…",
+      "lee_meaning": "Signifies humanity, the human nature of the tabernacle boards.",
+      "lee_quote": "The wood of the boards (Exo. 26:15) signifies humanity, the human nature.",
+      "lee_chapter": "21",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 15,
+        "economy": 9,
+        "genesis": 6,
+        "exodus": 28,
+        "leviticus": 14,
+        "kjv": 141
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 8.09,
+        "economy": 2.87,
+        "genesis": 4.02,
+        "leviticus": 15.75,
+        "kjv": 4.63
+      }
+    },
+    {
+      "term": "linen",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 41:42",
+      "ref_quote": "And Pharaoh took off his ring from his hand, and put it upon Joseph’s hand, and arrayed him in vestures of fine…",
+      "lee_meaning": "Fine linen symbolizes the humanity of Christ: fine, strong, without crudeness.",
+      "lee_quote": "the fine linen, which symbolizes the humanity of Christ with all His fine characteristics",
+      "lee_chapter": "22",
+      "coelho_candidates": [
+        "Arabian clothing of white linen, bought especially for this day."
+      ],
+      "counts": {
+        "alchemist": 1,
+        "gatsby": 2,
+        "steps": 2,
+        "economy": 16,
+        "genesis": 1,
+        "exodus": 36,
+        "leviticus": 13,
+        "kjv": 104
+      },
+      "rates": {
+        "alchemist": 0.58,
+        "gatsby": 0.84,
+        "steps": 1.08,
+        "economy": 5.1,
+        "genesis": 0.67,
+        "leviticus": 14.62,
+        "kjv": 3.41
+      }
+    },
+    {
+      "term": "onyx",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 2:12",
+      "ref_quote": "And the gold of that land is good: there is bdellium and the onyx stone.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 1,
+        "exodus": 7,
+        "leviticus": 0,
+        "kjv": 11
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.67,
+        "leviticus": 0.0,
+        "kjv": 0.36
+      }
+    },
+    {
+      "term": "bdellium",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 2:12",
+      "ref_quote": "And the gold of that land is good: there is bdellium and the onyx stone.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 1,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 2
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.67,
+        "leviticus": 0.0,
+        "kjv": 0.07
+      }
+    },
+    {
+      "term": "jewels",
+      "category": "materials / gems",
+      "source_note": "",
+      "ref": "Genesis 24:53",
+      "ref_quote": "And the servant brought forth jewels of silver, and jewels of gold, and raiment, and gave them to Rebekah: he gave also…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "There were also precious stones, gold masks adorned with red and white feathers, and stone statues embedded with jewels."
+      ],
+      "counts": {
+        "alchemist": 1,
+        "gatsby": 2,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 2,
+        "exodus": 7,
+        "leviticus": 0,
+        "kjv": 28
+      },
+      "rates": {
+        "alchemist": 0.58,
+        "gatsby": 0.84,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 1.34,
+        "leviticus": 0.0,
+        "kjv": 0.92
+      }
+    },
+    {
+      "term": "precious stones",
+      "category": "materials / gems",
+      "source_note": "The phrase “precious stones” does not occur in Genesis (Genesis 24:53 has “jewels of silver, and jewels of gold” and “precious things”). It occurs elsewhere in the KJV.",
+      "ref": "II Samuel 12:30",
+      "ref_quote": "And he took their king’s crown from off his head, the weight whereof was a talent of gold with the precious stones…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "The old man wore a breastplate of heavy gold, covered with precious stones."
+      ],
+      "counts": {
+        "alchemist": 5,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 21
+      },
+      "rates": {
+        "alchemist": 2.9,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 0.0,
+        "kjv": 0.69
+      }
+    },
+    {
+      "term": "crystal",
+      "category": "materials / gems",
+      "source_note": "Crystal does not occur in Genesis or Leviticus. In the KJV it appears in Job, Ezekiel, and Revelation.",
+      "ref": "Job 28:17",
+      "ref_quote": "The gold and the crystal cannot equal it: and the exchange of it shall not be for jewels of fine gold.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "CRYSTAL MERCHANT AWOKE WITH THE DAY, AND FELT the same anxiety that he felt every morning."
+      ],
+      "counts": {
+        "alchemist": 62,
+        "gatsby": 1,
+        "steps": 1,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 5
+      },
+      "rates": {
+        "alchemist": 35.95,
+        "gatsby": 0.42,
+        "steps": 0.54,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 0.0,
+        "kjv": 0.16
+      }
+    },
+    {
+      "term": "emerald",
+      "category": "materials / gems",
+      "source_note": "Emerald does not occur in Genesis or Leviticus. It first appears in the high priest’s breastplate in Exodus 28:18 (and again in Exodus 39:11).",
+      "ref": "Exodus 28:18",
+      "ref_quote": "And the second row shall be an emerald, a sapphire, and a diamond.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "The miner had abandoned everything to go mining for emeralds."
+      ],
+      "counts": {
+        "alchemist": 15,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 2,
+        "leviticus": 0,
+        "kjv": 6
+      },
+      "rates": {
+        "alchemist": 8.7,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 0.0,
+        "kjv": 0.2
+      }
+    },
+    {
+      "term": "Urim",
+      "category": "materials / gems",
+      "source_note": "Urim is not in Genesis. Leviticus 8:8 places the Urim and the Thummim in the breastplate at Aaron’s consecration. The instructions for making them are in Exodus 28:30.",
+      "ref": "Leviticus 8:8",
+      "ref_quote": "And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Urim and Thummim."
+      ],
+      "counts": {
+        "alchemist": 15,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 1,
+        "leviticus": 1,
+        "kjv": 7
+      },
+      "rates": {
+        "alchemist": 8.7,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 1.12,
+        "kjv": 0.23
+      }
+    },
+    {
+      "term": "Thummim",
+      "category": "materials / gems",
+      "source_note": "Thummim is not in Genesis. Leviticus 8:8 is the splash verse; the instructions are in Exodus 28:30.",
+      "ref": "Leviticus 8:8",
+      "ref_quote": "And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Thummim."
+      ],
+      "counts": {
+        "alchemist": 15,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 1,
+        "leviticus": 1,
+        "kjv": 5
+      },
+      "rates": {
+        "alchemist": 8.7,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 1.12,
+        "kjv": 0.16
+      }
+    },
+    {
+      "term": "white",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:35",
+      "ref_quote": "And he removed that day the he goats that were ringstraked and spotted, and all the she goats that were speckled and…",
+      "lee_meaning": "The court linen’s testimony: inside the church’s line, everything is purged and white.",
+      "lee_quote": "Outside this line everything is black, but within this line everything is white.",
+      "lee_chapter": "21",
+      "coelho_candidates": [
+        "He must be disguised to avoid encounters with thieves."
+      ],
+      "counts": {
+        "alchemist": 13,
+        "gatsby": 47,
+        "steps": 23,
+        "economy": 9,
+        "genesis": 5,
+        "exodus": 1,
+        "leviticus": 20,
+        "kjv": 75
+      },
+      "rates": {
+        "alchemist": 7.54,
+        "gatsby": 19.73,
+        "steps": 12.4,
+        "economy": 2.87,
+        "genesis": 3.35,
+        "leviticus": 22.49,
+        "kjv": 2.46
+      }
+    },
+    {
+      "term": "black",
+      "category": "colors",
+      "source_note": "The color word “black” does not occur in Genesis. It appears in Leviticus 13 in a skin-disease law (“black hair”), not as a gem color. Coelho describes Urim and Thummim as “a white stone and a black stone”; the King James text names the stones but does not give their colors.",
+      "ref": "Leviticus 13:31",
+      "ref_quote": "And if the priest look on the plague of the scall, and, behold, it be not in sight deeper than the skin…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Andalusia, with flowing black hair, and eyes that vaguely recalled the Moorish conquerors."
+      ],
+      "counts": {
+        "alchemist": 12,
+        "gatsby": 11,
+        "steps": 31,
+        "economy": 4,
+        "genesis": 0,
+        "exodus": 0,
+        "leviticus": 2,
+        "kjv": 18
+      },
+      "rates": {
+        "alchemist": 6.96,
+        "gatsby": 4.62,
+        "steps": 16.71,
+        "economy": 1.28,
+        "genesis": 0.0,
+        "leviticus": 2.25,
+        "kjv": 0.59
+      }
+    },
+    {
+      "term": "red",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 25:25",
+      "ref_quote": "And the first came out red, all over like an hairy garment; and they called his name Esau.",
+      "lee_meaning": "The color of the rams’ skins: the shedding of blood in redemption.",
+      "lee_quote": "The color red means the shedding of blood in Christ’s redemptive work.",
+      "lee_chapter": "22",
+      "coelho_candidates": [
+        "RED, AND SUDDENLY THE sun appeared."
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 9,
+        "steps": 8,
+        "economy": 14,
+        "genesis": 3,
+        "exodus": 11,
+        "leviticus": 0,
+        "kjv": 53
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 3.78,
+        "steps": 4.31,
+        "economy": 4.47,
+        "genesis": 2.01,
+        "leviticus": 0.0,
+        "kjv": 1.74
+      }
+    },
+    {
+      "term": "speckled",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:32",
+      "ref_quote": "I will pass through all thy flock to day, removing from thence all the speckled and spotted cattle, and all the brown…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 9,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 11
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 6.03,
+        "leviticus": 0.0,
+        "kjv": 0.36
+      }
+    },
+    {
+      "term": "spotted",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:32",
+      "ref_quote": "I will pass through all thy flock to day, removing from thence all the speckled and spotted cattle, and all the brown…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 1,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 6,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 7
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.42,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 4.02,
+        "leviticus": 0.0,
+        "kjv": 0.23
+      }
+    },
+    {
+      "term": "ringstraked",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:35",
+      "ref_quote": "And he removed that day the he goats that were ringstraked and spotted, and all the she goats that were speckled and…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 7,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 7
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 4.69,
+        "leviticus": 0.0,
+        "kjv": 0.23
+      }
+    },
+    {
+      "term": "brown",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:32",
+      "ref_quote": "I will pass through all thy flock to day, removing from thence all the speckled and spotted cattle, and all the brown…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 7,
+        "steps": 14,
+        "economy": 0,
+        "genesis": 4,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 4
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 2.94,
+        "steps": 7.55,
+        "economy": 0.0,
+        "genesis": 2.68,
+        "leviticus": 0.0,
+        "kjv": 0.13
+      }
+    },
+    {
+      "term": "grisled",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 31:10",
+      "ref_quote": "And it came to pass at the time that the cattle conceived, that I lifted up mine eyes, and saw in a…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 2,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 4
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 1.34,
+        "leviticus": 0.0,
+        "kjv": 0.13
+      }
+    },
+    {
+      "term": "scarlet",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 38:28",
+      "ref_quote": "And it came to pass, when she travailed, that the one put out his hand: and the midwife took and bound upon…",
+      "lee_meaning": "The tabernacle color that stands for redemption.",
+      "lee_quote": "Blue means heavenly, purple means royalty, and scarlet stands for redemption.",
+      "lee_chapter": "22",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 3,
+        "genesis": 2,
+        "exodus": 26,
+        "leviticus": 5,
+        "kjv": 52
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.96,
+        "genesis": 1.34,
+        "leviticus": 5.62,
+        "kjv": 1.71
+      }
+    },
+    {
+      "term": "green",
+      "category": "colors",
+      "source_note": "",
+      "ref": "Genesis 30:37",
+      "ref_quote": "And Jacob took him rods of green poplar, and of the hazel and chesnut tree; and pilled white strakes in them, and…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "He always enjoyed seeing the happiness that the travelers experienced when, after weeks of yellow sand and blue sky, they first saw…"
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 17,
+        "steps": 15,
+        "economy": 0,
+        "genesis": 3,
+        "exodus": 1,
+        "leviticus": 2,
+        "kjv": 41
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 7.14,
+        "steps": 8.09,
+        "economy": 0.0,
+        "genesis": 2.01,
+        "leviticus": 2.25,
+        "kjv": 1.34
+      }
+    },
+    {
+      "term": "tree",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 2:9",
+      "ref_quote": "And out of the ground made the Lord God to grow every tree that is pleasant to the sight and good for…",
+      "lee_meaning": "",
+      "lee_quote": "should express Himself as the center of His whole universe.",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "When the people saw that star shining in the morning sky, they knew they were on the right course toward water, palm…"
+      ],
+      "counts": {
+        "alchemist": 17,
+        "gatsby": 20,
+        "steps": 14,
+        "economy": 45,
+        "genesis": 20,
+        "exodus": 6,
+        "leviticus": 7,
+        "kjv": 346
+      },
+      "rates": {
+        "alchemist": 9.86,
+        "gatsby": 8.39,
+        "steps": 7.55,
+        "economy": 14.36,
+        "genesis": 13.4,
+        "leviticus": 7.87,
+        "kjv": 11.35
+      }
+    },
+    {
+      "term": "tree of life",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 2:9",
+      "ref_quote": "And out of the ground made the Lord God to grow every tree that is pleasant to the sight and good for…",
+      "lee_meaning": "Signifies God Himself in Christ as our life.",
+      "lee_quote": "the tree of life signifies God Himself in Christ as our life.",
+      "lee_chapter": "12",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 10,
+        "genesis": 3,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 10
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 3.19,
+        "genesis": 2.01,
+        "leviticus": 0.0,
+        "kjv": 0.33
+      }
+    },
+    {
+      "term": "tree of knowledge",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 2:9",
+      "ref_quote": "And out of the ground made the Lord God to grow every tree that is pleasant to the sight and good for…",
+      "lee_meaning": "Represents Satan, the source of death.",
+      "lee_quote": "This tree represents nothing else than Satan, the source of death.",
+      "lee_chapter": "12",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 9,
+        "genesis": 2,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 2
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 2.87,
+        "genesis": 1.34,
+        "leviticus": 0.0,
+        "kjv": 0.07
+      }
+    },
+    {
+      "term": "star",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 15:5",
+      "ref_quote": "And he brought him forth abroad, and said, Look now toward heaven, and tell the stars, if thou be able to number…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "It was still dark when he awoke, and, looking up, he could see the stars through the half-destroyed roof."
+      ],
+      "counts": {
+        "alchemist": 16,
+        "gatsby": 10,
+        "steps": 1,
+        "economy": 7,
+        "genesis": 5,
+        "exodus": 1,
+        "leviticus": 0,
+        "kjv": 66
+      },
+      "rates": {
+        "alchemist": 9.28,
+        "gatsby": 4.2,
+        "steps": 0.54,
+        "economy": 2.23,
+        "genesis": 3.35,
+        "leviticus": 0.0,
+        "kjv": 2.17
+      }
+    },
+    {
+      "term": "sand",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 22:17",
+      "ref_quote": "That in blessing I will bless thee, and in multiplying I will multiply thy seed as the stars of the heaven, and…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "But before the boy could say anything, the old man leaned over, picked up a stick, and began to write in the…"
+      ],
+      "counts": {
+        "alchemist": 22,
+        "gatsby": 3,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 3,
+        "exodus": 1,
+        "leviticus": 0,
+        "kjv": 28
+      },
+      "rates": {
+        "alchemist": 12.76,
+        "gatsby": 1.26,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 2.01,
+        "leviticus": 0.0,
+        "kjv": 0.92
+      }
+    },
+    {
+      "term": "dust",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 13:16",
+      "ref_quote": "And I will make thy seed as the dust of the earth: so that if a man can number the dust of…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "STRUCTURE that smelled of animals, sweat, and dust; it was part warehouse, part corral."
+      ],
+      "counts": {
+        "alchemist": 5,
+        "gatsby": 10,
+        "steps": 8,
+        "economy": 0,
+        "genesis": 8,
+        "exodus": 4,
+        "leviticus": 2,
+        "kjv": 108
+      },
+      "rates": {
+        "alchemist": 2.9,
+        "gatsby": 4.2,
+        "steps": 4.31,
+        "economy": 0.0,
+        "genesis": 5.36,
+        "leviticus": 2.25,
+        "kjv": 3.54
+      }
+    },
+    {
+      "term": "desert / wilderness",
+      "category": "nature / elements",
+      "source_note": "Genesis uses “wilderness,” not “desert.” The two are counted together because The Alchemist’s setting word is “desert.”",
+      "ref": "Genesis 16:7",
+      "ref_quote": "And the angel of the Lord found her by a fountain of water in the wilderness, by the fountain in the way…",
+      "lee_meaning": "Typifies wandering in the soul after salvation, short of entering the spirit.",
+      "lee_quote": "What does this typify?",
+      "lee_chapter": "3",
+      "coelho_candidates": [
+        "Moors, yes, but it had also brought the smell of the desert and of veiled women."
+      ],
+      "counts": {
+        "alchemist": 185,
+        "gatsby": 0,
+        "steps": 1,
+        "economy": 35,
+        "genesis": 7,
+        "exodus": 27,
+        "leviticus": 4,
+        "kjv": 353
+      },
+      "rates": {
+        "alchemist": 107.27,
+        "gatsby": 0.0,
+        "steps": 0.54,
+        "economy": 11.17,
+        "genesis": 4.69,
+        "leviticus": 4.5,
+        "kjv": 11.58
+      }
+    },
+    {
+      "term": "river",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 2:10",
+      "ref_quote": "And a river went out of Eden to water the garden; and from thence it was parted, and became into four heads.",
+      "lee_meaning": "",
+      "lee_quote": "he veil in order to enter into the Holiest of all; so the veil, which typifies the flesh (Heb. 10:20), must be…",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "For five years he had been working a certain river, and had examined hundreds of thousands of stones looking for an emerald."
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 2,
+        "steps": 10,
+        "economy": 5,
+        "genesis": 15,
+        "exodus": 26,
+        "leviticus": 2,
+        "kjv": 256
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 0.84,
+        "steps": 5.39,
+        "economy": 1.6,
+        "genesis": 10.05,
+        "leviticus": 2.25,
+        "kjv": 8.4
+      }
+    },
+    {
+      "term": "light",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 1:3",
+      "ref_quote": "And God said, Let there be light: and there was light.",
+      "lee_meaning": "The lampstand typifies Christ as the light of life, shining within.",
+      "lee_quote": "The candlestick, or the lampstand, typifies Christ as the light of life.",
+      "lee_chapter": "21",
+      "coelho_candidates": [
+        "Light try to teach."
+      ],
+      "counts": {
+        "alchemist": 7,
+        "gatsby": 53,
+        "steps": 26,
+        "economy": 78,
+        "genesis": 14,
+        "exodus": 13,
+        "leviticus": 1,
+        "kjv": 282
+      },
+      "rates": {
+        "alchemist": 4.06,
+        "gatsby": 22.25,
+        "steps": 14.02,
+        "economy": 24.88,
+        "genesis": 9.38,
+        "leviticus": 1.12,
+        "kjv": 9.25
+      }
+    },
+    {
+      "term": "darkness",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 1:2",
+      "ref_quote": "And the earth was without form and void; and darkness was upon the face of the deep. And the Spirit of God…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 9,
+        "steps": 6,
+        "economy": 14,
+        "genesis": 5,
+        "exodus": 5,
+        "leviticus": 0,
+        "kjv": 162
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 3.78,
+        "steps": 3.24,
+        "economy": 4.47,
+        "genesis": 3.35,
+        "leviticus": 0.0,
+        "kjv": 5.31
+      }
+    },
+    {
+      "term": "flood",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 6:17",
+      "ref_quote": "And, behold, I, even I, do bring a flood of waters upon the earth, to destroy all flesh, wherein is the breath…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "My neighbors feared they would lose all their olive trees in the flood, and my wife was afraid that we would lose…"
+      ],
+      "counts": {
+        "alchemist": 1,
+        "gatsby": 1,
+        "steps": 1,
+        "economy": 1,
+        "genesis": 12,
+        "exodus": 1,
+        "leviticus": 0,
+        "kjv": 62
+      },
+      "rates": {
+        "alchemist": 0.58,
+        "gatsby": 0.42,
+        "steps": 0.54,
+        "economy": 0.32,
+        "genesis": 8.04,
+        "leviticus": 0.0,
+        "kjv": 2.03
+      }
+    },
+    {
+      "term": "fire",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 22:6",
+      "ref_quote": "And Abraham took the wood of the burnt offering, and laid it upon Isaac his son; and he took the fire in…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Whenever he saw the sea, or a fire, he fell silent, impressed by their elemental force."
+      ],
+      "counts": {
+        "alchemist": 16,
+        "gatsby": 4,
+        "steps": 5,
+        "economy": 12,
+        "genesis": 3,
+        "exodus": 24,
+        "leviticus": 74,
+        "kjv": 550
+      },
+      "rates": {
+        "alchemist": 9.28,
+        "gatsby": 1.68,
+        "steps": 2.7,
+        "economy": 3.83,
+        "genesis": 2.01,
+        "leviticus": 83.23,
+        "kjv": 18.04
+      }
+    },
+    {
+      "term": "cloud",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 9:13",
+      "ref_quote": "I do set my bow in the cloud, and it shall be for a token of a covenant between me and the…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Those who don’t return become a part of the clouds, a part of the animals that hide in the ravines and of…"
+      ],
+      "counts": {
+        "alchemist": 3,
+        "gatsby": 4,
+        "steps": 2,
+        "economy": 0,
+        "genesis": 4,
+        "exodus": 18,
+        "leviticus": 2,
+        "kjv": 156
+      },
+      "rates": {
+        "alchemist": 1.74,
+        "gatsby": 1.68,
+        "steps": 1.08,
+        "economy": 0.0,
+        "genesis": 2.68,
+        "leviticus": 2.25,
+        "kjv": 5.12
+      }
+    },
+    {
+      "term": "mountain",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 22:2",
+      "ref_quote": "And he said, Take now thy son, thine only son Isaac, whom thou lovest, and get thee into the land of Moriah…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "They climb the mountain to see the castle, and they wind up thinking that the past was better than what we have…"
+      ],
+      "counts": {
+        "alchemist": 6,
+        "gatsby": 0,
+        "steps": 3,
+        "economy": 0,
+        "genesis": 9,
+        "exodus": 6,
+        "leviticus": 0,
+        "kjv": 314
+      },
+      "rates": {
+        "alchemist": 3.48,
+        "gatsby": 0.0,
+        "steps": 1.62,
+        "economy": 0.0,
+        "genesis": 6.03,
+        "leviticus": 0.0,
+        "kjv": 10.3
+      }
+    },
+    {
+      "term": "rain",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 7:12",
+      "ref_quote": "And the rain was upon the earth forty days and forty nights.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 17,
+        "steps": 1,
+        "economy": 0,
+        "genesis": 4,
+        "exodus": 4,
+        "leviticus": 1,
+        "kjv": 102
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 7.14,
+        "steps": 0.54,
+        "economy": 0.0,
+        "genesis": 2.68,
+        "leviticus": 1.12,
+        "kjv": 3.35
+      }
+    },
+    {
+      "term": "wind",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 8:1",
+      "ref_quote": "And God remembered Noah, and every living thing, and all the cattle that was with him in the ark: and God made…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "They climb the mountain to see the castle, and they wind up thinking that the past was better than what we have…"
+      ],
+      "counts": {
+        "alchemist": 87,
+        "gatsby": 13,
+        "steps": 6,
+        "economy": 0,
+        "genesis": 4,
+        "exodus": 5,
+        "leviticus": 0,
+        "kjv": 146
+      },
+      "rates": {
+        "alchemist": 50.45,
+        "gatsby": 5.46,
+        "steps": 3.24,
+        "economy": 0.0,
+        "genesis": 2.68,
+        "leviticus": 0.0,
+        "kjv": 4.79
+      }
+    },
+    {
+      "term": "fountain",
+      "category": "nature / elements",
+      "source_note": "",
+      "ref": "Genesis 16:7",
+      "ref_quote": "And the angel of the Lord found her by a fountain of water in the wilderness, by the fountain in the way…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 1,
+        "economy": 1,
+        "genesis": 4,
+        "exodus": 0,
+        "leviticus": 3,
+        "kjv": 48
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.54,
+        "economy": 0.32,
+        "genesis": 2.68,
+        "leviticus": 3.37,
+        "kjv": 1.57
+      }
+    },
+    {
+      "term": "treasure",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 43:23",
+      "ref_quote": "And he said, Peace be to you, fear not: your God, and the God of your father, hath given you treasure in…",
+      "lee_meaning": "The image of Christ as the treasure held in earthen vessels.",
+      "lee_quote": "This very image of Christ is the treasure in the earthen vessels.",
+      "lee_chapter": "5",
+      "coelho_candidates": [
+        "said to me, ‘If you come here, you will find a hidden treasure."
+      ],
+      "counts": {
+        "alchemist": 85,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 4,
+        "genesis": 1,
+        "exodus": 2,
+        "leviticus": 0,
+        "kjv": 99
+      },
+      "rates": {
+        "alchemist": 49.29,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 1.28,
+        "genesis": 0.67,
+        "leviticus": 0.0,
+        "kjv": 3.25
+      }
+    },
+    {
+      "term": "ring",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 41:42",
+      "ref_quote": "And Pharaoh took off his ring from his hand, and put it upon Joseph’s hand, and arrayed him in vestures of fine…",
+      "lee_meaning": "",
+      "lee_quote": "ife, then the building of the church is possible.",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "He put his headcloth in place and secured it with a ring made of camel skin."
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 2,
+        "steps": 4,
+        "economy": 6,
+        "genesis": 1,
+        "exodus": 40,
+        "leviticus": 0,
+        "kjv": 55
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 0.84,
+        "steps": 2.16,
+        "economy": 1.91,
+        "genesis": 0.67,
+        "leviticus": 0.0,
+        "kjv": 1.8
+      }
+    },
+    {
+      "term": "coat",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 37:3",
+      "ref_quote": "Now Israel loved Joseph more than all his children, because he was the son of his old age: and he made him…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 17,
+        "steps": 13,
+        "economy": 0,
+        "genesis": 9,
+        "exodus": 7,
+        "leviticus": 4,
+        "kjv": 39
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 7.14,
+        "steps": 7.01,
+        "economy": 0.0,
+        "genesis": 6.03,
+        "leviticus": 4.5,
+        "kjv": 1.28
+      }
+    },
+    {
+      "term": "ark",
+      "category": "objects",
+      "source_note": "In Genesis the word denotes Noah’s vessel. Witness Lee’s typological definition refers to the ark of the covenant (Exodus), a different object.",
+      "ref": "Genesis 6:14",
+      "ref_quote": "Make thee an ark of gopher wood; rooms shalt thou make in the ark, and shalt pitch it within and without with…",
+      "lee_meaning": "The type of Christ Himself, hidden in the Holiest of all (the ark of the covenant, not Noah’s ark).",
+      "lee_quote": "The Holiest of all contains one thing, the ark, the type of Christ Himself.",
+      "lee_chapter": "21",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 25,
+        "genesis": 26,
+        "exodus": 28,
+        "leviticus": 1,
+        "kjv": 230
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 7.98,
+        "genesis": 17.42,
+        "leviticus": 1.12,
+        "kjv": 7.54
+      }
+    },
+    {
+      "term": "cup",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 44:2",
+      "ref_quote": "And put my cup, the silver cup, in the sack’s mouth of the youngest, and his corn money. And he did according…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "The thief wasn’t there, and the owner brought him a cup of tea."
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 3,
+        "steps": 2,
+        "economy": 1,
+        "genesis": 10,
+        "exodus": 0,
+        "leviticus": 0,
+        "kjv": 74
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 1.26,
+        "steps": 1.08,
+        "economy": 0.32,
+        "genesis": 6.7,
+        "leviticus": 0.0,
+        "kjv": 2.43
+      }
+    },
+    {
+      "term": "staff",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 32:10",
+      "ref_quote": "I am not worthy of the least of all the mercies, and of all the truth, which thou hast shewed unto thy…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "A soldier shoved the boy and the alchemist into a tent where the chief was holding a meeting with his staff."
+      ],
+      "counts": {
+        "alchemist": 1,
+        "gatsby": 0,
+        "steps": 1,
+        "economy": 0,
+        "genesis": 3,
+        "exodus": 2,
+        "leviticus": 1,
+        "kjv": 43
+      },
+      "rates": {
+        "alchemist": 0.58,
+        "gatsby": 0.0,
+        "steps": 0.54,
+        "economy": 0.0,
+        "genesis": 2.01,
+        "leviticus": 1.12,
+        "kjv": 1.41
+      }
+    },
+    {
+      "term": "sword",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 3:24",
+      "ref_quote": "So he drove out the man; and he placed at the east of the garden of Eden Cherubims, and a flaming sword…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "Matamoros on his white horse, his sword unsheathed, and figures such as these kneeling at his feet."
+      ],
+      "counts": {
+        "alchemist": 19,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 5,
+        "genesis": 6,
+        "exodus": 7,
+        "leviticus": 7,
+        "kjv": 448
+      },
+      "rates": {
+        "alchemist": 11.02,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 1.6,
+        "genesis": 4.02,
+        "leviticus": 7.87,
+        "kjv": 14.7
+      }
+    },
+    {
+      "term": "bow",
+      "category": "objects",
+      "source_note": "Genesis uses “bow” both for the covenant rainbow (Genesis 9:13) and for a weapon.",
+      "ref": "Genesis 9:13",
+      "ref_quote": "I do set my bow in the cloud, and it shall be for a token of a covenant between me and the…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 2,
+        "steps": 1,
+        "economy": 0,
+        "genesis": 11,
+        "exodus": 3,
+        "leviticus": 1,
+        "kjv": 113
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.84,
+        "steps": 0.54,
+        "economy": 0.0,
+        "genesis": 7.37,
+        "leviticus": 1.12,
+        "kjv": 3.71
+      }
+    },
+    {
+      "term": "bracelets",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 24:22",
+      "ref_quote": "And it came to pass, as the camels had done drinking, that the man took a golden earring of half a shekel…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 1,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 5,
+        "exodus": 1,
+        "leviticus": 0,
+        "kjv": 11
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.42,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 3.35,
+        "leviticus": 0.0,
+        "kjv": 0.36
+      }
+    },
+    {
+      "term": "earring",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 24:22",
+      "ref_quote": "And it came to pass, as the camels had done drinking, that the man took a golden earring of half a shekel…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [],
+      "counts": {
+        "alchemist": 0,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 4,
+        "exodus": 3,
+        "leviticus": 0,
+        "kjv": 17
+      },
+      "rates": {
+        "alchemist": 0.0,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 2.68,
+        "leviticus": 0.0,
+        "kjv": 0.56
+      }
+    },
+    {
+      "term": "vessels",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 43:11",
+      "ref_quote": "And their father Israel said unto them, If it must be so now, do this; take of the best fruits in the…",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "She had a vessel on her shoulder, and her head was covered by a veil, but her face was uncovered."
+      ],
+      "counts": {
+        "alchemist": 4,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 5,
+        "genesis": 1,
+        "exodus": 21,
+        "leviticus": 10,
+        "kjv": 200
+      },
+      "rates": {
+        "alchemist": 2.32,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 1.6,
+        "genesis": 0.67,
+        "leviticus": 11.25,
+        "kjv": 6.56
+      }
+    },
+    {
+      "term": "veil",
+      "category": "objects",
+      "source_note": "",
+      "ref": "Genesis 24:65",
+      "ref_quote": "For she had said unto the servant, What man is this that walketh in the field to meet us? And the servant…",
+      "lee_meaning": "Typifies the flesh, which must be riven to enter the Holiest.",
+      "lee_quote": "the veil, which typifies the flesh (Heb. 10:20), must be riven and broken.",
+      "lee_chapter": "3",
+      "coelho_candidates": [
+        "She had a vessel on her shoulder, and her head was covered by a veil, but her face was uncovered."
+      ],
+      "counts": {
+        "alchemist": 2,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 28,
+        "genesis": 3,
+        "exodus": 18,
+        "leviticus": 7,
+        "kjv": 46
+      },
+      "rates": {
+        "alchemist": 1.16,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 8.93,
+        "genesis": 2.01,
+        "leviticus": 7.87,
+        "kjv": 1.51
+      }
+    },
+    {
+      "term": "breastplate",
+      "category": "objects",
+      "source_note": "Breastplate is not in Genesis. Leviticus 8:8 is the consecration scene. The construction and the twelve gemstones are described in Exodus 28:15–30.",
+      "ref": "Leviticus 8:8",
+      "ref_quote": "And he put the breastplate upon him: also he put in the breastplate the Urim and the Thummim.",
+      "lee_meaning": "",
+      "lee_quote": "",
+      "lee_chapter": "",
+      "coelho_candidates": [
+        "The old man wore a breastplate of heavy gold, covered with precious stones."
+      ],
+      "counts": {
+        "alchemist": 6,
+        "gatsby": 0,
+        "steps": 0,
+        "economy": 0,
+        "genesis": 0,
+        "exodus": 23,
+        "leviticus": 2,
+        "kjv": 31
+      },
+      "rates": {
+        "alchemist": 3.48,
+        "gatsby": 0.0,
+        "steps": 0.0,
+        "economy": 0.0,
+        "genesis": 0.0,
+        "leviticus": 2.25,
+        "kjv": 1.02
+      }
+    }
+  ]
+}

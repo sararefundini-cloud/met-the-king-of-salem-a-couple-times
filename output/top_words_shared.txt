@@ -1,0 +1,4 @@
+shared_all_three=day, heart, know, man, now, one, things, two, your
+shared_KJV_Economy=day, father, god, heart, know, lord, man, now, one, put, say, son, things, two, your
+shared_KJV_Alchemist=because, day, go, heart, know, man, men, now, one, people, things, two, your
+shared_Economy_Alchemist=day, heart, know, life, love, man, now, one, soul, things, two, way, your

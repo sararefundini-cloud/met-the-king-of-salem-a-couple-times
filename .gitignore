@@ -1,0 +1,15 @@
+# Copyrighted source texts supplied by the user (not part of this repo)
+data/private/*
+!data/private/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Local scratch
+*.pkl
+.DS_Store

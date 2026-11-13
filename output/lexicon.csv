@@ -1,0 +1,1038 @@
+motif,subgroup,term,match_type,confidence,notes,report_as
+Donkey,,ass,exact,high,,ass
+Donkey,,asses,exact,high,,asses
+Donkey,,mule,exact,high,,mule
+Donkey,,mules,exact,high,,mules
+Donkey,,colt,exact,medium,"Colt/foal can be of an ass, horse, or camel; often an ass in narrative (e.g. Triumphal Entry).",colt
+Donkey,,colts,exact,medium,"Colt/foal can be of an ass, horse, or camel; often an ass in narrative (e.g. Triumphal Entry).",colts
+Donkey,,foal,exact,medium,"Colt/foal can be of an ass, horse, or camel; often an ass in narrative (e.g. Triumphal Entry).",foal
+Donkey,,foals,exact,medium,"Colt/foal can be of an ass, horse, or camel; often an ass in narrative (e.g. Triumphal Entry).",foals
+Donkey,,she ass,phrase,high,,she ass
+Donkey,,she asses,phrase,high,,she asses
+Donkey,,he ass,phrase,high,,he ass
+Donkey,,he asses,phrase,high,,he asses
+Donkey,,wild ass,phrase,high,,wild ass
+Donkey,,wild asses,phrase,high,,wild asses
+Precious Metals,,gold,exact,high,,gold
+Precious Metals,,golden,exact,high,,golden
+Precious Metals,,goldsmith,exact,high,,goldsmith
+Precious Metals,,goldsmiths,exact,high,,goldsmiths
+Precious Metals,,silver,exact,high,,silver
+Precious Metals,,silversmith,exact,high,,silversmith
+Precious Metals,,silversmiths,exact,high,,silversmiths
+Sheep,,sheep,exact,high,,sheep
+Sheep,,sheepfold,exact,high,,sheepfold
+Sheep,,sheepfolds,exact,high,,sheepfolds
+Sheep,,sheepcote,exact,high,,sheepcote
+Sheep,,sheepcotes,exact,high,,sheepcotes
+Sheep,,lamb,exact,high,,lamb
+Sheep,,lambs,exact,high,,lambs
+Sheep,,ewe,exact,high,,ewe
+Sheep,,ewes,exact,high,,ewes
+Sheep,,ewelamb,exact,high,,ewelamb
+Sheep,,ewelambs,exact,high,,ewelambs
+Sheep,,rams,exact,high,,rams
+Sheep,,shepherd,exact,high,,shepherd
+Sheep,,shepherds,exact,high,,shepherds
+Sheep,,ram,exact,medium,"Also the personal name Ram in genealogies (Ruth, Chronicles).",ram
+Sheep,,flock,exact,medium,Flock can include goats or mixed herds.,flock
+Sheep,,flocks,exact,medium,Flock can include goats or mixed herds.,flocks
+Sheep,,wool,exact,medium,"Material, not always a living sheep in the verse.",wool
+Sheep,,woollen,exact,medium,"Material, not always a living sheep in the verse.",woollen
+Sheep,,woolen,exact,medium,"Material, not always a living sheep in the verse.",woolen
+Blood,,blood,exact,high,,blood
+Blood,,bloods,exact,high,,bloods
+Blood,,bloody,exact,high,,bloody
+Blood,,bloodshed,exact,high,,bloodshed
+Blood,,bloodthirsty,exact,high,,bloodthirsty
+Blood,,bleed,exact,high,,bleed
+Blood,,bled,exact,high,,bled
+Blood,,bleeding,exact,high,,bleeding
+Blood,,bleedeth,exact,high,,bleedeth
+Wine & Grapes,,wine,exact,high,,wine
+Wine & Grapes,,wines,exact,high,,wines
+Wine & Grapes,,winepress,exact,high,,winepress
+Wine & Grapes,,winepresses,exact,high,,winepresses
+Wine & Grapes,,winefat,exact,high,,winefat
+Wine & Grapes,,winefats,exact,high,,winefats
+Wine & Grapes,,winebibber,exact,high,,winebibber
+Wine & Grapes,,winebibbers,exact,high,,winebibbers
+Wine & Grapes,,vinegar,exact,high,,vinegar
+Wine & Grapes,,flagon,exact,high,,flagon
+Wine & Grapes,,flagons,exact,high,,flagons
+Wine & Grapes,,grape,exact,high,,grape
+Wine & Grapes,,grapes,exact,high,,grapes
+Wine & Grapes,,grapegatherer,exact,high,,grapegatherer
+Wine & Grapes,,grapegatherers,exact,high,,grapegatherers
+Wine & Grapes,,vintage,exact,high,,vintage
+Wine & Grapes,,vine,exact,high,,vine
+Wine & Grapes,,vines,exact,high,,vines
+Wine & Grapes,,vineyard,exact,high,,vineyard
+Wine & Grapes,,vineyards,exact,high,,vineyards
+Wine & Grapes,,vinegrower,exact,high,,vinegrower
+Wine & Grapes,,raisin,exact,high,,raisin
+Wine & Grapes,,raisins,exact,high,,raisins
+Wine & Grapes,,strong drink,phrase,high,,strong drink
+Wine & Grapes,,blood of grapes,phrase,high,,blood of grapes
+Wine & Grapes,,blood of the grape,phrase,high,,blood of the grape
+Sword,,sword,exact,high,,sword
+Sword,,swords,exact,high,,swords
+Sword,,twoedged,exact,high,,twoedged
+Sword,,twoedged,exact,high,,twoedged
+Sword,,two edged,phrase,high,,two edged
+Sword,,two edged sword,phrase,high,,two edged sword
+Sword,,edge of the sword,phrase,high,,edge of the sword
+Grapes,,grape,exact,high,,grape
+Grapes,,grapes,exact,high,,grapes
+Grapes,,grapegatherer,exact,high,,grapegatherer
+Grapes,,grapegatherers,exact,high,,grapegatherers
+Grapes,,vintage,exact,high,,vintage
+Grapes,,vine,exact,high,,vine
+Grapes,,vines,exact,high,,vines
+Grapes,,vineyard,exact,high,,vineyard
+Grapes,,vineyards,exact,high,,vineyards
+Grapes,,raisin,exact,high,,raisin
+Grapes,,raisins,exact,high,,raisins
+Grapes,,cluster,exact,medium,"Usually grapes or fruit in KJV, but not always specified.",cluster
+Grapes,,clusters,exact,medium,"Usually grapes or fruit in KJV, but not always specified.",clusters
+Grapes,,blood of grapes,phrase,high,,blood of grapes
+Grapes,,blood of the grape,phrase,high,,blood of the grape
+Bread,,bread,exact,high,,bread
+Bread,,shewbread,exact,high,,shewbread
+Bread,,loaf,exact,high,,loaf
+Bread,,loaves,exact,high,,loaves
+Bread,,wafer,exact,high,,wafer
+Bread,,wafers,exact,high,,wafers
+Bread,,unleavened,exact,high,,unleavened
+Bread,,manna,exact,medium,"Treated as 'bread from heaven', not baked bread.",manna
+Bread,,leaven,exact,medium,"Bread-related, including metaphorical leaven.",leaven
+Bread,,leavened,exact,medium,"Bread-related, including metaphorical leaven.",leavened
+Bread,,leaveneth,exact,medium,"Bread-related, including metaphorical leaven.",leaveneth
+Bread,,cake,exact,low,"May be cakes of bread, or cakes of figs/raisins.",cake
+Bread,,cakes,exact,low,"May be cakes of bread, or cakes of figs/raisins.",cakes
+Bread,,crumb,exact,medium,,crumb
+Bread,,crumbs,exact,medium,,crumbs
+Parting Water,,divided the waters,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",divided the waters
+Parting Water,,waters were divided,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",waters were divided
+Parting Water,,divided the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",divided the sea
+Parting Water,,divided the red sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",divided the red sea
+Parting Water,,parted hither,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",parted hither
+Parting Water,,parted hither and thither,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",parted hither and thither
+Parting Water,,waters were a wall,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",waters were a wall
+Parting Water,,midst of the sea upon the dry,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",midst of the sea upon the dry
+Parting Water,,through the sea on dry,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",through the sea on dry
+Parting Water,,went into the midst of the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",went into the midst of the sea
+Parting Water,,passed through the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",passed through the sea
+Parting Water,,passed through the red sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",passed through the red sea
+Parting Water,,walked upon dry land in the midst of the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",walked upon dry land in the midst of the sea
+Parting Water,,dry ground in the midst of the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",dry ground in the midst of the sea
+Parting Water,,made the sea dry,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",made the sea dry
+Parting Water,,the sea reserved,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",the sea reserved
+Parting Water,,rose up upon an heap,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",rose up upon an heap
+Parting Water,,stood and rose up upon an heap,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",stood and rose up upon an heap
+Parting Water,,waters of jordan,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",waters of jordan
+Parting Water,,waters which came down from above stood,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",waters which came down from above stood
+Parting Water,,dried up the waters,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",dried up the waters
+Parting Water,,dried up the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",dried up the sea
+Parting Water,,dried the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",dried the sea
+Parting Water,,smote the waters,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",smote the waters
+Parting Water,,rod over the sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",rod over the sea
+Parting Water,,lift thou up thy rod,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",lift thou up thy rod
+Parting Water,,red sea,phrase,high,"Includes commemorative 'Red sea' references as well as the event verses. Loose 'water near dry land/cut off' patterns were dropped to avoid false hits (e.g. drought, geography, creation dry land). Genesis 1:7 still matches the phrase 'divided the waters'.",red sea
+Parting Water,,waters of the jordan were cut off,phrase,high,,waters of the jordan were cut off
+Parting Water,,waters of jordan were cut off,phrase,high,,waters of jordan were cut off
+Parting Water,,dried up the waters of jordan,phrase,high,,dried up the waters of jordan
+Parting Water,,passed through the red sea,phrase,high,,passed through the red sea
+Parting Water,,through the red sea,phrase,high,,through the red sea
+Repeating Names,,consecutive_repeated_name,special,high,"Vocative name doubled with a comma (Abraham, Abraham; Saul, Saul; Eli, Eli; Lord, Lord). Ignores genealogy and clause-boundary repeats (Noah: Noah; Phinehas, Phinehas begat). Excludes non-names (Awake, Peace, Alas, Aha) and function words.",consecutive repeated name
+Repeating Names,,"my son, my son",phrase,medium,"Vocative repetitions used as name-like address (David for Absalom; 'My God, my God' in Ps 22 / the cross).","my son, my son"
+Repeating Names,,"my God, my God",phrase,medium,"Vocative repetitions used as name-like address (David for Absalom; 'My God, my God' in Ps 22 / the cross).","my God, my God"
+Colors,,scarlet,exact,high,,scarlet
+Colors,,purple,exact,high,,purple
+Colors,,blue,exact,high,,blue
+Colors,,crimson,exact,high,,crimson
+Colors,,vermilion,exact,high,,vermilion
+Colors,,white,exact,high,,white
+Colors,,black,exact,high,,black
+Colors,,green,exact,high,,green
+Colors,,yellow,exact,high,,yellow
+Colors,,amber,exact,high,,amber
+Colors,,bay,exact,high,,bay
+Colors,,grisled,exact,high,,grisled
+Colors,,grizzled,exact,high,,grizzled
+Colors,,speckled,exact,high,,speckled
+Colors,,spotted,exact,high,,spotted
+Colors,,brown,exact,high,,brown
+Colors,,grey,exact,high,,grey
+Colors,,gray,exact,high,,gray
+Colors,,hoary,exact,high,,hoary
+Colors,,ruddy,exact,high,,ruddy
+Colors,,pale,exact,high,,pale
+Colors,,colour,exact,high,,colour
+Colors,,colour,exact,high,,colour
+Colors,,colours,exact,high,,colours
+Colors,,colored,exact,high,,colored
+Colors,,coloured,exact,high,,coloured
+Colors,,color,exact,high,,color
+Colors,,colors,exact,high,,colors
+Colors,,red,exact,high,"Occurrences inside the phrase 'Red sea' are excluded (place name, not a color mention).",red
+Colors,,hoar,exact,low,"Often 'hoar frost' or 'hoar hairs' (gray), not always a pure color word.",hoar
+Brides,,bride,exact,high,,bride
+Brides,,brides,exact,high,,brides
+Brides,,bridal,exact,high,,bridal
+Brides,,bridegroom,exact,high,,bridegroom
+Brides,,bridegrooms,exact,high,,bridegrooms
+Brides,,marriage,exact,high,,marriage
+Brides,,marriages,exact,high,,marriages
+Brides,,marry,exact,high,,marry
+Brides,,married,exact,high,,married
+Brides,,marrieth,exact,high,,marrieth
+Brides,,marrying,exact,high,,marrying
+Brides,,wedding,exact,high,,wedding
+Brides,,betroth,exact,high,,betroth
+Brides,,betrothed,exact,high,,betrothed
+Brides,,espouse,exact,high,,espouse
+Brides,,espoused,exact,high,,espoused
+Brides,,espousals,exact,high,,espousals
+Brides,,spouse,exact,high,,spouse
+Brides,,spouses,exact,high,,spouses
+Providence,,providence,exact,medium,"The only KJV use of the noun is Acts 24:2 (Tertullus flattering Felix), not divine providence.",providence
+Providence,,provide,exact,medium,Lexical 'provide' family; not all uses are theological providence.,provide
+Providence,,provided,exact,medium,Lexical 'provide' family; not all uses are theological providence.,provided
+Providence,,provideth,exact,medium,Lexical 'provide' family; not all uses are theological providence.,provideth
+Providence,,providing,exact,medium,Lexical 'provide' family; not all uses are theological providence.,providing
+Providence,,provider,exact,medium,Lexical 'provide' family; not all uses are theological providence.,provider
+Providence,,provision,exact,low,Usually food or military supply.,provision
+Providence,,provisions,exact,low,Usually food or military supply.,provisions
+Providence,,jehovahjireh,exact,high,"Joined form of Jehovah–jireh, 'the LORD will provide'.",jehovahjireh
+Providence,,will provide,phrase,high,,will provide
+Providence,,the lord will provide,phrase,high,,the lord will provide
+Providence,,god will provide,phrase,high,,god will provide
+Providence,,all things work together for good,phrase,high,,all things work together for good
+Providence,,careth for you,phrase,high,,careth for you
+Providence,,according to his purpose,phrase,high,,according to his purpose
+Providence,,predestinate,exact,medium,Related doctrine of divine purpose; not the everyday word providence.,predestinate
+Providence,,predestinated,exact,medium,Related doctrine of divine purpose; not the everyday word providence.,predestinated
+Light,,light,exact,high,,light
+Light,,lights,exact,high,,lights
+Light,,lighted,exact,high,,lighted
+Light,,lighteth,exact,high,,lighteth
+Light,,lighten,exact,high,,lighten
+Light,,lightened,exact,high,,lightened
+Light,,lighteneth,exact,high,,lighteneth
+Light,,enlighten,exact,high,,enlighten
+Light,,enlightened,exact,high,,enlightened
+Light,,enlighteneth,exact,high,,enlighteneth
+Light,,enlightening,exact,high,,enlightening
+Light,,candle,exact,high,,candle
+Light,,candles,exact,high,,candles
+Light,,candlestick,exact,high,,candlestick
+Light,,candlesticks,exact,high,,candlesticks
+Light,,lamp,exact,high,,lamp
+Light,,lamps,exact,high,,lamps
+Light,,lantern,exact,high,,lantern
+Light,,lanterns,exact,high,,lanterns
+Light,,shine,exact,high,,shine
+Light,,shined,exact,high,,shined
+Light,,shineth,exact,high,,shineth
+Light,,shining,exact,high,,shining
+Light,,shone,exact,high,,shone
+Light,,bright,exact,high,,bright
+Light,,brightness,exact,high,,brightness
+Light,,brightly,exact,high,,brightly
+Light,,day star,phrase,high,,day star
+Fire,,fire,exact,high,,fire
+Fire,,fires,exact,high,,fires
+Fire,,fiery,exact,high,,fiery
+Fire,,flame,exact,high,,flame
+Fire,,flames,exact,high,,flames
+Fire,,flaming,exact,high,,flaming
+Fire,,burn,exact,high,,burn
+Fire,,burned,exact,high,,burned
+Fire,,burnt,exact,high,,burnt
+Fire,,burning,exact,high,,burning
+Fire,,burneth,exact,high,,burneth
+Fire,,burnest,exact,high,,burnest
+Fire,,kindle,exact,high,,kindle
+Fire,,kindled,exact,high,,kindled
+Fire,,kindleth,exact,high,,kindleth
+Fire,,coal,exact,medium,"Often 'coals of fire', sometimes cooking or metalwork.",coal
+Fire,,coals,exact,medium,"Often 'coals of fire', sometimes cooking or metalwork.",coals
+Fire,,furnace,exact,medium,Smelting or judgment (fiery furnace).,furnace
+Fire,,furnaces,exact,medium,Smelting or judgment (fiery furnace).,furnaces
+Fire,,brimstone,exact,medium,Shared with Natural Disasters.,brimstone
+Natural Disasters,,earthquake,exact,high,,earthquake
+Natural Disasters,,earthquakes,exact,high,,earthquakes
+Natural Disasters,,flood,exact,high,,flood
+Natural Disasters,,floods,exact,high,,floods
+Natural Disasters,,flooded,exact,high,,flooded
+Natural Disasters,,famine,exact,high,,famine
+Natural Disasters,,famines,exact,high,,famines
+Natural Disasters,,pestilence,exact,high,,pestilence
+Natural Disasters,,pestilences,exact,high,,pestilences
+Natural Disasters,,drought,exact,high,,drought
+Natural Disasters,,dearth,exact,high,,dearth
+Natural Disasters,,hail,exact,high,,hail
+Natural Disasters,,hailstones,exact,high,,hailstones
+Natural Disasters,,tempest,exact,high,,tempest
+Natural Disasters,,tempests,exact,high,,tempests
+Natural Disasters,,storm,exact,high,,storm
+Natural Disasters,,storms,exact,high,,storms
+Natural Disasters,,stormy,exact,high,,stormy
+Natural Disasters,,whirlwind,exact,high,,whirlwind
+Natural Disasters,,whirlwinds,exact,high,,whirlwinds
+Natural Disasters,,thunder,exact,high,,thunder
+Natural Disasters,,thunders,exact,high,,thunders
+Natural Disasters,,thundered,exact,high,,thundered
+Natural Disasters,,thundereth,exact,high,,thundereth
+Natural Disasters,,thunderings,exact,high,,thunderings
+Natural Disasters,,thunderbolts,exact,high,,thunderbolts
+Natural Disasters,,lightning,exact,high,,lightning
+Natural Disasters,,lightnings,exact,high,,lightnings
+Natural Disasters,,plague,exact,high,,plague
+Natural Disasters,,plagues,exact,high,,plagues
+Natural Disasters,,brimstone,exact,high,,brimstone
+Natural Disasters,,locust,exact,high,,locust
+Natural Disasters,,locusts,exact,high,,locusts
+Natural Disasters,,mildew,exact,high,,mildew
+Natural Disasters,,blasting,exact,high,,blasting
+Natural Disasters,,overflowed,exact,medium,"Sometimes flood imagery, sometimes abundance.",overflowed
+Natural Disasters,,overflowing,exact,medium,"Sometimes flood imagery, sometimes abundance.",overflowing
+Animals,,cattle,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cattle
+Animals,,ox,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ox
+Animals,,oxen,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,oxen
+Animals,,bull,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bull
+Animals,,bulls,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bulls
+Animals,,bullock,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bullock
+Animals,,bullocks,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bullocks
+Animals,,cow,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cow
+Animals,,cows,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cows
+Animals,,kine,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,kine
+Animals,,heifer,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,heifer
+Animals,,heifers,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,heifers
+Animals,,calf,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,calf
+Animals,,calves,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,calves
+Animals,,goat,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,goat
+Animals,,goats,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,goats
+Animals,,kid,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,kid
+Animals,,kids,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,kids
+Animals,,horse,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,horse
+Animals,,horses,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,horses
+Animals,,camel,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,camel
+Animals,,camels,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,camels
+Animals,,dromedary,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dromedary
+Animals,,dromedaries,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dromedaries
+Animals,,lion,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lion
+Animals,,lions,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lions
+Animals,,lioness,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lioness
+Animals,,lionesses,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lionesses
+Animals,,lionlike,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lionlike
+Animals,,bear,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bear
+Animals,,bears,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bears
+Animals,,wolf,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,wolf
+Animals,,wolves,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,wolves
+Animals,,leopard,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,leopard
+Animals,,leopards,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,leopards
+Animals,,dog,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dog
+Animals,,dogs,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dogs
+Animals,,swine,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,swine
+Animals,,fox,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fox
+Animals,,foxes,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,foxes
+Animals,,hart,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hart
+Animals,,harts,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,harts
+Animals,,hind,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hind
+Animals,,hinds,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hinds
+Animals,,roe,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,roe
+Animals,,roes,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,roes
+Animals,,roebuck,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,roebuck
+Animals,,roebucks,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,roebucks
+Animals,,deer,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,deer
+Animals,,pygarg,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,pygarg
+Animals,,chamois,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,chamois
+Animals,,coney,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,coney
+Animals,,conies,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,conies
+Animals,,hare,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hare
+Animals,,hares,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hares
+Animals,,mouse,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,mouse
+Animals,,mice,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,mice
+Animals,,weasel,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,weasel
+Animals,,ferret,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ferret
+Animals,,mole,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,mole
+Animals,,moles,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,moles
+Animals,,badger,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,badger
+Animals,,badgers,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,badgers
+Animals,,bat,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bat
+Animals,,bats,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bats
+Animals,,ape,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ape
+Animals,,apes,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,apes
+Animals,,unicorn,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,unicorn
+Animals,,unicorns,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,unicorns
+Animals,,behemoth,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,behemoth
+Animals,,leviathan,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,leviathan
+Animals,,greyhound,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,greyhound
+Animals,,serpent,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,serpent
+Animals,,serpents,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,serpents
+Animals,,viper,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,viper
+Animals,,vipers,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,vipers
+Animals,,asp,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,asp
+Animals,,asps,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,asps
+Animals,,adder,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,adder
+Animals,,adders,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,adders
+Animals,,cockatrice,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cockatrice
+Animals,,cockatrices,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cockatrices
+Animals,,dragon,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dragon
+Animals,,dragons,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dragons
+Animals,,lizard,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lizard
+Animals,,lizards,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lizards
+Animals,,tortoise,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,tortoise
+Animals,,chameleon,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,chameleon
+Animals,,snail,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,snail
+Animals,,snails,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,snails
+Animals,,scorpion,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,scorpion
+Animals,,scorpions,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,scorpions
+Animals,,whale,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,whale
+Animals,,whales,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,whales
+Animals,,fish,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fish
+Animals,,fishes,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fishes
+Animals,,bird,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bird
+Animals,,birds,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,birds
+Animals,,fowl,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fowl
+Animals,,fowls,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fowls
+Animals,,eagle,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,eagle
+Animals,,eagles,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,eagles
+Animals,,raven,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,raven
+Animals,,ravens,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ravens
+Animals,,dove,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,dove
+Animals,,doves,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,doves
+Animals,,pigeon,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,pigeon
+Animals,,pigeons,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,pigeons
+Animals,,sparrow,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,sparrow
+Animals,,sparrows,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,sparrows
+Animals,,owl,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,owl
+Animals,,owls,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,owls
+Animals,,stork,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,stork
+Animals,,heron,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,heron
+Animals,,herons,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,herons
+Animals,,pelican,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,pelican
+Animals,,pelicans,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,pelicans
+Animals,,cormorant,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cormorant
+Animals,,cormorants,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cormorants
+Animals,,hawk,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hawk
+Animals,,hawks,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hawks
+Animals,,nighthawk,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,nighthawk
+Animals,,vulture,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,vulture
+Animals,,vultures,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,vultures
+Animals,,ossifrage,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ossifrage
+Animals,,ospray,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ospray
+Animals,,osprey,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,osprey
+Animals,,kite,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,kite
+Animals,,kites,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,kites
+Animals,,glede,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,glede
+Animals,,cuckow,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cuckow
+Animals,,cuckoo,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cuckoo
+Animals,,lapwing,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lapwing
+Animals,,bittern,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bittern
+Animals,,quail,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,quail
+Animals,,quails,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,quails
+Animals,,cock,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cock
+Animals,,hen,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hen
+Animals,,chicken,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,chicken
+Animals,,chickens,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,chickens
+Animals,,turtledove,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,turtledove
+Animals,,turtledoves,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,turtledoves
+Animals,,peacock,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,peacock
+Animals,,peacocks,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,peacocks
+Animals,,swan,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,swan
+Animals,,swans,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,swans
+Animals,,locust,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,locust
+Animals,,locusts,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,locusts
+Animals,,grasshopper,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,grasshopper
+Animals,,grasshoppers,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,grasshoppers
+Animals,,palmerworm,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,palmerworm
+Animals,,cankerworm,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,cankerworm
+Animals,,caterpillar,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,caterpillar
+Animals,,caterpillars,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,caterpillars
+Animals,,caterpiller,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,caterpiller
+Animals,,caterpillers,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,caterpillers
+Animals,,bee,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bee
+Animals,,bees,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,bees
+Animals,,flies,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,flies
+Animals,,worm,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,worm
+Animals,,worms,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,worms
+Animals,,moth,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,moth
+Animals,,moths,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,moths
+Animals,,hornet,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hornet
+Animals,,hornets,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,hornets
+Animals,,spider,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,spider
+Animals,,spiders,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,spiders
+Animals,,ant,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ant
+Animals,,ants,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,ants
+Animals,,flea,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,flea
+Animals,,fleas,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,fleas
+Animals,,lice,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,lice
+Animals,,louse,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,louse
+Animals,,frog,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,frog
+Animals,,frogs,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,frogs
+Animals,,beetle,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,beetle
+Animals,,beetles,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,beetles
+Animals,,gnat,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,gnat
+Animals,,gnats,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,gnats
+Animals,,horseleach,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,horseleach
+Animals,,horseleech,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,horseleech
+Animals,,beast,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,beast
+Animals,,beasts,exact,high,Excludes sheep/ram/lamb/ewe/flock and ass/mule/colt (those have their own motifs).,beasts
+Animals,,fallow deer,phrase,high,,fallow deer
+Animals,,great fish,phrase,high,,great fish
+Animals,,creeping thing,phrase,high,,creeping thing
+Animals,,creeping things,phrase,high,,creeping things
+Animals,,night hawk,phrase,high,,night hawk
+Animals,,herd of swine,phrase,high,,herd of swine
+Animals,,sea monster,phrase,high,,sea monster
+Animals,,sea monsters,phrase,high,,sea monsters
+Animals,,turtle dove,phrase,high,,turtle dove
+Animals,,turtle doves,phrase,high,,turtle doves
+Animals,,herd,exact,medium,"Usually cattle, not always.",herd
+Animals,,herds,exact,medium,"Usually cattle, not always.",herds
+Animals,,horseman,exact,low,Military cavalry more than the animal itself.,horseman
+Animals,,horsemen,exact,low,Military cavalry more than the animal itself.,horsemen
+Giants,,giant,exact,high,,giant
+Giants,,giants,exact,high,,giants
+Giants,,anak,exact,high,,anak
+Giants,,anakim,exact,high,,anakim
+Giants,,anakims,exact,high,,anakims
+Giants,,rephaim,exact,high,,rephaim
+Giants,,rephaims,exact,high,,rephaims
+Giants,,emim,exact,high,,emim
+Giants,,emims,exact,high,,emims
+Giants,,zamzummim,exact,high,,zamzummim
+Giants,,zamzummims,exact,high,,zamzummims
+Giants,,zuzim,exact,high,,zuzim
+Giants,,zuzims,exact,high,,zuzims
+Giants,,og,exact,high,,og
+Giants,,goliath,exact,high,,goliath
+Giants,,lahmi,exact,high,,lahmi
+Giants,,ishbibenob,exact,high,,ishbibenob
+Giants,,saph,exact,high,,saph
+Giants,,sons of anak,phrase,high,,sons of anak
+Giants,,children of anak,phrase,high,,children of anak
+Giants,,sons of the giant,phrase,high,,sons of the giant
+Giants,,children of the giant,phrase,high,,children of the giant
+Giants,,brother of goliath,phrase,high,,brother of goliath
+Giants,,valley of rephaim,phrase,high,,valley of rephaim
+Giants,,valley of the giants,phrase,high,,valley of the giants
+Giants,,men of great stature,phrase,high,,men of great stature
+Giants,,of great stature,phrase,high,,of great stature
+Giants,,six fingers,phrase,high,,six fingers
+Giants,,six toes,phrase,high,,six toes
+Giants,,og king of bashan,phrase,high,,og king of bashan
+Giants,,arba,exact,low,"Father of Anak, but also embedded in the place name Kirjath-arba / Kirjatharba.",arba
+Egypt,,egypt,exact,high,,egypt
+Egypt,,egyptian,exact,high,,egyptian
+Egypt,,egyptians,exact,high,,egyptians
+Egypt,,pharaoh,exact,high,,pharaoh
+Egypt,,pharaohs,exact,high,,pharaohs
+Egypt,,pharaohnecho,exact,high,,pharaohnecho
+Egypt,,pharaohnechoh,exact,high,,pharaohnechoh
+Egypt,,pharaohhophra,exact,high,,pharaohhophra
+Egypt,,mizraim,exact,high,,mizraim
+Egypt,,zoan,exact,high,,zoan
+Egypt,,noph,exact,high,,noph
+Egypt,,pathros,exact,high,,pathros
+Egypt,,rameses,exact,high,,rameses
+Egypt,,raamses,exact,high,,raamses
+Egypt,,pithom,exact,high,,pithom
+Egypt,,goshen,exact,medium,The land of Goshen in Egypt; not every later echo is clearly Egyptian context.,goshen
+Egypt,,land of ham,phrase,medium,Poetic name for Egypt in some psalms and prophets.,land of ham
+Death in General,,death,exact,high,,death
+Death in General,,deaths,exact,high,,deaths
+Death in General,,die,exact,high,,die
+Death in General,,died,exact,high,,died
+Death in General,,diest,exact,high,,diest
+Death in General,,dieth,exact,high,,dieth
+Death in General,,dying,exact,high,,dying
+Death in General,,dead,exact,high,,dead
+Death in General,,deadly,exact,high,,deadly
+Death in General,,deadness,exact,high,,deadness
+Death in General,,slay,exact,high,,slay
+Death in General,,slayeth,exact,high,,slayeth
+Death in General,,slaying,exact,high,,slaying
+Death in General,,slain,exact,high,,slain
+Death in General,,slew,exact,high,,slew
+Death in General,,slayer,exact,high,,slayer
+Death in General,,slayers,exact,high,,slayers
+Death in General,,kill,exact,high,,kill
+Death in General,,killed,exact,high,,killed
+Death in General,,killeth,exact,high,,killeth
+Death in General,,killing,exact,high,,killing
+Death in General,,grave,exact,high,,grave
+Death in General,,graves,exact,high,,graves
+Death in General,,sepulchre,exact,high,,sepulchre
+Death in General,,sepulchres,exact,high,,sepulchres
+Death in General,,bury,exact,high,,bury
+Death in General,,buried,exact,high,,buried
+Death in General,,burieth,exact,high,,burieth
+Death in General,,burying,exact,high,,burying
+Death in General,,burial,exact,high,,burial
+Death in General,,buriers,exact,high,,buriers
+Death in General,,buryingplace,exact,high,,buryingplace
+Death in General,,carcase,exact,high,,carcase
+Death in General,,carcases,exact,high,,carcases
+Death in General,,mortal,exact,high,,mortal
+Death in General,,mortality,exact,high,,mortality
+Death in General,,perish,exact,medium,"Can mean ruin or loss, not only physical death.",perish
+Death in General,,perished,exact,medium,"Can mean ruin or loss, not only physical death.",perished
+Death in General,,perisheth,exact,medium,"Can mean ruin or loss, not only physical death.",perisheth
+Death in General,,perishing,exact,medium,"Can mean ruin or loss, not only physical death.",perishing
+Death in General,,gave up the ghost,phrase,high,,gave up the ghost
+Death in General,,give up the ghost,phrase,high,,give up the ghost
+Death in General,,given up the ghost,phrase,high,,given up the ghost
+Death in General,,yielded up the ghost,phrase,high,,yielded up the ghost
+Death in General,,slept with his fathers,phrase,high,,slept with his fathers
+Death in General,,slept with their fathers,phrase,high,,slept with their fathers
+Death in General,,sleep with thy fathers,phrase,high,,sleep with thy fathers
+Death in General,,slept with his fathers,phrase,high,,slept with his fathers
+Infant Death,,\binfants?\b,regex,medium,"The word infant/infants only when the verse also has a death/violence verb. Drops blessing scenes such as Luke 18:15, and Isaiah 65:20 (an infant of days in a longevity blessing, not a child dying).",infant(s) in a death/violence context
+Infant Death,,\bsucklings?\b,regex,medium,"Included when the verse also has a death/violence verb (die, slay, dash, kill, smote, dead, death, perish, destroy).",suckling(s) in a death/violence context
+Infant Death,,child died,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",child died
+Infant Death,,child is dead,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",child is dead
+Infant Death,,child was dead,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",child was dead
+Infant Death,,the child is dead,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",the child is dead
+Infant Death,,the child died,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",the child died
+Infant Death,,two years old and under,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",two years old and under
+Infant Death,,slew all the children,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",slew all the children
+Infant Death,,slew all the male children,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",slew all the male children
+Infant Death,,"if it be a son, then ye shall kill him",phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).","if it be a son, then ye shall kill him"
+Infant Death,,every son that is born ye shall cast into the river,phrase,high,"The last two phrases are Pharaoh's order to kill Hebrew baby boys (Exodus 1:16, 1:22).",every son that is born ye shall cast into the river
+Infant Death,,\blittle ones\b,regex,medium,"Only when the verse also has dash/dashed/slay/slew/slain/kill/die/dead/death/perish/destroy, and the little ones themselves are being killed or destroyed. Drops Matthew 18:14 (it is not the Father's will that little ones perish) and Zechariah 13:7 (the shepherd's flock, not children dying).",little ones in a death/violence context
+Infant Death,,\byoung child(?:ren)?\b,regex,medium,Only when the verse also has a death/violence verb (catches Herod's massacre and similar).,young child(ren) in a death/violence context
+Infant Death,,\bfirstborn\b,regex,medium,"Only when the verse also has a death/violence verb. Excludes theological 'firstborn from the dead' / 'firstborn of every creature' / 'church of the firstborn'; adult firstborn genealogies (Er in Genesis 38:7 and 1 Chronicles 2:3); and verses that consecrate Israel's firstborn (Numbers 3:13, 8:17) even when they recall the Egyptian plague.",firstborn in a death context
+Infant Death,,"\bdashed?(?:\s+in\s+pieces)?\b.{0,40}\b(little ones|infants?|sucklings?|children|child)\b|\b(little ones|infants?|sucklings?|children)\b.{0,40}\bdashed?(?:\s+in\s+pieces)?\b",regex,high,Dashing of little ones / children / infants.,dashed little ones/children
+Name Meaning,,being interpreted,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",being interpreted
+Name Meaning,,which being interpreted,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",which being interpreted
+Name Meaning,,"which is, being interpreted",phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).","which is, being interpreted"
+Name Meaning,,"that is, being interpreted",phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).","that is, being interpreted"
+Name Meaning,,by interpretation,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",by interpretation
+Name Meaning,,which is by interpretation,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",which is by interpretation
+Name Meaning,,is by interpretation,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",is by interpretation
+Name Meaning,,called his name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called his name
+Name Meaning,,called her name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called her name
+Name Meaning,,called their name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called their name
+Name Meaning,,called the name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called the name
+Name Meaning,,called the name of,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called the name of
+Name Meaning,,shall call his name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",shall call his name
+Name Meaning,,shalt call his name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",shalt call his name
+Name Meaning,,thou shalt call his name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",thou shalt call his name
+Name Meaning,,his name was called,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",his name was called
+Name Meaning,,her name was called,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",her name was called
+Name Meaning,,the name of it was called,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",the name of it was called
+Name Meaning,,name of the place was called,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",name of the place was called
+Name Meaning,,therefore the name of,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",therefore the name of
+Name Meaning,,therefore was the name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",therefore was the name
+Name Meaning,,the name of it called,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",the name of it called
+Name Meaning,,called his wife's name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called his wife's name
+Name Meaning,,called his son's name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called his son's name
+Name Meaning,,called her son's name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called her son's name
+Name Meaning,,called his daughter's name,phrase,high,"Standard KJV naming and etymology formulae. Does not catch every folk etymology that lacks these frames (e.g. Cain in Gen 4:1, which has no 'called his name' clause).",called his daughter's name
+Name Meaning,,that is to say,phrase,low,"Sometimes a name gloss, sometimes a general clarification.",that is to say
+Apparel,,apparel,exact,high,,apparel
+Apparel,,apparelled,exact,high,,apparelled
+Apparel,,appareled,exact,high,,appareled
+Apparel,,garment,exact,high,,garment
+Apparel,,garments,exact,high,,garments
+Apparel,,raiment,exact,high,,raiment
+Apparel,,robe,exact,high,,robe
+Apparel,,robes,exact,high,,robes
+Apparel,,coat,exact,high,,coat
+Apparel,,coats,exact,high,,coats
+Apparel,,vesture,exact,high,,vesture
+Apparel,,clothe,exact,high,,clothe
+Apparel,,clothed,exact,high,,clothed
+Apparel,,clothes,exact,high,,clothes
+Apparel,,clothing,exact,high,,clothing
+Apparel,,clothest,exact,high,,clothest
+Apparel,,clotheth,exact,high,,clotheth
+Apparel,,cloth,exact,high,,cloth
+Apparel,,cloths,exact,high,,cloths
+Apparel,,sackcloth,exact,high,,sackcloth
+Apparel,,veil,exact,high,,veil
+Apparel,,veils,exact,high,,veils
+Apparel,,vail,exact,high,,vail
+Apparel,,vails,exact,high,,vails
+Apparel,,mitre,exact,high,,mitre
+Apparel,,mitres,exact,high,,mitres
+Apparel,,ephod,exact,high,,ephod
+Apparel,,breeches,exact,high,,breeches
+Apparel,,girdle,exact,high,,girdle
+Apparel,,girdles,exact,high,,girdles
+Apparel,,shoe,exact,high,,shoe
+Apparel,,shoes,exact,high,,shoes
+Apparel,,shoelatchet,exact,high,,shoelatchet
+Apparel,,bonnet,exact,high,,bonnet
+Apparel,,bonnets,exact,high,,bonnets
+Apparel,,cloke,exact,high,,cloke
+Apparel,,cloak,exact,high,,cloak
+Apparel,,mantle,exact,high,,mantle
+Apparel,,mantles,exact,high,,mantles
+Apparel,,skirt,exact,high,,skirt
+Apparel,,skirts,exact,high,,skirts
+Apparel,,napkin,exact,high,,napkin
+Apparel,,napkins,exact,high,,napkins
+Apparel,,handkerchief,exact,high,,handkerchief
+Apparel,,handkerchiefs,exact,high,,handkerchiefs
+Apparel,,attire,exact,high,,attire
+Apparel,,attired,exact,high,,attired
+Apparel,,swaddling,exact,high,,swaddling
+Apparel,,linen,exact,medium,"Often clothing (fine linen), sometimes tabernacle material.",linen
+Apparel,,woollen,exact,medium,,woollen
+Apparel,,woolen,exact,medium,,woolen
+Apparel,,gird,exact,medium,"Includes 'gird up thy loins' (prepare), not only putting on a girdle.",gird
+Apparel,,girded,exact,medium,"Includes 'gird up thy loins' (prepare), not only putting on a girdle.",girded
+Apparel,,girdeth,exact,medium,"Includes 'gird up thy loins' (prepare), not only putting on a girdle.",girdeth
+Apparel,,arrayed in,phrase,high,,arrayed in
+Apparel,,arrayed with,phrase,high,,arrayed with
+Apparel,,fine linen,phrase,high,,fine linen
+Apparel,,swaddling clothes,phrase,high,,swaddling clothes
+Tree,,tree,exact,high,,tree
+Tree,,trees,exact,high,,trees
+Tree,,oak,exact,high,,oak
+Tree,,oaks,exact,high,,oaks
+Tree,,cedar,exact,high,,cedar
+Tree,,cedars,exact,high,,cedars
+Tree,,fir,exact,high,,fir
+Tree,,firs,exact,high,,firs
+Tree,,pine,exact,high,,pine
+Tree,,pines,exact,high,,pines
+Tree,,olive,exact,high,,olive
+Tree,,olives,exact,high,,olives
+Tree,,oliveyard,exact,high,,oliveyard
+Tree,,oliveyards,exact,high,,oliveyards
+Tree,,gopher,exact,high,,gopher
+Tree,,shittim,exact,high,,shittim
+Tree,,willow,exact,high,,willow
+Tree,,willows,exact,high,,willows
+Tree,,poplar,exact,high,,poplar
+Tree,,poplars,exact,high,,poplars
+Tree,,myrtle,exact,high,,myrtle
+Tree,,myrtles,exact,high,,myrtles
+Tree,,juniper,exact,high,,juniper
+Tree,,chestnut,exact,high,,chestnut
+Tree,,chestnuts,exact,high,,chestnuts
+Tree,,cypress,exact,high,,cypress
+Tree,,algum,exact,high,,algum
+Tree,,algums,exact,high,,algums
+Tree,,almug,exact,high,,almug
+Tree,,almugs,exact,high,,almugs
+Tree,,sycamine,exact,high,,sycamine
+Tree,,sycomore,exact,high,,sycomore
+Tree,,sycomores,exact,high,,sycomores
+Tree,,sycamore,exact,high,,sycamore
+Tree,,sycamores,exact,high,,sycamores
+Tree,,mulberry,exact,high,,mulberry
+Tree,,mulberries,exact,high,,mulberries
+Tree,,grove,exact,high,,grove
+Tree,,groves,exact,high,,groves
+Tree,,forest,exact,high,,forest
+Tree,,forests,exact,high,,forests
+Tree,,bush,exact,high,,bush
+Tree,,bushes,exact,high,,bushes
+Tree,,bough,exact,high,,bough
+Tree,,boughs,exact,high,,boughs
+Tree,,fig,exact,medium,Includes the fruit as well as the fig tree.,fig
+Tree,,figs,exact,medium,Includes the fruit as well as the fig tree.,figs
+Tree,,almond,exact,medium,"Tree or nuts (Aaron's rod, food).",almond
+Tree,,almonds,exact,medium,"Tree or nuts (Aaron's rod, food).",almonds
+Tree,,pomegranate,exact,medium,"Fruit, ornament, or tree.",pomegranate
+Tree,,pomegranates,exact,medium,"Fruit, ornament, or tree.",pomegranates
+Tree,,branch,exact,medium,Often literal limbs; also messianic/tribal metaphor.,branch
+Tree,,branches,exact,medium,Often literal limbs; also messianic/tribal metaphor.,branches
+Tree,,palm tree,phrase,high,,palm tree
+Tree,,palm trees,phrase,high,,palm trees
+Tree,,teil tree,phrase,high,,teil tree
+Tree,,box tree,phrase,high,,box tree
+Tree,,ash tree,phrase,high,,ash tree
+Tree,,fig tree,phrase,high,,fig tree
+Tree,,fig trees,phrase,high,,fig trees
+Tree,,olive tree,phrase,high,,olive tree
+Tree,,olive trees,phrase,high,,olive trees
+Tree,,hanged on a tree,phrase,high,,hanged on a tree
+Tree,,hangeth on a tree,phrase,high,,hangeth on a tree
+Tree,,hanging on a tree,phrase,high,,hanging on a tree
+Tree,,cedar wood,phrase,high,,cedar wood
+Tree,,shittim wood,phrase,high,,shittim wood
+Tree,,gopher wood,phrase,high,,gopher wood
+Death as a Consequence,,surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,surely die
+Death as a Consequence,,shalt surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,shalt surely die
+Death as a Consequence,,shall surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,shall surely die
+Death as a Consequence,,ye shall surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,ye shall surely die
+Death as a Consequence,,thou shalt surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,thou shalt surely die
+Death as a Consequence,,he shall surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,he shall surely die
+Death as a Consequence,,they shall surely die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,they shall surely die
+Death as a Consequence,,put to death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,put to death
+Death as a Consequence,,be put to death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,be put to death
+Death as a Consequence,,shall be put to death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,shall be put to death
+Death as a Consequence,,surely be put to death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,surely be put to death
+Death as a Consequence,,wages of sin,phrase,high,Legal and theological death-as-penalty / judgment formulae.,wages of sin
+Death as a Consequence,,wages of sin is death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,wages of sin is death
+Death as a Consequence,,soul that sinneth,phrase,high,Legal and theological death-as-penalty / judgment formulae.,soul that sinneth
+Death as a Consequence,,"the soul that sinneth, it shall die",phrase,high,Legal and theological death-as-penalty / judgment formulae.,"the soul that sinneth, it shall die"
+Death as a Consequence,,blood shall be upon,phrase,high,Legal and theological death-as-penalty / judgment formulae.,blood shall be upon
+Death as a Consequence,,blood shall be upon them,phrase,high,Legal and theological death-as-penalty / judgment formulae.,blood shall be upon them
+Death as a Consequence,,his blood be upon,phrase,high,Legal and theological death-as-penalty / judgment formulae.,his blood be upon
+Death as a Consequence,,his blood shall be,phrase,high,Legal and theological death-as-penalty / judgment formulae.,his blood shall be
+Death as a Consequence,,blood be upon,phrase,high,Legal and theological death-as-penalty / judgment formulae.,blood be upon
+Death as a Consequence,,cut off from among,phrase,high,Legal and theological death-as-penalty / judgment formulae.,cut off from among
+Death as a Consequence,,cut off from his people,phrase,high,Legal and theological death-as-penalty / judgment formulae.,cut off from his people
+Death as a Consequence,,cut off from the people,phrase,high,Legal and theological death-as-penalty / judgment formulae.,cut off from the people
+Death as a Consequence,,cut off from the congregation,phrase,high,Legal and theological death-as-penalty / judgment formulae.,cut off from the congregation
+Death as a Consequence,,worthy of death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,worthy of death
+Death as a Consequence,,guilty of death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,guilty of death
+Death as a Consequence,,sin unto death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,sin unto death
+Death as a Consequence,,die the death,phrase,high,Legal and theological death-as-penalty / judgment formulae.,die the death
+Death as a Consequence,,hanged on a tree,phrase,high,Legal and theological death-as-penalty / judgment formulae.,hanged on a tree
+Death as a Consequence,,hangeth on a tree,phrase,high,Legal and theological death-as-penalty / judgment formulae.,hangeth on a tree
+Death as a Consequence,,stoned till he die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,stoned till he die
+Death as a Consequence,,stone him till,phrase,high,Legal and theological death-as-penalty / judgment formulae.,stone him till
+Death as a Consequence,,until he die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,until he die
+Death as a Consequence,,till he die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,till he die
+Death as a Consequence,,till they die,phrase,high,Legal and theological death-as-penalty / judgment formulae.,till they die
+Death as a Consequence,,\b(the lord|the lord god|god|the lord thy god)\s+smote\b|\bsmote him\b|\bsmote them\b,regex,low,Divine 'smote' often (not always) means death as judgment. Lower confidence; some smitings are illness or defeat.,divine/fatal smote
+Stones,God as Rock/Stone,my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",my rock
+Stones,God as Rock/Stone,our rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",our rock
+Stones,God as Rock/Stone,their rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",their rock
+Stones,God as Rock/Stone,the lord is my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",the lord is my rock
+Stones,God as Rock/Stone,he is my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",he is my rock
+Stones,God as Rock/Stone,thou art my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",thou art my rock
+Stones,God as Rock/Stone,he is the rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",he is the rock
+Stones,God as Rock/Stone,he only is my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",he only is my rock
+Stones,God as Rock/Stone,blessed be my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",blessed be my rock
+Stones,God as Rock/Stone,god my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",god my rock
+Stones,God as Rock/Stone,god of my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",god of my rock
+Stones,God as Rock/Stone,o lord my rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",o lord my rock
+Stones,God as Rock/Stone,god was their rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",god was their rock
+Stones,God as Rock/Stone,rock of israel,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of israel
+Stones,God as Rock/Stone,stone of israel,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone of israel
+Stones,God as Rock/Stone,rock of my salvation,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of my salvation
+Stones,God as Rock/Stone,rock of our salvation,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of our salvation
+Stones,God as Rock/Stone,rock of his salvation,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of his salvation
+Stones,God as Rock/Stone,rock of my strength,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of my strength
+Stones,God as Rock/Stone,rock of my refuge,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of my refuge
+Stones,God as Rock/Stone,the rock that begat thee,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",the rock that begat thee
+Stones,God as Rock/Stone,who is a rock save our god,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",who is a rock save our god
+Stones,God as Rock/Stone,who is a rock save the lord,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",who is a rock save the lord
+Stones,God as Rock/Stone,neither is there any rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",neither is there any rock
+Stones,God as Rock/Stone,chief corner stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",chief corner stone
+Stones,God as Rock/Stone,head of the corner,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",head of the corner
+Stones,God as Rock/Stone,head stone of the corner,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",head stone of the corner
+Stones,God as Rock/Stone,precious corner stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",precious corner stone
+Stones,God as Rock/Stone,tried stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",tried stone
+Stones,God as Rock/Stone,stone which the builders refused,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone which the builders refused
+Stones,God as Rock/Stone,stone which the builders rejected,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone which the builders rejected
+Stones,God as Rock/Stone,stone which the builders disallowed,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone which the builders disallowed
+Stones,God as Rock/Stone,stone of stumbling,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone of stumbling
+Stones,God as Rock/Stone,stumbling stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stumbling stone
+Stones,God as Rock/Stone,stumblingstone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stumblingstone
+Stones,God as Rock/Stone,rock of offence,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",rock of offence
+Stones,God as Rock/Stone,spiritual rock,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",spiritual rock
+Stones,God as Rock/Stone,that rock was christ,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",that rock was christ
+Stones,God as Rock/Stone,living stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",living stone
+Stones,God as Rock/Stone,lively stones,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",lively stones
+Stones,God as Rock/Stone,upon this rock i will build,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",upon this rock i will build
+Stones,God as Rock/Stone,stone was cut out,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",stone was cut out
+Stones,God as Rock/Stone,cut out of the mountain without hands,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",cut out of the mountain without hands
+Stones,God as Rock/Stone,cut out without hands,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",cut out without hands
+Stones,God as Rock/Stone,a stone cut out,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",a stone cut out
+Stones,God as Rock/Stone,look unto the rock whence ye are hewn,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",look unto the rock whence ye are hewn
+Stones,God as Rock/Stone,the rock whence ye are hewn,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",the rock whence ye are hewn
+Stones,God as Rock/Stone,i lay in zion for a foundation a stone,phrase,high,"Titles and typological identifications of God/Christ as rock or stone. 'Upon this rock I will build' (Matt 16:18) is included as medium-confidence because the referent is debated. Bare 'the rock' (a boulder, Horeb, a cave) is not in this subgroup.",i lay in zion for a foundation a stone
+Stones,God as Rock/Stone,upon this rock i will build,phrase,medium,"Matthew 16:18. Included because the verse names a rock on which the church is built; the exact referent (Christ, Peter's confession, Peter) is debated.",upon this rock I will build
+Stones,Law in stone,tables of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",tables of stone
+Stones,Law in stone,table of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",table of stone
+Stones,Law in stone,two tables of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",two tables of stone
+Stones,Law in stone,tables of testimony,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",tables of testimony
+Stones,Law in stone,two tables of the testimony,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",two tables of the testimony
+Stones,Law in stone,tables of the covenant,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",tables of the covenant
+Stones,Law in stone,two tables of the covenant,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",two tables of the covenant
+Stones,Law in stone,written with the finger of god,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",written with the finger of god
+Stones,Law in stone,altar of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",altar of stone
+Stones,Law in stone,altars of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",altars of stone
+Stones,Law in stone,altar of whole stones,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",altar of whole stones
+Stones,Law in stone,pillar of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",pillar of stone
+Stones,Law in stone,pillars of stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",pillars of stone
+Stones,Law in stone,stone for a pillar,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",stone for a pillar
+Stones,Law in stone,set it up for a pillar,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",set it up for a pillar
+Stones,Law in stone,set up a pillar,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",set up a pillar
+Stones,Law in stone,set up a stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",set up a stone
+Stones,Law in stone,set it up for a stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",set it up for a stone
+Stones,Law in stone,"this stone, which i have set for a pillar",phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.","this stone, which i have set for a pillar"
+Stones,Law in stone,ebenezer,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",ebenezer
+Stones,Law in stone,heap of stones,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",heap of stones
+Stones,Law in stone,twelve stones,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",twelve stones
+Stones,Law in stone,wrote upon the stones,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",wrote upon the stones
+Stones,Law in stone,write upon them all the words,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",write upon them all the words
+Stones,Law in stone,"took a great stone, and set it up",phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.","took a great stone, and set it up"
+Stones,Law in stone,set them a great stone,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",set them a great stone
+Stones,Law in stone,two tables which moses,phrase,high,"The law written in stone, stone altars, and memorial/pillar stones (Bethel pillar, Ebenezer, Jordan's twelve stones, Joshua's witness stone, Galeed heap). Not every mention of the city Bethel.",two tables which moses
+Stones,Law in stone,\btwo tables\b(?=.*\b(stone|covenant|testimony|moses|horeb|brake)\b)|\b(stone|covenant|testimony|moses|horeb|brake)\b.*\btwo tables\b,regex,high,Catches 'the two tables' when the verse is clearly the Sinai tablets (not Ezekiel's temple offering tables).,two tables (Sinai)
+Stones,stoning,stoned,exact,high,,stoned
+Stones,stoning,stoneth,exact,high,,stoneth
+Stones,stoning,stoning,exact,high,,stoning
+Stones,stoning,stone him,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone him
+Stones,stoning,stone her,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone her
+Stones,stoning,stone them,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone them
+Stones,stoning,stone thee,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone thee
+Stones,stoning,stone me,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone me
+Stones,stoning,be stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",be stoned
+Stones,stoning,are stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",are stoned
+Stones,stoning,were stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",were stoned
+Stones,stoning,was stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",was stoned
+Stones,stoning,is stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",is stoned
+Stones,stoning,shall be stoned,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",shall be stoned
+Stones,stoning,stone with stones,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stone with stones
+Stones,stoning,stoned with stones,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stoned with stones
+Stones,stoning,stoned with,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",stoned with
+Stones,stoning,let us stone,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",let us stone
+Stones,stoning,sought to stone,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",sought to stone
+Stones,stoning,took up stones,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",took up stones
+Stones,stoning,take up stones,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",take up stones
+Stones,stoning,cast a stone,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",cast a stone
+Stones,stoning,first cast a stone,phrase,high,"Judicial or mob stoning. David's sling stone is not included. When the same verse also has 'the Lord said/commanded', that is flagged in findings as an explicit divine order.",first cast a stone
+Stones,stoning,"\b(the lord (said|spake|commanded).{0,120}\b(stone him|stone her|stone them|stone with stones|stoned)|((stone him|stone her|stone them|stone with stones|stoned).{0,120}\b(the lord (said|spake|commanded)|as the lord commanded)))",regex,high,Same-verse pairing of a stoning act/command with 'the Lord said/spake/commanded'.,the LORD said/commanded ... stone
+Stones,caves and rock shelters,cave,exact,high,,cave
+Stones,caves and rock shelters,caves,exact,high,,caves
+Stones,caves and rock shelters,machpelah,exact,high,,machpelah
+Stones,caves and rock shelters,adullam,exact,high,,adullam
+Stones,caves and rock shelters,clift of the rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",clift of the rock
+Stones,caves and rock shelters,cleft of the rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",cleft of the rock
+Stones,caves and rock shelters,clefts of the rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",clefts of the rock
+Stones,caves and rock shelters,clifts of the rocks,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",clifts of the rocks
+Stones,caves and rock shelters,hole of the rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",hole of the rock
+Stones,caves and rock shelters,holes of the rocks,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",holes of the rocks
+Stones,caves and rock shelters,hewn out in the rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",hewn out in the rock
+Stones,caves and rock shelters,hewn out of a rock,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",hewn out of a rock
+Stones,caves and rock shelters,hewn in stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",hewn in stone
+Stones,caves and rock shelters,hewed thee out a sepulchre,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",hewed thee out a sepulchre
+Stones,caves and rock shelters,sepulchre on high,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",sepulchre on high
+Stones,caves and rock shelters,rolled a great stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",rolled a great stone
+Stones,caves and rock shelters,rolled a stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",rolled a stone
+Stones,caves and rock shelters,rolled back the stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",rolled back the stone
+Stones,caves and rock shelters,rolled away the stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",rolled away the stone
+Stones,caves and rock shelters,stone was rolled away,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",stone was rolled away
+Stones,caves and rock shelters,stone rolled away,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",stone rolled away
+Stones,caves and rock shelters,stone taken away from the sepulchre,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",stone taken away from the sepulchre
+Stones,caves and rock shelters,roll us away the stone,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",roll us away the stone
+Stones,caves and rock shelters,roll great stones upon the mouth of the cave,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",roll great stones upon the mouth of the cave
+Stones,caves and rock shelters,entering in of the cave,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",entering in of the cave
+Stones,caves and rock shelters,"unto a cave, and lodged",phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.","unto a cave, and lodged"
+Stones,caves and rock shelters,dens and caves,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",dens and caves
+Stones,caves and rock shelters,dens and in the rocks,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",dens and in the rocks
+Stones,caves and rock shelters,den of lions,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",den of lions
+Stones,caves and rock shelters,mouth of the den,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",mouth of the den
+Stones,caves and rock shelters,out of the den,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",out of the den
+Stones,caves and rock shelters,into the den,phrase,high,"Caves, rock clefts, patriarchal tombs (Machpelah), David's Adullam, Elijah at Horeb, the tomb hewn in the rock and the rolled stone, Daniel's den, and dens used as human shelters. Animal dens and 'den of thieves/robbers' are not included unless a more specific shelter phrase also hits.",into the den
+Stones,water from the rock,smote the rock,phrase,high,,smote the rock
+Stones,water from the rock,smite the rock,phrase,high,,smite the rock
+Stones,water from the rock,speak ye unto the rock,phrase,high,,speak ye unto the rock
+Stones,water from the rock,speak unto the rock,phrase,high,,speak unto the rock
+Stones,water from the rock,water out of the rock,phrase,high,,water out of the rock
+Stones,water from the rock,waters out of the rock,phrase,high,,waters out of the rock
+Stones,water from the rock,water out of this rock,phrase,high,,water out of this rock
+Stones,water from the rock,water out of the rock of flint,phrase,high,,water out of the rock of flint
+Stones,water from the rock,water out of the flinty rock,phrase,high,,water out of the flinty rock
+Stones,water from the rock,brought streams also out of the rock,phrase,high,,brought streams also out of the rock
+Stones,water from the rock,clave the rock,phrase,high,,clave the rock
+Stones,water from the rock,honey out of the rock,phrase,high,,honey out of the rock
+Stones,water from the rock,oil out of the flinty rock,phrase,high,,oil out of the flinty rock
+Stones,water from the rock,rivers out of the rock,phrase,high,,rivers out of the rock
+Stones,water from the rock,drinking water out of the rock,phrase,high,,drinking water out of the rock
+Stones,water from the rock,there shall come water out of it,phrase,high,,there shall come water out of it
+Stones,water from the rock,the same spiritual drink,phrase,high,,the same spiritual drink
+Stones,water from the rock,meribah,exact,medium,Place-names of the water-from-the-rock episodes and later commemorations of them.,meribah
+Stones,water from the rock,massah,exact,medium,Place-names of the water-from-the-rock episodes and later commemorations of them.,massah
+Stones,water from the rock,they drank of that spiritual rock,phrase,high,"Paul's reading of the wilderness water as the spiritual Rock, who is Christ. Also listed under God as Rock/Stone.",they drank of that spiritual rock
+Stones,water from the rock,that rock was christ,phrase,high,"Paul's reading of the wilderness water as the spiritual Rock, who is Christ. Also listed under God as Rock/Stone.",that rock was christ
+I AM,Johannine I am,i am the bread of life,phrase,high,"The bread-of-life cluster in John 6, treated as one official 'I am' statement with its variant wordings.",i am the bread of life
+I AM,Johannine I am,i am that bread of life,phrase,high,"The bread-of-life cluster in John 6, treated as one official 'I am' statement with its variant wordings.",i am that bread of life
+I AM,Johannine I am,i am the living bread,phrase,high,"The bread-of-life cluster in John 6, treated as one official 'I am' statement with its variant wordings.",i am the living bread
+I AM,Johannine I am,i am the bread which came down from heaven,phrase,high,"The bread-of-life cluster in John 6, treated as one official 'I am' statement with its variant wordings.",i am the bread which came down from heaven
+I AM,Johannine I am,i am the light of the world,phrase,high,,i am the light of the world
+I AM,Johannine I am,i am the door,phrase,high,,i am the door
+I AM,Johannine I am,i am the door of the sheep,phrase,high,,i am the door of the sheep
+I AM,Johannine I am,i am the good shepherd,phrase,high,,i am the good shepherd
+I AM,Johannine I am,"i am the resurrection, and the life",phrase,high,,"i am the resurrection, and the life"
+I AM,Johannine I am,"i am the way, the truth, and the life",phrase,high,,"i am the way, the truth, and the life"
+I AM,Johannine I am,i am the true vine,phrase,high,,i am the true vine
+I AM,Johannine I am,i am the vine,phrase,high,,i am the vine
+I AM,Johannine I am,"before abraham was, i am",phrase,high,,"before abraham was, i am"
+I AM,OT echo,i am that i am,phrase,high,"Exodus 3:14. The divine name formula that the Johannine 'Before Abraham was, I am' echoes. Linked from that Term via the ot_refs property, not a graph relationship.",i am that i am
+I AM,OT echo,i am hath sent me,phrase,high,"Exodus 3:14. The divine name formula that the Johannine 'Before Abraham was, I am' echoes. Linked from that Term via the ot_refs property, not a graph relationship.",i am hath sent me
+I AM,OT echo,i am the lord,phrase,high,The recurring self-identification 'I am the LORD'. OT echo of the absolute 'I am' (John 8:58). All matched refs are stored on the Term and copied onto the Johannine Term's ot_refs property.,i am the lord
+I AM,OT echo,i am the lord thy god,phrase,high,The recurring self-identification 'I am the LORD'. OT echo of the absolute 'I am' (John 8:58). All matched refs are stored on the Term and copied onto the Johannine Term's ot_refs property.,i am the lord thy god
+I AM,OT echo,i am the lord your god,phrase,high,The recurring self-identification 'I am the LORD'. OT echo of the absolute 'I am' (John 8:58). All matched refs are stored on the Term and copied onto the Johannine Term's ot_refs property.,i am the lord your god
+I AM,OT echo,manna,phrase,high,"OT (and recap) 'bread from heaven'/manna, typological echo of 'I am the bread of life'. ot_refs on the Johannine Term use Old Testament hits only.",manna
+I AM,OT echo,bread from heaven,phrase,high,"OT (and recap) 'bread from heaven'/manna, typological echo of 'I am the bread of life'. ot_refs on the Johannine Term use Old Testament hits only.",bread from heaven
+I AM,OT echo,bread which came down from heaven,phrase,high,"OT (and recap) 'bread from heaven'/manna, typological echo of 'I am the bread of life'. ot_refs on the Johannine Term use Old Testament hits only.",bread which came down from heaven
+I AM,OT echo,manna,exact,high,See bread from heaven / manna.,manna
+I AM,OT echo,the lord is my light,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,the lord is my light
+I AM,OT echo,the lord shall be unto thee an everlasting light,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,the lord shall be unto thee an everlasting light
+I AM,OT echo,everlasting light,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,everlasting light
+I AM,OT echo,in thy light shall we see light,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,in thy light shall we see light
+I AM,OT echo,the lord my god will enlighten,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,the lord my god will enlighten
+I AM,OT echo,a light to the gentiles,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,a light to the gentiles
+I AM,OT echo,the people that walked in darkness have seen a great light,phrase,high,OT God-as-light language echoing 'I am the light of the world'.,the people that walked in darkness have seen a great light
+I AM,OT echo,the gate of the lord,phrase,high,Selected OT door/gate verses (not every tabernacle door) echoing 'I am the door'.,the gate of the lord
+I AM,OT echo,"lift up your heads, o ye gates",phrase,high,Selected OT door/gate verses (not every tabernacle door) echoing 'I am the door'.,"lift up your heads, o ye gates"
+I AM,OT echo,this is the gate of heaven,phrase,high,Selected OT door/gate verses (not every tabernacle door) echoing 'I am the door'.,this is the gate of heaven
+I AM,OT echo,the lord is my shepherd,phrase,high,OT God-as-shepherd language echoing 'I am the good shepherd'. Not every occurrence of the common noun 'shepherd'.,the lord is my shepherd
+I AM,OT echo,shepherd of israel,phrase,high,OT God-as-shepherd language echoing 'I am the good shepherd'. Not every occurrence of the common noun 'shepherd'.,shepherd of israel
+I AM,OT echo,he shall feed his flock like a shepherd,phrase,high,OT God-as-shepherd language echoing 'I am the good shepherd'. Not every occurrence of the common noun 'shepherd'.,he shall feed his flock like a shepherd
+I AM,OT echo,i will feed my flock,phrase,high,OT God-as-shepherd language echoing 'I am the good shepherd'. Not every occurrence of the common noun 'shepherd'.,i will feed my flock
+I AM,OT echo,i will seek that which was lost,phrase,high,OT God-as-shepherd language echoing 'I am the good shepherd'. Not every occurrence of the common noun 'shepherd'.,i will seek that which was lost
+I AM,OT echo,"i kill, and i make alive",phrase,high,"Selected OT life-from-death statements echoing 'I am the resurrection, and the life'.","i kill, and i make alive"
+I AM,OT echo,"the lord killeth, and maketh alive",phrase,high,"Selected OT life-from-death statements echoing 'I am the resurrection, and the life'.","the lord killeth, and maketh alive"
+I AM,OT echo,i will open your graves,phrase,high,"Selected OT life-from-death statements echoing 'I am the resurrection, and the life'.",i will open your graves
+I AM,OT echo,i know that my redeemer liveth,phrase,high,"Selected OT life-from-death statements echoing 'I am the resurrection, and the life'.",i know that my redeemer liveth
+I AM,OT echo,"this is the way, walk ye in it",phrase,high,"Selected OT 'way' verses echoing 'I am the way, the truth, and the life'. Not every 'way of the LORD'.","this is the way, walk ye in it"
+I AM,OT echo,the way of holiness,phrase,high,"Selected OT 'way' verses echoing 'I am the way, the truth, and the life'. Not every 'way of the LORD'.",the way of holiness
+I AM,OT echo,prepare ye the way of the lord,phrase,high,"Selected OT 'way' verses echoing 'I am the way, the truth, and the life'. Not every 'way of the LORD'.",prepare ye the way of the lord
+I AM,OT echo,make straight in the desert a highway,phrase,high,"Selected OT 'way' verses echoing 'I am the way, the truth, and the life'. Not every 'way of the LORD'.",make straight in the desert a highway
+I AM,OT echo,vineyard of the lord,phrase,high,OT Israel-as-vineyard/vine language echoing 'I am the true vine'.,vineyard of the lord
+I AM,OT echo,thou hast brought a vine out of egypt,phrase,high,OT Israel-as-vineyard/vine language echoing 'I am the true vine'.,thou hast brought a vine out of egypt
+I AM,OT echo,i had planted thee a noble vine,phrase,high,OT Israel-as-vineyard/vine language echoing 'I am the true vine'.,i had planted thee a noble vine
+I AM,OT echo,israel is an empty vine,phrase,high,OT Israel-as-vineyard/vine language echoing 'I am the true vine'.,israel is an empty vine
+I AM,OT echo,a noble vine,phrase,high,OT Israel-as-vineyard/vine language echoing 'I am the true vine'.,a noble vine
+I AM,OT echo,the lord is my rock,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",the lord is my rock
+I AM,OT echo,he is the rock,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",he is the rock
+I AM,OT echo,rock of israel,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",rock of israel
+I AM,OT echo,the rock that begat thee,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",the rock that begat thee
+I AM,OT echo,who is a rock save our god,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",who is a rock save our god
+I AM,OT echo,god was their rock,phrase,high,"OT God-as-Rock titles, included as I AM typological echoes (there is no Johannine 'I am the rock'; 1 Cor 10:4 reads the wilderness Rock as Christ). These verses are also Stones / God as Rock/Stone.",god was their rock
+Alchemist overlap,fountains,fountain,exact,high,,fountain
+Alchemist overlap,fountains,fountains,exact,high,,fountains
+Alchemist overlap,fountains,fount,exact,high,,fount
+Alchemist overlap,sheep,sheep,exact,high,,sheep
+Alchemist overlap,sheep,shepherd,exact,high,,shepherd
+Alchemist overlap,sheep,shepherds,exact,high,,shepherds
+Alchemist overlap,sheep,flock,exact,high,,flock
+Alchemist overlap,sheep,flocks,exact,high,,flocks
+Alchemist overlap,sheep,lamb,exact,high,,lamb
+Alchemist overlap,sheep,lambs,exact,high,,lambs
+Alchemist overlap,character names,melchizedek,exact,high,,melchizedek
+Alchemist overlap,character names,melchisedec,exact,high,,melchisedec
+Alchemist overlap,character names,melchisedek,exact,high,,melchisedek
+Alchemist overlap,character names,king of salem,phrase,high,,king of salem
+Alchemist overlap,character names,salem,exact,medium,Place-name Salem (Jerusalem) in the KJV; the Alchemist's 'king of Salem' / Melchizedek is the intended overlap. Some KJV hits are the place alone.,salem
+Alchemist overlap,desert,desert,exact,high,,desert
+Alchemist overlap,desert,deserts,exact,high,,deserts
+Alchemist overlap,desert,wilderness,exact,medium,KJV often says 'wilderness' where modern narrative would say 'desert'; included so the comparison is not just a spelling mismatch.,wilderness
+Alchemist overlap,desert,wildernesses,exact,medium,KJV often says 'wilderness' where modern narrative would say 'desert'; included so the comparison is not just a spelling mismatch.,wildernesses
+Alchemist overlap,hunger,hunger,exact,high,,hunger
+Alchemist overlap,hunger,hungry,exact,high,,hungry
+Alchemist overlap,hunger,hungered,exact,high,,hungered
+Alchemist overlap,hunger,hungreth,exact,high,,hungreth
+Alchemist overlap,hunger,hungred,exact,high,,hungred
+Alchemist overlap,hunger,an hungred,phrase,high,KJV idiom for 'hungry'.,an hungred
+Alchemist overlap,journey,journey,exact,high,,journey
+Alchemist overlap,journey,journeys,exact,high,,journeys
+Alchemist overlap,journey,journeyed,exact,high,,journeyed
+Alchemist overlap,journey,journeyeth,exact,high,,journeyeth
+Alchemist overlap,journey,journeying,exact,high,,journeying
