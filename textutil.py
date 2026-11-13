@@ -1,4 +1,9 @@
-"""Shared typography, tokenization, stopwords, and book-text cleaners."""
+"""Shared typography, tokenization, stopwords, and book-text cleaners.
+
+These helpers make every corpus in the project countable the same way:
+the King James text, The Alchemist, the two control novels, and The Economy of God.
+Rates on the report use content tokens (tokens left after stopwords are removed).
+"""
 
 from __future__ import annotations
 
@@ -50,22 +55,55 @@ STOPWORDS.update({
 
 
 def normalize_text(text: str) -> str:
+    """Standardize punctuation so every corpus is tokenized the same way.
+
+    Typographic apostrophes become ASCII apostrophes. En-dashes are removed so
+    King James names like Beth–el become the single token Bethel. Em-dashes are
+    turned into spaces so a clause break like "crystal—he" stays two words
+    instead of being glued into "crystalhe". Possessives are reduced to the
+    base word (king's -> king), including uppercase GOD'S. Common English
+    contractions are expanded so "don't" is not split into the junk tokens
+    "don" and "t".
+    """
     t = text.replace("\u2019", "'").replace("\u2018", "'")
-    t = t.replace("\u2013", "").replace("\u2014", "")
+    t = t.replace("\u02bc", "'").replace("\u2032", "'")
+    # En-dashes join compound names (Beth–el -> Bethel).
+    t = t.replace("\u2013", "")
+    # Em-dashes are punctuation, not hyphens.
+    t = t.replace("\u2014", " ")
     t = t.replace("Æ", "Ae").replace("æ", "ae")
     t = t.replace("[but]", "but").replace("[", "").replace("]", "")
     t = re.sub(r"[\u0590-\u05FF]+", " ", t)
-    t = re.sub(r"([A-Za-z]+)'s\b", r"\1", t)
-    t = re.sub(r"([A-Za-z]+s)'\b", r"\1", t)
+    # Possessives: king's / kings' / GOD'S -> king / kings / GOD
+    t = re.sub(r"([A-Za-z]+)'s\b", r"\1", t, flags=re.I)
+    t = re.sub(r"([A-Za-z]+s)'\b", r"\1", t, flags=re.I)
+    # Expand contractions after possessives have already been stripped.
+    t = re.sub(r"\bwon't\b", "will not", t, flags=re.I)
+    t = re.sub(r"\bcan't\b", "cannot", t, flags=re.I)
+    t = re.sub(r"\bshan't\b", "shall not", t, flags=re.I)
+    t = re.sub(r"\bain't\b", "is not", t, flags=re.I)
+    t = re.sub(r"\bo'clock\b", "oclock", t, flags=re.I)
+    t = re.sub(r"n't\b", " not", t, flags=re.I)
+    t = re.sub(r"'re\b", " are", t, flags=re.I)
+    t = re.sub(r"'ve\b", " have", t, flags=re.I)
+    t = re.sub(r"'ll\b", " will", t, flags=re.I)
+    t = re.sub(r"'d\b", " would", t, flags=re.I)
+    t = re.sub(r"'m\b", " am", t, flags=re.I)
     t = re.sub(r"\s+", " ", t)
     return t.strip()
 
 
 def tokenize(text: str) -> list[str]:
+    """Split text into lowercase letter-only words after normalize_text.
+
+    Hyphens and other punctuation are treated as separators, so
+    well-known becomes two tokens: well, known.
+    """
     return [m.group(0).lower() for m in LETTER_RE.finditer(normalize_text(text))]
 
 
 def strip_gutenberg(text: str) -> str:
+    """Drop the Project Gutenberg header and footer, leaving the book text."""
     start = re.search(r"\*\*\*\s*START OF (?:THE PROJECT GUTENBERG EBOOK|THIS PROJECT GUTENBERG EBOOK).*\*\*\*", text, re.I)
     end = re.search(r"\*\*\*\s*END OF (?:THE PROJECT GUTENBERG EBOOK|THIS PROJECT GUTENBERG EBOOK).*\*\*\*", text, re.I)
     if start:

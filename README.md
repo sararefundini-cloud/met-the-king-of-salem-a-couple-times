@@ -10,7 +10,7 @@ This project started with a simple habit: circling repeated words in the Bible t
 
 ## Method
 
-The scripts tokenize running text the same way across every corpus (lowercase, typographic apostrophes and dashes normalized, possessives reduced to the base word). Function words are dropped with a shared English / KJV stopword list. Rates are reported per 10,000 content (non-stopword) tokens.
+The scripts tokenize running text the same way across every corpus (lowercase, typographic apostrophes and dashes normalized, possessives reduced to the base word, common contractions expanded). Em-dashes are treated as punctuation (so *crystal—he* stays two words); en-dashes in King James names are joined (*Beth–el* → *Bethel*). Function words are dropped with a shared English / KJV stopword list. Rates are reported per 10,000 content (non-stopword) tokens.
 
 Distinctiveness uses smoothed log-odds against [wordfreq](https://github.com/rspeer/wordfreq) 3.1.1 English (treated as a large modern-English reference), not TF-IDF. A content word is treated as distinctive of a biblical book when it occurs at least 3 times in that book and its smoothed log-odds is at least **4.0**. That 4.0 cutoff is a **heuristic**, set by inspecting the score distribution; it is not a formal significance test.
 
@@ -26,9 +26,9 @@ A secondary quantitative contrast is the **Abraham-cycle rate** (distinctive voc
 
 | Text | Rate per 10k content tokens |
 |---|---:|
-| *The Alchemist* | 38.27 |
-| *The Great Gatsby* | 2.94 |
-| *The Thirty-Nine Steps* | 11.32 |
+| *The Alchemist* | 40.42 |
+| *The Great Gatsby* | 3.09 |
+| *The Thirty-Nine Steps* | 11.60 |
 
 These are observations from an exploratory comparison, not proof of deliberate literary construction. Santiago can be read as a literary foil to Abraham; that is an interpretation, not a statistical conclusion.
 
@@ -59,6 +59,9 @@ met-the-king-of-salem-a-couple-times/
 ## How to rerun
 
 You will need Python 3.10+ and the packages in `requirements.txt`.
+
+A plain-English methods guide, including why log-odds was used and how the 4.0 cutoff behaves at 3 and 5, is in [`docs/HOW_THE_ANALYSIS_WORKS.md`](docs/HOW_THE_ANALYSIS_WORKS.md). After installing dependencies, run the checks with `python -m pytest tests/test_counts.py`.
+
 
 1. **Create a virtual environment and install dependencies**
 

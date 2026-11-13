@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Build a Genesis-sourced symbolic lexicon (Leviticus splash for Urim/Thummim)
-and count terms across The Alchemist, baselines, Economy of God, and the KJV.
+"""Count a biblical lexicon across The Alchemist, the control novels, and the KJV.
 
-Also re-verifies corpus sizes and the Abraham-cycle distinctiveness rates.
+The word list is drawn mainly from Genesis, with a few terms whose King James
+source is Exodus, Leviticus, Job, or 2 Samuel (marked on each row). This script
+also re-checks corpus sizes and the Abraham-cycle distinctiveness rates that
+appear on the report. Copyrighted books must be supplied in data/private/.
 """
 from __future__ import annotations
 
@@ -677,8 +679,16 @@ def corpus_sizes(verses, corpora):
     return sizes
 
 
-def abraham_cycle(verses, corpora):
-    """Re-verify the Abraham-cycle distinctiveness list and novel rates."""
+def abraham_cycle(verses, corpora, log_odds_threshold=None):
+    """Build the Abraham-cycle distinctive-word list and score the novels.
+
+    The window is Genesis 11:26–25:10. A content word makes the list if it
+    occurs at least three times, its log-odds versus modern English is at
+    least the threshold (4.0 by default), and it is also over-represented
+    against the rest of Genesis. Proper names are added separately; Melchizedek
+    and Salem are kept even as hapaxes. Rates are distinctive tokens per
+    10,000 content tokens in each novel.
+    """
     cycle = []
     rest = []
     for v in verses:
@@ -695,13 +705,13 @@ def abraham_cycle(verses, corpora):
         else:
             rest.append(v)
     cycle_tokens = [t for v in cycle for t in v["tokens"]]
-    rest_tokens = [t for v in cycle for t in []]  # placeholder
     rest_tokens = [t for v in rest for t in v["tokens"]]
     cycle_counts = collections.Counter(cycle_tokens)
     rest_counts = collections.Counter(rest_tokens)
     n_cycle = len(cycle_tokens)
     n_rest = len(rest_tokens)
     texts = [v["text"] for v in cycle]
+    threshold = DISTINCT_LOG_ODDS_THRESHOLD if log_odds_threshold is None else log_odds_threshold
 
     # content words by log-odds vs wordfreq AND vs rest of Genesis
     words = {}
@@ -712,7 +722,7 @@ def abraham_cycle(verses, corpora):
             continue
         lor, rr, freq, zipf = wordfreq_scores(k, n_cycle, w)
         lor_rest = log_odds(k, n_cycle, rest_counts[w], n_rest)
-        if lor >= DISTINCT_LOG_ODDS_THRESHOLD and lor_rest >= 0.5:
+        if lor >= threshold and lor_rest >= 0.5:
             words[w] = {
                 "reason": "log_odds",
                 "count": k,

@@ -25,24 +25,24 @@
       "n_verses": 859
     },
     "economy": {
-      "n_tokens": 74454,
-      "n_content": 31347,
-      "n_types": 3818
+      "n_tokens": 74590,
+      "n_content": 31293,
+      "n_types": 3691
     },
     "alchemist": {
-      "n_tokens": 39608,
-      "n_content": 17246,
-      "n_types": 3326
+      "n_tokens": 39637,
+      "n_content": 16576,
+      "n_types": 3264
     },
     "gatsby": {
-      "n_tokens": 49173,
-      "n_content": 23825,
-      "n_types": 6087
+      "n_tokens": 49438,
+      "n_content": 22667,
+      "n_types": 5808
     },
     "thirty_nine_steps": {
-      "n_tokens": 41677,
-      "n_content": 18547,
-      "n_types": 5303
+      "n_tokens": 41753,
+      "n_content": 18106,
+      "n_types": 5199
     }
   },
   "abraham": {
@@ -56,13 +56,13 @@
     "novels": {
       "alchemist": {
         "n_types": 12,
-        "n_tokens": 66,
-        "rate": 38.26974370868607,
+        "n_tokens": 67,
+        "rate": 40.41988416988417,
         "used": {
           "abraham": 1,
           "arose": 1,
           "bury": 1,
-          "camels": 8,
+          "camels": 9,
           "departed": 1,
           "egyptian": 3,
           "lad": 1,
@@ -76,7 +76,7 @@
       "gatsby": {
         "n_types": 5,
         "n_tokens": 7,
-        "rate": 2.9380902413431267,
+        "rate": 3.0881898795605944,
         "used": {
           "arose": 1,
           "bracelets": 1,
@@ -88,7 +88,7 @@
       "thirty_nine_steps": {
         "n_types": 10,
         "n_tokens": 21,
-        "rate": 11.322585862942793,
+        "rate": 11.598365182812328,
         "used": {
           "abide": 1,
           "departed": 1,
@@ -153,46 +153,46 @@
   },
   "category_rates": {
     "architecture / places": {
-      "alchemist": 71.32,
-      "gatsby": 101.99,
-      "steps": 80.88,
-      "economy": 54.55,
+      "alchemist": 74.2,
+      "gatsby": 107.2,
+      "steps": 82.85,
+      "economy": 54.64,
       "genesis": 292.13,
       "leviticus": 211.45,
       "kjv": 205.68
     },
     "materials / gems": {
-      "alchemist": 125.83,
-      "gatsby": 14.27,
-      "steps": 31.81,
-      "economy": 31.9,
+      "alchemist": 130.91,
+      "gatsby": 15.0,
+      "steps": 32.59,
+      "economy": 31.96,
       "genesis": 32.16,
       "leviticus": 58.49,
       "kjv": 56.06
     },
     "colors": {
-      "alchemist": 17.4,
-      "gatsby": 38.61,
-      "steps": 49.06,
-      "economy": 9.57,
+      "alchemist": 18.1,
+      "gatsby": 40.59,
+      "steps": 50.26,
+      "economy": 9.59,
       "genesis": 27.47,
       "leviticus": 32.62,
       "kjv": 8.92
     },
     "nature / elements": {
-      "alchemist": 212.8,
-      "gatsby": 61.28,
-      "steps": 45.83,
-      "economy": 69.23,
+      "alchemist": 221.4,
+      "gatsby": 64.41,
+      "steps": 46.95,
+      "economy": 69.34,
       "genesis": 81.74,
       "leviticus": 107.97,
       "kjv": 98.11
     },
     "objects": {
-      "alchemist": 70.16,
-      "gatsby": 10.49,
-      "steps": 11.32,
-      "economy": 23.61,
+      "alchemist": 73.0,
+      "gatsby": 11.03,
+      "steps": 11.6,
+      "economy": 23.65,
       "genesis": 53.6,
       "leviticus": 37.12,
       "kjv": 46.12
@@ -222,9 +222,9 @@
         "kjv": 1318
       },
       "rates": {
-        "alchemist": 12.18,
-        "gatsby": 7.97,
-        "steps": 4.31,
+        "alchemist": 12.67,
+        "gatsby": 8.38,
+        "steps": 4.42,
         "economy": 0.64,
         "genesis": 33.5,
         "leviticus": 15.75,
@@ -254,9 +254,9 @@
         "kjv": 65
       },
       "rates": {
-        "alchemist": 1.74,
-        "gatsby": 1.68,
-        "steps": 0.54,
+        "alchemist": 1.81,
+        "gatsby": 1.76,
+        "steps": 0.55,
         "economy": 0.0,
         "genesis": 2.01,
         "leviticus": 0.0,
@@ -287,7 +287,7 @@
         "alchemist": 0.0,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 13.08,
+        "economy": 13.1,
         "genesis": 8.71,
         "leviticus": 97.85,
         "kjv": 14.2
@@ -316,8 +316,8 @@
         "kjv": 164
       },
       "rates": {
-        "alchemist": 20.29,
-        "gatsby": 0.84,
+        "alchemist": 21.11,
+        "gatsby": 0.88,
         "steps": 0.0,
         "economy": 0.96,
         "genesis": 18.09,
@@ -348,10 +348,10 @@
         "kjv": 61
       },
       "rates": {
-        "alchemist": 7.54,
-        "gatsby": 2.1,
-        "steps": 1.08,
-        "economy": 2.87,
+        "alchemist": 7.84,
+        "gatsby": 2.21,
+        "steps": 1.1,
+        "economy": 2.88,
         "genesis": 19.43,
         "leviticus": 0.0,
         "kjv": 2.0
@@ -380,9 +380,9 @@
         "kjv": 419
       },
       "rates": {
-        "alchemist": 3.48,
-        "gatsby": 3.36,
-        "steps": 5.39,
+        "alchemist": 3.62,
+        "gatsby": 3.53,
+        "steps": 5.52,
         "economy": 0.96,
         "genesis": 6.03,
         "leviticus": 0.0,
@@ -412,10 +412,10 @@
         "kjv": 2162
       },
       "rates": {
-        "alchemist": 2.9,
-        "gatsby": 43.23,
-        "steps": 34.51,
-        "economy": 9.57,
+        "alchemist": 3.02,
+        "gatsby": 45.44,
+        "steps": 35.35,
+        "economy": 9.59,
         "genesis": 58.29,
         "leviticus": 52.86,
         "kjv": 70.92
@@ -444,10 +444,10 @@
         "kjv": 260
       },
       "rates": {
-        "alchemist": 1.74,
-        "gatsby": 29.8,
-        "steps": 29.12,
-        "economy": 2.23,
+        "alchemist": 1.81,
+        "gatsby": 31.32,
+        "steps": 29.82,
+        "economy": 2.24,
         "genesis": 8.04,
         "leviticus": 26.99,
         "kjv": 8.53
@@ -475,9 +475,9 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 0.42,
+        "gatsby": 0.44,
         "steps": 0.0,
-        "economy": 6.7,
+        "economy": 6.71,
         "genesis": 8.04,
         "leviticus": 0.0,
         "kjv": 4.46
@@ -506,9 +506,9 @@
         "kjv": 64
       },
       "rates": {
-        "alchemist": 1.16,
-        "gatsby": 12.59,
-        "steps": 5.39,
+        "alchemist": 1.21,
+        "gatsby": 13.24,
+        "steps": 5.52,
         "economy": 1.6,
         "genesis": 9.38,
         "leviticus": 0.0,
@@ -538,7 +538,7 @@
         "kjv": 4
       },
       "rates": {
-        "alchemist": 6.38,
+        "alchemist": 6.64,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,
@@ -570,10 +570,10 @@
         "kjv": 736
       },
       "rates": {
-        "alchemist": 13.92,
+        "alchemist": 14.48,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 7.66,
+        "economy": 7.67,
         "genesis": 64.99,
         "leviticus": 13.5,
         "kjv": 24.14
@@ -722,8 +722,8 @@
       "rates": {
         "alchemist": 0.0,
         "gatsby": 0.0,
-        "steps": 0.54,
-        "economy": 2.55,
+        "steps": 0.55,
+        "economy": 2.56,
         "genesis": 3.35,
         "leviticus": 0.0,
         "kjv": 6.46
@@ -752,10 +752,10 @@
         "kjv": 483
       },
       "rates": {
-        "alchemist": 26.09,
-        "gatsby": 6.3,
-        "steps": 2.16,
-        "economy": 11.48,
+        "alchemist": 27.15,
+        "gatsby": 6.62,
+        "steps": 2.21,
+        "economy": 11.5,
         "genesis": 6.03,
         "leviticus": 1.12,
         "kjv": 15.84
@@ -784,9 +784,9 @@
         "kjv": 320
       },
       "rates": {
-        "alchemist": 1.74,
-        "gatsby": 4.62,
-        "steps": 1.62,
+        "alchemist": 1.81,
+        "gatsby": 4.85,
+        "steps": 1.66,
         "economy": 1.28,
         "genesis": 7.37,
         "leviticus": 5.62,
@@ -816,10 +816,10 @@
         "kjv": 349
       },
       "rates": {
-        "alchemist": 30.15,
-        "gatsby": 0.42,
-        "steps": 16.18,
-        "economy": 1.91,
+        "alchemist": 31.37,
+        "gatsby": 0.44,
+        "steps": 16.57,
+        "economy": 1.92,
         "genesis": 10.05,
         "leviticus": 16.87,
         "kjv": 11.45
@@ -847,9 +847,9 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 0.84,
-        "steps": 1.08,
-        "economy": 9.25,
+        "gatsby": 0.88,
+        "steps": 1.1,
+        "economy": 9.27,
         "genesis": 0.67,
         "leviticus": 1.12,
         "kjv": 4.13
@@ -878,9 +878,9 @@
         "kjv": 101
       },
       "rates": {
-        "alchemist": 1.74,
+        "alchemist": 1.81,
         "gatsby": 0.0,
-        "steps": 1.08,
+        "steps": 1.1,
         "economy": 0.0,
         "genesis": 0.67,
         "leviticus": 1.12,
@@ -910,8 +910,8 @@
       "rates": {
         "alchemist": 0.0,
         "gatsby": 0.0,
-        "steps": 8.09,
-        "economy": 2.87,
+        "steps": 8.28,
+        "economy": 2.88,
         "genesis": 4.02,
         "leviticus": 15.75,
         "kjv": 4.63
@@ -940,10 +940,10 @@
         "kjv": 104
       },
       "rates": {
-        "alchemist": 0.58,
-        "gatsby": 0.84,
-        "steps": 1.08,
-        "economy": 5.1,
+        "alchemist": 0.6,
+        "gatsby": 0.88,
+        "steps": 1.1,
+        "economy": 5.11,
         "genesis": 0.67,
         "leviticus": 14.62,
         "kjv": 3.41
@@ -1032,8 +1032,8 @@
         "kjv": 28
       },
       "rates": {
-        "alchemist": 0.58,
-        "gatsby": 0.84,
+        "alchemist": 0.6,
+        "gatsby": 0.88,
         "steps": 0.0,
         "economy": 0.0,
         "genesis": 1.34,
@@ -1064,7 +1064,7 @@
         "kjv": 21
       },
       "rates": {
-        "alchemist": 2.9,
+        "alchemist": 3.02,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,
@@ -1096,9 +1096,9 @@
         "kjv": 5
       },
       "rates": {
-        "alchemist": 35.95,
-        "gatsby": 0.42,
-        "steps": 0.54,
+        "alchemist": 37.4,
+        "gatsby": 0.44,
+        "steps": 0.55,
         "economy": 0.0,
         "genesis": 0.0,
         "leviticus": 0.0,
@@ -1128,7 +1128,7 @@
         "kjv": 6
       },
       "rates": {
-        "alchemist": 8.7,
+        "alchemist": 9.05,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,
@@ -1160,7 +1160,7 @@
         "kjv": 7
       },
       "rates": {
-        "alchemist": 8.7,
+        "alchemist": 9.05,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,
@@ -1192,7 +1192,7 @@
         "kjv": 5
       },
       "rates": {
-        "alchemist": 8.7,
+        "alchemist": 9.05,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,
@@ -1224,10 +1224,10 @@
         "kjv": 75
       },
       "rates": {
-        "alchemist": 7.54,
-        "gatsby": 19.73,
-        "steps": 12.4,
-        "economy": 2.87,
+        "alchemist": 7.84,
+        "gatsby": 20.73,
+        "steps": 12.7,
+        "economy": 2.88,
         "genesis": 3.35,
         "leviticus": 22.49,
         "kjv": 2.46
@@ -1256,9 +1256,9 @@
         "kjv": 18
       },
       "rates": {
-        "alchemist": 6.96,
-        "gatsby": 4.62,
-        "steps": 16.71,
+        "alchemist": 7.24,
+        "gatsby": 4.85,
+        "steps": 17.12,
         "economy": 1.28,
         "genesis": 0.0,
         "leviticus": 2.25,
@@ -1288,9 +1288,9 @@
         "kjv": 53
       },
       "rates": {
-        "alchemist": 1.74,
-        "gatsby": 3.78,
-        "steps": 4.31,
+        "alchemist": 1.81,
+        "gatsby": 3.97,
+        "steps": 4.42,
         "economy": 4.47,
         "genesis": 2.01,
         "leviticus": 0.0,
@@ -1349,7 +1349,7 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 0.42,
+        "gatsby": 0.44,
         "steps": 0.0,
         "economy": 0.0,
         "genesis": 4.02,
@@ -1409,8 +1409,8 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 2.94,
-        "steps": 7.55,
+        "gatsby": 3.09,
+        "steps": 7.73,
         "economy": 0.0,
         "genesis": 2.68,
         "leviticus": 0.0,
@@ -1500,9 +1500,9 @@
         "kjv": 41
       },
       "rates": {
-        "alchemist": 1.16,
-        "gatsby": 7.14,
-        "steps": 8.09,
+        "alchemist": 1.21,
+        "gatsby": 7.5,
+        "steps": 8.28,
         "economy": 0.0,
         "genesis": 2.01,
         "leviticus": 2.25,
@@ -1532,10 +1532,10 @@
         "kjv": 346
       },
       "rates": {
-        "alchemist": 9.86,
-        "gatsby": 8.39,
-        "steps": 7.55,
-        "economy": 14.36,
+        "alchemist": 10.26,
+        "gatsby": 8.82,
+        "steps": 7.73,
+        "economy": 14.38,
         "genesis": 13.4,
         "leviticus": 7.87,
         "kjv": 11.35
@@ -1565,7 +1565,7 @@
         "alchemist": 0.0,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 3.19,
+        "economy": 3.2,
         "genesis": 2.01,
         "leviticus": 0.0,
         "kjv": 0.33
@@ -1595,7 +1595,7 @@
         "alchemist": 0.0,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 2.87,
+        "economy": 2.88,
         "genesis": 1.34,
         "leviticus": 0.0,
         "kjv": 0.07
@@ -1624,10 +1624,10 @@
         "kjv": 66
       },
       "rates": {
-        "alchemist": 9.28,
-        "gatsby": 4.2,
-        "steps": 0.54,
-        "economy": 2.23,
+        "alchemist": 9.65,
+        "gatsby": 4.41,
+        "steps": 0.55,
+        "economy": 2.24,
         "genesis": 3.35,
         "leviticus": 0.0,
         "kjv": 2.17
@@ -1656,8 +1656,8 @@
         "kjv": 28
       },
       "rates": {
-        "alchemist": 12.76,
-        "gatsby": 1.26,
+        "alchemist": 13.27,
+        "gatsby": 1.32,
         "steps": 0.0,
         "economy": 0.0,
         "genesis": 2.01,
@@ -1688,9 +1688,9 @@
         "kjv": 108
       },
       "rates": {
-        "alchemist": 2.9,
-        "gatsby": 4.2,
-        "steps": 4.31,
+        "alchemist": 3.02,
+        "gatsby": 4.41,
+        "steps": 4.42,
         "economy": 0.0,
         "genesis": 5.36,
         "leviticus": 2.25,
@@ -1720,10 +1720,10 @@
         "kjv": 353
       },
       "rates": {
-        "alchemist": 107.27,
+        "alchemist": 111.61,
         "gatsby": 0.0,
-        "steps": 0.54,
-        "economy": 11.17,
+        "steps": 0.55,
+        "economy": 11.18,
         "genesis": 4.69,
         "leviticus": 4.5,
         "kjv": 11.58
@@ -1752,9 +1752,9 @@
         "kjv": 256
       },
       "rates": {
-        "alchemist": 1.16,
-        "gatsby": 0.84,
-        "steps": 5.39,
+        "alchemist": 1.21,
+        "gatsby": 0.88,
+        "steps": 5.52,
         "economy": 1.6,
         "genesis": 10.05,
         "leviticus": 2.25,
@@ -1784,10 +1784,10 @@
         "kjv": 282
       },
       "rates": {
-        "alchemist": 4.06,
-        "gatsby": 22.25,
-        "steps": 14.02,
-        "economy": 24.88,
+        "alchemist": 4.22,
+        "gatsby": 23.38,
+        "steps": 14.36,
+        "economy": 24.93,
         "genesis": 9.38,
         "leviticus": 1.12,
         "kjv": 9.25
@@ -1815,8 +1815,8 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 3.78,
-        "steps": 3.24,
+        "gatsby": 3.97,
+        "steps": 3.31,
         "economy": 4.47,
         "genesis": 3.35,
         "leviticus": 0.0,
@@ -1846,9 +1846,9 @@
         "kjv": 62
       },
       "rates": {
-        "alchemist": 0.58,
-        "gatsby": 0.42,
-        "steps": 0.54,
+        "alchemist": 0.6,
+        "gatsby": 0.44,
+        "steps": 0.55,
         "economy": 0.32,
         "genesis": 8.04,
         "leviticus": 0.0,
@@ -1878,9 +1878,9 @@
         "kjv": 550
       },
       "rates": {
-        "alchemist": 9.28,
-        "gatsby": 1.68,
-        "steps": 2.7,
+        "alchemist": 9.65,
+        "gatsby": 1.76,
+        "steps": 2.76,
         "economy": 3.83,
         "genesis": 2.01,
         "leviticus": 83.23,
@@ -1910,9 +1910,9 @@
         "kjv": 156
       },
       "rates": {
-        "alchemist": 1.74,
-        "gatsby": 1.68,
-        "steps": 1.08,
+        "alchemist": 1.81,
+        "gatsby": 1.76,
+        "steps": 1.1,
         "economy": 0.0,
         "genesis": 2.68,
         "leviticus": 2.25,
@@ -1942,9 +1942,9 @@
         "kjv": 314
       },
       "rates": {
-        "alchemist": 3.48,
+        "alchemist": 3.62,
         "gatsby": 0.0,
-        "steps": 1.62,
+        "steps": 1.66,
         "economy": 0.0,
         "genesis": 6.03,
         "leviticus": 0.0,
@@ -1973,8 +1973,8 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 7.14,
-        "steps": 0.54,
+        "gatsby": 7.5,
+        "steps": 0.55,
         "economy": 0.0,
         "genesis": 2.68,
         "leviticus": 1.12,
@@ -2004,9 +2004,9 @@
         "kjv": 146
       },
       "rates": {
-        "alchemist": 50.45,
-        "gatsby": 5.46,
-        "steps": 3.24,
+        "alchemist": 52.49,
+        "gatsby": 5.74,
+        "steps": 3.31,
         "economy": 0.0,
         "genesis": 2.68,
         "leviticus": 0.0,
@@ -2036,7 +2036,7 @@
       "rates": {
         "alchemist": 0.0,
         "gatsby": 0.0,
-        "steps": 0.54,
+        "steps": 0.55,
         "economy": 0.32,
         "genesis": 2.68,
         "leviticus": 3.37,
@@ -2066,7 +2066,7 @@
         "kjv": 99
       },
       "rates": {
-        "alchemist": 49.29,
+        "alchemist": 51.28,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 1.28,
@@ -2098,10 +2098,10 @@
         "kjv": 55
       },
       "rates": {
-        "alchemist": 1.16,
-        "gatsby": 0.84,
-        "steps": 2.16,
-        "economy": 1.91,
+        "alchemist": 1.21,
+        "gatsby": 0.88,
+        "steps": 2.21,
+        "economy": 1.92,
         "genesis": 0.67,
         "leviticus": 0.0,
         "kjv": 1.8
@@ -2129,8 +2129,8 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 7.14,
-        "steps": 7.01,
+        "gatsby": 7.5,
+        "steps": 7.18,
         "economy": 0.0,
         "genesis": 6.03,
         "leviticus": 4.5,
@@ -2161,7 +2161,7 @@
         "alchemist": 0.0,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 7.98,
+        "economy": 7.99,
         "genesis": 17.42,
         "leviticus": 1.12,
         "kjv": 7.54
@@ -2190,9 +2190,9 @@
         "kjv": 74
       },
       "rates": {
-        "alchemist": 1.16,
-        "gatsby": 1.26,
-        "steps": 1.08,
+        "alchemist": 1.21,
+        "gatsby": 1.32,
+        "steps": 1.1,
         "economy": 0.32,
         "genesis": 6.7,
         "leviticus": 0.0,
@@ -2222,9 +2222,9 @@
         "kjv": 43
       },
       "rates": {
-        "alchemist": 0.58,
+        "alchemist": 0.6,
         "gatsby": 0.0,
-        "steps": 0.54,
+        "steps": 0.55,
         "economy": 0.0,
         "genesis": 2.01,
         "leviticus": 1.12,
@@ -2254,7 +2254,7 @@
         "kjv": 448
       },
       "rates": {
-        "alchemist": 11.02,
+        "alchemist": 11.46,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 1.6,
@@ -2285,8 +2285,8 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 0.84,
-        "steps": 0.54,
+        "gatsby": 0.88,
+        "steps": 0.55,
         "economy": 0.0,
         "genesis": 7.37,
         "leviticus": 1.12,
@@ -2315,7 +2315,7 @@
       },
       "rates": {
         "alchemist": 0.0,
-        "gatsby": 0.42,
+        "gatsby": 0.44,
         "steps": 0.0,
         "economy": 0.0,
         "genesis": 3.35,
@@ -2376,7 +2376,7 @@
         "kjv": 200
       },
       "rates": {
-        "alchemist": 2.32,
+        "alchemist": 2.41,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 1.6,
@@ -2408,10 +2408,10 @@
         "kjv": 46
       },
       "rates": {
-        "alchemist": 1.16,
+        "alchemist": 1.21,
         "gatsby": 0.0,
         "steps": 0.0,
-        "economy": 8.93,
+        "economy": 8.95,
         "genesis": 2.01,
         "leviticus": 7.87,
         "kjv": 1.51
@@ -2440,7 +2440,7 @@
         "kjv": 31
       },
       "rates": {
-        "alchemist": 3.48,
+        "alchemist": 3.62,
         "gatsby": 0.0,
         "steps": 0.0,
         "economy": 0.0,

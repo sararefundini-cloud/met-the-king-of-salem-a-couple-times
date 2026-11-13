@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build a Neo4j-ready node inventory of the KJV for Bible Stories Bingo motifs.
+"""Build a Neo4j-ready node inventory of the King James text for Bible Stories Bingo motifs.
 
-Reads source/KJV.csv and lexicon.csv (generated from lexicon.py if missing or
-when --refresh-lexicon is passed). Writes verses, words, motifs, occurrences,
-import.cypher, findings.md, README.md, and a bar chart of verse counts.
+This script reads source/KJV.csv and the motif list from lexicon.py, then writes
+CSV files that can be loaded into Neo4j (terms, motifs, verses, occurrences).
+The Alchemist study itself does not run against a Neo4j database; these files
+are an optional export. Pass --refresh-lexicon to regenerate lexicon.csv first.
 """
 
 from __future__ import annotations
@@ -182,16 +183,22 @@ def normalize_book(name: str) -> str:
 
 
 def normalize_text(text: str) -> str:
-    """Typography-normalized text used for tokenization and matching."""
+    """Typography-normalized text used for KJV tokenization and matching.
+
+    Same typography rules as textutil.normalize_text for dashes and possessives.
+    Contractions are not expanded here: the King James text almost never uses
+    them, and the kjvindex cross-check should stay on a stable KJV path.
+    """
     t = text.replace("\u2019", "'").replace("\u2018", "'")
-    t = t.replace("\u2013", "").replace("\u2014", "")  # Beth–el -> Bethel
+    t = t.replace("\u2013", "")  # Beth–el -> Bethel
+    t = t.replace("\u2014", " ")  # punctuation dash, not a hyphen
     t = t.replace("Æ", "Ae").replace("æ", "ae")
     t = t.replace("[but]", "but").replace("[", "").replace("]", "")
     # Drop Hebrew letters (Psalm 119 headings)
     t = re.sub(r"[\u0590-\u05FF]+", " ", t)
-    # Possessives: king's / kings' -> king  (count under the base word)
-    t = re.sub(r"([A-Za-z]+)'s\b", r"\1", t)
-    t = re.sub(r"([A-Za-z]+s)'\b", r"\1", t)
+    # Possessives: king's / kings' / GOD'S -> king / kings / GOD
+    t = re.sub(r"([A-Za-z]+)'s\b", r"\1", t, flags=re.I)
+    t = re.sub(r"([A-Za-z]+s)'\b", r"\1", t, flags=re.I)
     t = re.sub(r"\s+", " ", t)
     return t.strip()
 

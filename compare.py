@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
-"""Compare other books against the KJV using the same motif lexicon,
-and measure how The Alchemist's vocabulary lines up with Genesis,
-Exodus, and Leviticus (with modern-novel baselines).
+"""Compare The Alchemist with Genesis, Exodus, and Leviticus, plus two control novels.
+
+This is the source-and-distinctiveness study. It tokenizes each book the same
+way, drops function words, and asks which words are distinctive of a biblical
+book compared with ordinary modern English (smoothed log-odds versus wordfreq).
+It also reports how often those distinctive words appear in The Alchemist and
+in the control novels, as a rate per 10,000 content words.
 
 Place copyrighted texts in data/private/ (alchemist.txt, economy.txt).
 Public-domain baselines live in data/baselines/. Paths are relative to
@@ -95,6 +99,10 @@ QUOTE_RE = re.compile(r"“([^”]{3,800})”")
 
 
 def rate_per_10k(count: int, total_tokens: int) -> float:
+    """Hits per 10,000 tokens. Using a rate (not a raw count) lets short and
+    long books be compared on the same scale. The report uses content tokens
+    — the words left after stopwords are removed — as the denominator.
+    """
     if total_tokens <= 0:
         return 0.0
     return (count / total_tokens) * 10000.0
@@ -361,7 +369,14 @@ def exclusive_bucket_shares(content_tokens: list[str], types: list[str], sets: d
 
 
 def log_odds(c_a: float, n_a: int, c_b: float, n_b: int) -> float:
-    """Smoothed log-odds ratio of a word in corpus A vs corpus B."""
+    """Smoothed log-odds ratio of a word in corpus A versus corpus B.
+
+    This asks: is word w more characteristic of A than of B? The 0.5 added to
+    every count is a smoothing term, so rare or missing words do not produce
+    zeros or infinities. Unlike TF-IDF, which ranks words inside a document,
+    this compares two corpora directly. The 4.0 cutoff used later is a
+    heuristic, not a formal significance test.
+    """
     return (
         math.log((c_a + 0.5) / (n_a - c_a + 0.5))
         - math.log((c_b + 0.5) / (n_b - c_b + 0.5))
@@ -535,7 +550,13 @@ NAME_DENY = STOPWORDS | {
 
 
 def wordfreq_scores(count: int, n_tokens: int, word: str) -> tuple[float, float, float, float]:
-    """Return (log_odds, rate_ratio, wordfreq_proportion, zipf) vs general English."""
+    """Compare a word's rate in a biblical book with general modern English.
+
+    wordfreq supplies the English reference rate. That rate is scaled to a
+    1-billion-word reference corpus (the scale zipf frequencies are defined
+    on), then passed through the same smoothed log-odds function.
+    Returns (log_odds, rate_ratio, wordfreq_proportion, zipf).
+    """
     from wordfreq import word_frequency, zipf_frequency
     freq = word_frequency(word, "en")
     zipf = zipf_frequency(word, "en")
