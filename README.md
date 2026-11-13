@@ -6,7 +6,7 @@ Interactive report: [dashboard](https://cursor.com/canvas/store-3f56d3a0-7393-43
 
 ## Origin
 
-This project started with a simple habit: circling repeated words in the Bible to make the text easier to follow. *The Alchemist* was a familiar book, so comparing its language and journey shape with the Old Testament became the research question.
+This is a personal starting point, not a finding from the data. In undergrad I was on a team that sorted TripAdvisor reviews about visitor harassment by micro-traders (taxi scams, aggressive street vendors) into categories. Later, at Staples, I analyzed exception tickets in Excel to find trends in benefits enrollment. Those experiences led me to start reading Bible stories the same way, as tickets sorted into categories. I built those categories from Venn diagrams I drew by hand comparing *The Economy of God* and *The Alchemist*, and that lexicon became the backbone of this Python analysis. *The Alchemist* used to be my bible and shaped my decisions; studied next to Genesis, it began to look like a shadow of Abraham's story — the same king of Salem and the same tenth, but with trust placed in personal dreams rather than in God. Abraham's kind of faith is the one I want in my own life.
 
 ## Method
 
